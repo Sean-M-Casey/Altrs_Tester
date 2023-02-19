@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using MoreMountains.Feedbacks;
 public class characterStats : MonoBehaviour
 {
 
@@ -19,6 +19,7 @@ public class characterStats : MonoBehaviour
 
     public GameObject[] buttons;
     [SerializeField] GameObject[] alignmentIcons;
+    [SerializeField] MMFeedbacks mmFeedbacks;
 
     public void GutFeeling()
     {
@@ -97,20 +98,29 @@ public class characterStats : MonoBehaviour
 
     public void AlignmentAssignment()
     {
-        if(looseUnit >= 2)
+        if(looseUnit == 2)
         {
             alignmentIcons[0].SetActive(true);
             alignmentIcons[1].SetActive(false);
             alignmentIcons[3].SetActive(true);
             alignmentIcons[2].SetActive(false);
+            if(byTheBook <= 1)
+            {
+                mmFeedbacks.PlayFeedbacks();
+            }
         }
-        if(byTheBook >=2)
+        if(byTheBook ==2)
         {
             alignmentIcons[2].SetActive(true);
             alignmentIcons[0].SetActive(false);
             alignmentIcons[1].SetActive(true);
             alignmentIcons[3].SetActive(false);
+            if(looseUnit <= 1)
+            {
+                mmFeedbacks.PlayFeedbacks();
+            }
         }
+
     }
     public void PlayerStats()
     {
