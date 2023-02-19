@@ -13,6 +13,7 @@ public class characterStats : MonoBehaviour
     // true = improvisor , false = knowledge 
     bool pstat3;
     // true = easily distracted , false = perceptive
+    bool aligned1;
     int looseUnit;
     int byTheBook;
 
@@ -31,6 +32,14 @@ public class characterStats : MonoBehaviour
         {
             byTheBook--;
         }
+        if(looseUnit ==2)
+        {
+            aligned1 = true;
+        }
+        else
+        {
+            aligned1 = false;
+        }
         AlignmentAssignment();
     }
     public void Strategic()
@@ -43,6 +52,14 @@ public class characterStats : MonoBehaviour
         {
             looseUnit--;
         }
+        if (byTheBook == 2)
+        {
+            aligned1 = true;
+        }
+        else
+        {
+            aligned1 = false;
+        }
         AlignmentAssignment();
     }
     public void Improvisor()
@@ -50,10 +67,18 @@ public class characterStats : MonoBehaviour
         pstat2 = true;
         buttons[2].GetComponent<Button>().interactable = false;
         buttons[3].GetComponent<Button>().interactable = true;
-        looseUnit++;
+        looseUnit++; 
         if (byTheBook > 0)
         {
             byTheBook--;
+        }
+        if (looseUnit == 2)
+        {
+            aligned1 = true;
+        }
+        else
+        {
+            aligned1 = false;
         }
         AlignmentAssignment();
     }
@@ -67,6 +92,14 @@ public class characterStats : MonoBehaviour
         {
             looseUnit--;
         }
+        if (byTheBook == 2)
+        {
+            aligned1 = true;
+        }
+        else
+        {
+            aligned1 = false;
+        }
         AlignmentAssignment();
     }
     public void EasilyDistracted()
@@ -78,6 +111,14 @@ public class characterStats : MonoBehaviour
         if (byTheBook > 0)
         {
             byTheBook--;
+        }
+        if (looseUnit == 2)
+        {
+            aligned1 = true;
+        }
+        else
+        {
+            aligned1 = false;
         }
         AlignmentAssignment();
 
@@ -92,33 +133,36 @@ public class characterStats : MonoBehaviour
         {
             looseUnit--;
         }
+        if (byTheBook == 2)
+        {
+            aligned1 = true;
+        }
+        else
+        {
+            aligned1 = false;
+        }
         AlignmentAssignment();
 
     }
 
     public void AlignmentAssignment()
     {
-        if(looseUnit == 2)
+        if (looseUnit >= 2 && byTheBook <=1 && aligned1 == true)
         {
             alignmentIcons[0].SetActive(true);
             alignmentIcons[1].SetActive(false);
             alignmentIcons[3].SetActive(true);
             alignmentIcons[2].SetActive(false);
-            if(byTheBook <= 1)
-            {
-                mmFeedbacks.PlayFeedbacks();
-            }
+            mmFeedbacks.PlayFeedbacks();
         }
-        if(byTheBook ==2)
+        if(byTheBook >=2 && looseUnit <= 1 && aligned1 == true)
         {
             alignmentIcons[2].SetActive(true);
             alignmentIcons[0].SetActive(false);
             alignmentIcons[1].SetActive(true);
             alignmentIcons[3].SetActive(false);
-            if(looseUnit <= 1)
-            {
-                mmFeedbacks.PlayFeedbacks();
-            }
+            if(byTheBook >= 2 && looseUnit <=1)
+            mmFeedbacks.PlayFeedbacks();
         }
 
     }
