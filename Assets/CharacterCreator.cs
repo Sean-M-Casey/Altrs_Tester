@@ -8,35 +8,25 @@ public class CharacterCreator : MonoBehaviour
 
     // Policework Stats //
     // 
-    bool pstat1;
-    // true = gut feeling , false = strategic
-    bool pstat2;
-    // true = improvisor , false = knowledge 
-    bool pstat3;
-    // true = easily distracted , false = perceptive
-
+    bool pstat1;        // true = gut feeling , false = strategic
+    bool pstat2;        // true = improvisor , false = knowledge 
+    bool pstat3;        // true = easily distracted , false = perceptive
     bool aligned1;
     int looseUnit;
     int byTheBook;
 
     // Interpersonal Stats // 
-    bool istat1;
-    // true = friendly , false = cold
-    bool istat2;
-    // true = trusting , false = intimidating
-    bool istat3;
-    // true = empathetic , false = contrarian
+    bool istat1;        // true = friendly , false = cold
+    bool istat2;        // true = trusting , false = intimidating
+    bool istat3;        // true = empathetic , false = contrarian
     bool aligned2;
     int goodCop;
     int badCop;
 
     // Interests Stats // 
-    bool intstat1;
-    // true = method man , false = integrated 
-    bool intstat2;
-    // true = shredded , false = slender
-    bool intstat3;
-    // true = wrench monkey , false = coded
+    bool intstat1;      // true = method man , false = integrated 
+    bool intstat2;      // true = shredded , false = slender
+    bool intstat3;      // true = wrench monkey , false = coded
     bool aligned3;
     int meatHead;
     int hackerMan;
@@ -354,7 +344,7 @@ public class CharacterCreator : MonoBehaviour
     }
     public void Shredded()
     {
-        intstat1 = true;
+        intstat2 = true;
         buttons[14].GetComponent<Button>().interactable = false;
         buttons[15].GetComponent<Button>().interactable = true;
         meatHead++;
@@ -375,7 +365,7 @@ public class CharacterCreator : MonoBehaviour
     }
     public void Slender()
     {
-        intstat3 = false;
+        intstat2= false;
         buttons[14].GetComponent<Button>().interactable = true;
         buttons[15].GetComponent<Button>().interactable = false;
         hackerMan++;
@@ -396,7 +386,7 @@ public class CharacterCreator : MonoBehaviour
     }
     public void WrenchMonkey()
     {
-        intstat1 = true;
+        intstat3 = true;
         buttons[16].GetComponent<Button>().interactable = false;
         buttons[17].GetComponent<Button>().interactable = true;
         meatHead++;
