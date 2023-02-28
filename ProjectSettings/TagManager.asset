@@ -41,10 +41,10 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Eyes
+  - name: Dayholt
     uniqueID: 1518042225
     locked: 0
-  - name: Body
+  - name: Vaughn
     uniqueID: 4005119021
     locked: 0
   - name: Face_Parts
