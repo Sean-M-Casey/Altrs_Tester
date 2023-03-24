@@ -6,41 +6,52 @@ public class DiceManager : MonoBehaviour
 {
     public DiceStats diceStats;
 
-    public Camera main;
+    Camera main;
 
-    public LayerMask layer;
+    [SerializeField] LayerMask diceColliderLayerMask, canPickupLayerMask;
 
-    Vector3 looking;
+    int forceAmount = 50;
 
-    float number;
+    Rigidbody rigidBody;
+
+    Vector3 diceUp;
+
+    Ray ray;
 
     void Awake()
     {
-        looking = diceStats.transform.forward;
+        diceUp = diceStats.transform.TransformDirection(Vector3.up);
 
-        number = looking.z;
+        rigidBody = diceStats.GetComponent<Rigidbody>();
 
-        number += 0.9106792f;
+        main = Camera.main;
     }
 
     void Update()
     {
-        //Vector3 point = diceStats.GetComponent<MeshCollider>().ClosestPointOnBounds(main.transform.position);
-
-        //Vector3 diff = diceStats.GetComponent<MeshCollider>().;
-
-        //Debug.Log(point);
-
-
-        
-
-        Debug.DrawRay(diceStats.transform.position, looking * 10, Color.yellow);
-
-        if (Physics.Raycast(diceStats.transform.position, diceStats.transform.forward, out RaycastHit hit, Mathf.Infinity, layer))
+        if(rigidBody.velocity == Vector3.zero)
         {
-            float distance = Vector3.Distance(new Vector3(0, 0, hit.point.z), new Vector3(0, 0, main.transform.position.z));
+            OutputRoll();
+        }
 
-            
+        ray = main.ScreenPointToRay(Input.mousePosition);
+
+        if(Physics.Raycast(ray, out RaycastHit hit, canPickupLayerMask))
+        {
+            if (Input.GetMouseButton(0))
+            {
+                diceStats.transform.position = new Vector3(hit.point.x, 1, hit.point.z);
+
+                rigidBody.AddForce(hit.point);
+            }
+        }
+    }
+
+    void OutputRoll()
+    {
+        if (Physics.Raycast(diceStats.transform.position, diceUp, out RaycastHit hit, Mathf.Infinity, diceColliderLayerMask))
+        {
+            Debug.Log(hit.collider.name);
         }
     }
 }
