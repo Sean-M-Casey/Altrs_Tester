@@ -4,52 +4,66 @@ using UnityEngine;
 
 public class DiceManager : MonoBehaviour
 {
-    public DiceStats diceStats;
+    [SerializeField] Transform[] spawnPoints;
+    Transform dice;
 
-    Camera main;
+    //Camera main;
 
-    [SerializeField] LayerMask diceColliderLayerMask, canPickupLayerMask;
+    [SerializeField] LayerMask diceColliderLayerMask/*, canPickupLayerMask*/;
 
-    int forceAmount = 50;
+    [Tooltip("Keep this at a length of 2! It will not work otherwise :)")]
+    [SerializeField] int[] forceRange = new int[2];
 
     Rigidbody rigidBody;
 
-    Vector3 diceUp;
-
-    Ray ray;
+    //Ray ray;
 
     void Awake()
-    {
-        diceUp = diceStats.transform.TransformDirection(Vector3.up);
-
-        rigidBody = diceStats.GetComponent<Rigidbody>();
-
-        main = Camera.main;
+    { 
+        //main = Camera.main;
     }
 
     void Update()
     {
-        if(rigidBody.velocity == Vector3.zero)
+        if(rigidBody != null)
         {
-            OutputRoll();
-        }
-
-        ray = main.ScreenPointToRay(Input.mousePosition);
-
-        if(Physics.Raycast(ray, out RaycastHit hit, canPickupLayerMask))
-        {
-            if (Input.GetMouseButton(0))
+            if (rigidBody.velocity == Vector3.zero)
             {
-                diceStats.transform.position = new Vector3(hit.point.x, 1, hit.point.z);
-
-                rigidBody.AddForce(hit.point);
+                OutputRoll();
             }
         }
+
+        //ray = main.ScreenPointToRay(Input.mousePosition);
+
+        //if(Physics.Raycast(ray, out RaycastHit hit, canPickupLayerMask))
+        //{
+        //    if (Input.GetMouseButton(0))
+        //    {
+        //        diceStats.transform.position = new Vector3(hit.point.x, 1, hit.point.z);
+
+        //        rigidBody.AddForce(hit.point);
+        //    }
+        //}
+    }
+
+    public void ThrowDice(Transform dicePrefab)
+    {
+        int random = Random.Range(0, spawnPoints.Length - 1);
+
+        dice = Instantiate(dicePrefab, spawnPoints[random].position, Quaternion.identity);
+
+        random = Random.Range(forceRange[0], forceRange[1]);
+
+        Debug.Log("Dice was thrown with a force of: " + random);
+
+        rigidBody = dice.GetComponent<Rigidbody>();
+
+        rigidBody.AddForce(new Vector3(1, 0, 1) * random, ForceMode.Force);
     }
 
     void OutputRoll()
     {
-        if (Physics.Raycast(diceStats.transform.position, diceUp, out RaycastHit hit, Mathf.Infinity, diceColliderLayerMask))
+        if (Physics.Raycast(dice.transform.position, transform.up, out RaycastHit hit, Mathf.Infinity, diceColliderLayerMask))
         {
             Debug.Log(hit.collider.name);
         }
