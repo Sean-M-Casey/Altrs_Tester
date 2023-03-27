@@ -61,11 +61,11 @@ public class DiceManager : MonoBehaviour
         StartCoroutine(DestroyAfterSeconds(dice.gameObject));
     }
 
-    void OutputRoll()
+    void OutputRoll() //this is the outcome of the roll
     {
         if (Physics.Raycast(dice.transform.position, transform.up, out RaycastHit hit, Mathf.Infinity, diceColliderLayerMask))
         {
-            Debug.Log(hit.collider.name);
+            Debug.Log(hit.collider.name); //need to figure out a way too ensure the dice isn't cocked.
         }
     }
 
