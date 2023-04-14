@@ -7,18 +7,22 @@ public class DiceManager : MonoBehaviour
 {
     [SerializeField] Transform[] spawnPoints;
     [SerializeField] Transform centrePoint;
-    Transform dice;
 
-    [SerializeField] float secondsBeforeDestroying;
+    List<int> selectedSpawnPoints = new();
+    List<Transform> pickedDice = new(), thrownDice = new();
+
+    [SerializeField] GameObject throwButton, diceButtons, cancelButton;
 
     [SerializeField] LayerMask diceColliderLayerMask;
 
+    [SerializeField] float secondsBeforeDestroying;
+
     [Tooltip("Keep this at a length of 2! It will not work otherwise :)")]
     [SerializeField] int[] forceRange = new int[2];
+    [SerializeField] int maximumDiceToThrow; //maximum number of dice that can be rolled at once
+    int diceThrownCount, totalRoll;
 
-    Rigidbody rigidBody;
-
-    bool diceRolled;
+    bool diceRolled = false;
 
     void Awake()
     { 
@@ -30,43 +34,145 @@ public class DiceManager : MonoBehaviour
 
     void Update()
     {
-        if(rigidBody != null && diceRolled)
+        if (!diceRolled)
         {
-            if (rigidBody.velocity == Vector3.zero)
+            return;
+        }
+
+        int counting = 0;
+
+        foreach(var t in thrownDice)
+        {
+            if (t.GetComponent<Rigidbody>().velocity == Vector3.zero)
             {
-                OutputRoll();
+                counting++;
             }
+        }
+
+        if (counting == thrownDice.Count) //if the number of die no longer moving is the same as the list count, then all of the dice have stopped moving
+        {
+            OutputRoll();
         }
     }
 
-    public void ThrowDice(Transform dicePrefab) //this method takes in the dice prefab from the button, picks a random spawnpoint, then a random force amount, and then throws the instantiated dice prefab with that force.
+    public void PickingDice(Transform diePrefab)
     {
-        int random = Random.Range(0, spawnPoints.Length);
+        thrownDice.Clear();
 
-        Transform pickedSpawnPoint = spawnPoints[random];
+        if(pickedDice.Count == maximumDiceToThrow) //maximum number of dice that can be rolled at once
+        {
+            return;
+        }
 
-        dice = Instantiate(dicePrefab, pickedSpawnPoint.position, Quaternion.identity);
-
-        random = Random.Range(forceRange[0], forceRange[1]);
-
-        Debug.Log("Dice was thrown from: " + pickedSpawnPoint.name + ", with a force of: " + random);
+        pickedDice.Add(diePrefab);
 
         diceRolled = false;
 
+        cancelButton.SetActive(true);
+        throwButton.SetActive(true);
+    }
+
+    public void ThrowButtonClicked()
+    {
+        cancelButton.SetActive(false);
+        throwButton.SetActive(false);
+        diceButtons.SetActive(false);
+
+        diceThrownCount = 0;
+
+        foreach (var t in pickedDice)
+        {
+            SelectSpawnPoint(t);
+        }
+
+        pickedDice.Clear();
+    }
+
+    public void CancelPicking()
+    {
+        pickedDice.Clear();
+
+        cancelButton.SetActive(false);
+        throwButton.SetActive(false);
+    }
+
+    void SelectSpawnPoint(Transform dieToThrow)
+    {
+        int random = Random.Range(0, spawnPoints.Length);
+
+        if (!CheckSelectedSpawnPoint(random))
+        {
+            SelectSpawnPoint(dieToThrow); //trys again for a new spawn point
+            return;
+        }
+        else
+        {
+            ThrowDie(dieToThrow, random);
+        }
+    }
+
+    void ThrowDie(Transform dieToThrow, int selectedSpawnPoint)
+    {
+        selectedSpawnPoints.Add(selectedSpawnPoint); //ensures each die gets thrown from a different spawn point in the array for randomness
+
+        Transform pickedSpawnPoint = spawnPoints[selectedSpawnPoint];
+
+        Transform dice = Instantiate(dieToThrow, pickedSpawnPoint.position, Quaternion.identity);
+
+        dice.gameObject.AddComponent<DiceStats>(); //making the new die unique from the prefab - prefabs don't have dice stat components
+
+        thrownDice.Add(dice);
+
+        diceThrownCount++;
+
+        dice.name = "Dice Number " + diceThrownCount; //making sure each die has a unique name for counting later
+
+        selectedSpawnPoint = Random.Range(forceRange[0], forceRange[1]);
+
         StartCoroutine(WaitForThrow());
 
-        rigidBody = dice.GetComponent<Rigidbody>();
-        rigidBody.AddForce(pickedSpawnPoint.forward * random, ForceMode.Force);
+        Rigidbody rigidBody = dice.GetComponent<Rigidbody>();
+        rigidBody.AddForce(pickedSpawnPoint.forward * selectedSpawnPoint, ForceMode.Force);
 
         StartCoroutine(DestroyAfterSeconds(dice.gameObject));
     }
 
+    bool CheckSelectedSpawnPoint(int random) //checks to make sure the spawn point is a new one and hasn't been selected by another die in this throw.
+    {
+        foreach(var i in selectedSpawnPoints)
+        {
+            if(i == random)
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
     void OutputRoll() //this is the outcome of the roll
     {
-        if (Physics.Raycast(dice.transform.position, transform.up, out RaycastHit hit, Mathf.Infinity, diceColliderLayerMask))
+        totalRoll = 0;
+
+        foreach(var t in thrownDice)
         {
-            Debug.Log(hit.collider.name); //need to figure out a way too ensure the dice isn't cocked.
+            int individualRoll;
+
+            if (Physics.Raycast(t.position, transform.up, out RaycastHit hit, Mathf.Infinity, diceColliderLayerMask))
+            {
+                Debug.Log(t.name + " rolled: " + hit.collider.name); //need to figure out a way too ensure the dice isn't cocked.
+
+                individualRoll = int.Parse(hit.collider.name); //this is the individual die's roll, can be pushed to UI seperate from the total as well if needed.
+
+                totalRoll += individualRoll;
+            }
         }
+
+        Debug.Log("Total roll: " + totalRoll); //this is where the total is output, can be swapped out for UI in the future.
+
+        diceRolled = false;
+
+        thrownDice.Clear();
     }
 
     IEnumerator DestroyAfterSeconds(GameObject diceToDestroy) //destroys dice after a certain time to reduce performance issues.
@@ -74,6 +180,14 @@ public class DiceManager : MonoBehaviour
         yield return new WaitForSeconds(secondsBeforeDestroying);
 
         Destroy(diceToDestroy);
+
+        diceRolled = false;
+
+        diceButtons.SetActive(true);
+
+        selectedSpawnPoints.Clear();
+        thrownDice.Clear();
+        pickedDice.Clear();
     }
 
     IEnumerator WaitForThrow() //without this, the dice returns 20 before it has a chance to apply force, leading to potential inaccuracies in the future.
