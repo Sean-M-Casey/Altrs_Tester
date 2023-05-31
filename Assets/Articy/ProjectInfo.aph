@@ -1,0 +1,19 @@
+<ProjectInfo Version="1">
+  <Signature>277FF58FDC4D37F681A496500742084886BB30B19BBA1857A5B2CD7DF1F824AE</Signature>
+  <Content>
+    <Project Guid="c18f9635-f8a2-4bec-9ede-95e9585dfd28">
+      <DisplayName Value="ALTRS"/>
+      <DetailName Value=""/>
+      <MainProjectGuid Value="58c64b3e-0b97-468c-8aa7-76da9451669e"/>
+      <IconType Value="0"/>
+      <IdProjectIcon Value="00000000-0000-0000-0000-000000000000"/>
+      <ScmProviderGuid Value="0745c2ee-abe3-451b-934e-7f597f56c0d7"/>
+      <ScmConfiguration Value=""/>
+      <CreationTimeStamp Value="638047551509067109"/>
+      <PartitionHash Value="326CFB164E6B2987FCB3136CAEAAD6C009E5609BDE6CCA3B656010D03946247D"/>
+      <SaveFileVersion Value="56"/>
+      <ProjectType Value="0"/>
+      <IsOnlineProject Value="False"/>
+    </Project>
+  </Content>
+</ProjectInfo>
