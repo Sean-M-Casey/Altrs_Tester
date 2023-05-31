@@ -2772,8 +2772,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 292.26062, y: 783.69446}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 411.89893, y: 964.5458}
+    canvasZoom: 0.94000006
   - id: 2
     fields:
     - title: Title
@@ -13938,7 +13938,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
@@ -16069,7 +16069,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 750.07104}
+    canvasScrollPosition: {x: 0, y: 938.51404}
     canvasZoom: 0.6799998
   - id: 5
     fields:
@@ -16187,7 +16187,7 @@ MonoBehaviour:
       - originConversationID: 5
         originDialogueID: 0
         destinationConversationID: 5
-        destinationDialogueID: 1
+        destinationDialogueID: 4
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -16197,7 +16197,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 84.78964
+        x: 83.57013
         y: 1234.2769
         width: 160
         height: 30
@@ -16262,13 +16262,7 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 5
-        originDialogueID: 1
-        destinationConversationID: 5
-        destinationDialogueID: 9
-        isConnector: 0
-        priority: 2
+      outgoingLinks: []
       conditionsString: 
       userScript: 
       onExecute:
@@ -16449,7 +16443,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 114.47331
-        y: 1567.3647
+        y: 1568.5844
         width: 160
         height: 30
     - id: 5
@@ -16523,10 +16517,7 @@ MonoBehaviour:
         destinationDialogueID: 7
         isConnector: 0
         priority: 2
-      conditionsString: '-- Stat Bonus - Easily Distracted
-
-        Variable["PlayerStats.easilyDistracted"]
-        == 1'
+      conditionsString: Variable["PlayerStats.easilyDistracted"] == true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -16534,7 +16525,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 337.89444
-        y: 1435.7858
+        y: 1437.0054
         width: 160
         height: 30
     - id: 6
@@ -16589,11 +16580,11 @@ MonoBehaviour:
       - title: Articy Id
         value: 0x01000000000014A8
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: OutputId
         value: 0x01000000000014AB
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 5
       isRoot: 0
       isGroup: 1
@@ -16608,10 +16599,7 @@ MonoBehaviour:
         destinationDialogueID: 9
         isConnector: 0
         priority: 2
-      conditionsString: '(-- Stat Bonus - Easily Distracted
-
-        Variable["PlayerStats.easilyDistracted"]
-        == 1) == false'
+      conditionsString: Variable["PlayerStats.easilyDistracted"] == false
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -18329,8 +18317,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2818.9546
-        y: 1603.3082
+        x: 2820.174
+        y: 1604.5278
         width: 160
         height: 30
     - id: 27
@@ -19014,7 +19002,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 1159.5149}
+    canvasScrollPosition: {x: 0, y: 1161.3972}
     canvasZoom: 0.8200002
   - id: 6
     fields:

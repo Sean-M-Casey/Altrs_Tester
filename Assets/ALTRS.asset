@@ -16525,7 +16525,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 337.89444
-        y: 1435.7858
+        y: 1437.0054
         width: 160
         height: 30
     - id: 6
@@ -16580,11 +16580,11 @@ MonoBehaviour:
       - title: Articy Id
         value: 0x01000000000014A8
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: OutputId
         value: 0x01000000000014AB
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 5
       isRoot: 0
       isGroup: 1
@@ -19002,7 +19002,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 1900.0006, y: 1390.6643}
+    canvasScrollPosition: {x: 0, y: 1161.3972}
     canvasZoom: 0.8200002
   - id: 6
     fields:
