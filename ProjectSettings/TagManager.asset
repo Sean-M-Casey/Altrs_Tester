@@ -8,11 +8,11 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - DiceCollider
   - Water
   - UI
   - 2.5D
-  - 
+  - CanPickup
   - 
   - 
   - 
