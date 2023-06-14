@@ -76,19 +76,13 @@ public class SpriteSwitch : MonoBehaviour
         Debug.Log($"SpriteObj Orientation is {objDir}.");
         Debug.Log($"Offset Orientation is {offsetDir}.");
 
-        if (trueRatio < 0.4)
+        if (trueRatio < 0.5)
         {
-            if (rawRatio < 0)
-            {
-                spriteRenderer.sprite = spriteBottom;
-            }
-            else
-            {
-                billboardFacing = new Vector3(camOrientation.transform.position.x, objTrans.position.y, camOrientation.transform.position.z) - objTrans.position;
-                spriteTrans.rotation = Quaternion.LookRotation(-billboardFacing, Vector3.forward);
+            billboardFacing = new Vector3(camOrientation.transform.position.x, objTrans.position.y, camOrientation.transform.position.z) - objTrans.position;
+            spriteTrans.rotation = Quaternion.LookRotation(-(billboardFacing + objTrans.up), objTrans.forward);
+            Debug.Log($"Billboard Vector is: {billboardFacing}");
 
-                spriteRenderer.sprite = spriteTop;
-            }
+            spriteRenderer.sprite = spriteTop;
         }
         else 
         {
