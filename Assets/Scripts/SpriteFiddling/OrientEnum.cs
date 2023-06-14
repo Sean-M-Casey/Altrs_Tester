@@ -14,3 +14,8 @@ public enum Orientation
     West,
     NorthWest,
 }
+
+public enum Pitch
+{
+    
+}

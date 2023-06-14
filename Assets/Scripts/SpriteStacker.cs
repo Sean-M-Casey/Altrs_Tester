@@ -30,6 +30,6 @@ public class SpriteStacker : MonoBehaviour
             }
         }
         nearestCharacter.GetComponent<SortingGroup>().sortingOrder = 120;
-        Debug.Log("Nearest Character: " + nearestCharacter + "; Distance: " + minimumDistance + "Sorting Group " + nearestCharacter.GetComponent<SortingGroup>());
+        //Debug.Log("Nearest Character: " + nearestCharacter + "; Distance: " + minimumDistance + "Sorting Group " + nearestCharacter.GetComponent<SortingGroup>());
     }
 }
