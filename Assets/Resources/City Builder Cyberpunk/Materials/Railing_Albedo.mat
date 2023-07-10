@@ -88,7 +88,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: 3f2e0c9b37b5d6b4689e27c784c996ef, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3eba91adf6427b147a57b703f2743a28, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissiveColorMap:
@@ -108,7 +108,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: fbe83cbe33d51e54dbd3d92388a3a1f5, type: 3}
+        m_Texture: {fileID: 2800000, guid: 38c7f77197c22084aa1dd80a8bfa5268, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
