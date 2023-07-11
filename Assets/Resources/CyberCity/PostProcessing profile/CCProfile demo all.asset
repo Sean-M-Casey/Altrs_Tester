@@ -95,7 +95,7 @@ MonoBehaviour:
       adaptationType: 0
       speedUp: 15
       speedDown: 25
-      logMin: -8
+      logMin: -10
       logMax: 4
   bloom:
     m_Enabled: 1
