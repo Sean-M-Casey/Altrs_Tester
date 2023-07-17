@@ -275,7 +275,7 @@ MonoBehaviour:
   allowBarksDuringConversations: 0
   skipBarkIfNoValidEntries: 0
   cacheBarkLines: 0
-  conversation: 'Act 1: Splat Street/Briefing'
+  conversation: Character Creation/Policework Questionnaire
   conversationConversant: {fileID: 22684206}
   conversationActor: {fileID: 891130178}
   startConversationEntryID: -1
