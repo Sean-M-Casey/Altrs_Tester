@@ -24,8 +24,6 @@ Material:
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ValidKeywords:
   - _EMISSION
-  - _METALLICGLOSSMAP
-  - _NORMALMAP
   m_InvalidKeywords:
   - _METALLICSPECGLOSSMAP
   m_LightmapFlags: 2
@@ -62,7 +60,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 1e66ec87b1081a744a70158e4ae8d1df, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6b3cf4abe17c7974a96f37107c841614, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:

@@ -25,7 +25,6 @@ Material:
   m_ValidKeywords:
   - _ALPHAPREMULTIPLY_ON
   - _EMISSION
-  - _METALLICGLOSSMAP
   m_InvalidKeywords:
   - _METALLICSPECGLOSSMAP
   m_LightmapFlags: 2
@@ -60,11 +59,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: dad12d9fa6274234e8b21182307e8ad3, type: 3}
+        m_Texture: {fileID: 2800000, guid: 91da57d560ce42d4eb891f958088973f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: f1c3588db8189a44ca568a07f04dbb69, type: 3}
+        m_Texture: {fileID: 2800000, guid: a47721a0e008a9d45bbfb452fa72cb3d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:

@@ -9,9 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: LampTechnical_mtl
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ValidKeywords:
-  - _METALLICGLOSSMAP
-  - _NORMALMAP
+  m_ValidKeywords: []
   m_InvalidKeywords:
   - _METALLICSPECGLOSSMAP
   m_LightmapFlags: 6
@@ -44,11 +42,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: 30030494a99010647829f58fdfd4d314, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4d37141b20c674b458fa40162aee6402, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 597b4e93eecbb2745b22214cb98ce230, type: 3}
+        m_Texture: {fileID: 2800000, guid: 630e3a3ef91ea0243b8fa3b9993ecc3c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
