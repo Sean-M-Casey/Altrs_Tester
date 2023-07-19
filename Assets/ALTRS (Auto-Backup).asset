@@ -626,7 +626,7 @@ MonoBehaviour:
       type: 2
       typeString: CustomFieldType_Boolean
     portrait: {fileID: 0}
-    spritePortrait: {fileID: 0}
+    spritePortrait: {fileID: 21300000, guid: 6fcad1292441e7a44894cd76647b073a, type: 3}
     alternatePortraits: []
     spritePortraits: []
   - id: 10
@@ -782,7 +782,7 @@ MonoBehaviour:
       type: 2
       typeString: CustomFieldType_Boolean
     portrait: {fileID: 0}
-    spritePortrait: {fileID: 0}
+    spritePortrait: {fileID: 21300000, guid: 15645efb792cd5a4781ade99868bf7b4, type: 3}
     alternatePortraits: []
     spritePortraits: []
   - id: 12
@@ -868,7 +868,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     portrait: {fileID: 0}
-    spritePortrait: {fileID: 0}
+    spritePortrait: {fileID: 21300000, guid: 5a8688b96e2fac24e80b5fc803b6f0ed, type: 3}
     alternatePortraits: []
     spritePortraits: []
   - id: 13
@@ -33640,11 +33640,11 @@ MonoBehaviour:
       - title: Title
         value: 'Dayholt: "You bet! It''s all in the belly!"'
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 12
         type: 5
@@ -33656,51 +33656,51 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: You bet! It's all in the belly!
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Articy Id
         value: 0x01000000000031F2
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: ReferenceSlot
         value: Dayholt
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: MediumTextValue
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: InputId
         value: 0x01000000000031F3
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: OutputId
         value: 0x01000000000031F4
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 16
       isRoot: 0
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
         originDialogueID: 8
         destinationConversationID: 16
-        destinationDialogueID: 14
+        destinationDialogueID: 7
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: "Variable[\"PlayerStats.gutFeelingStrategic\"]=true; \nGutStrats(true)"
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -33972,11 +33972,11 @@ MonoBehaviour:
       - originConversationID: 16
         originDialogueID: 12
         destinationConversationID: 16
-        destinationDialogueID: 13
+        destinationDialogueID: 7
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: "Variable[\"PlayerStats.gutFeelingStrategic\"]=false; \nGutStrats(false)"
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -34049,8 +34049,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2667.101
-        y: 1883.5906
+        x: 2675.3364
+        y: 2044.7671
         width: 160
         height: 30
     - id: 14
@@ -34116,8 +34116,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2667.101
-        y: 1810.1863
+        x: 2660.0422
+        y: 1687.8333
         width: 160
         height: 30
     - id: 15
@@ -35667,11 +35667,11 @@ MonoBehaviour:
       - originConversationID: 16
         originDialogueID: 34
         destinationConversationID: 16
-        destinationDialogueID: 41
+        destinationDialogueID: 33
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: 'Variable["PlayerStats.improvisorKnowledge"]=true; '
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -36019,11 +36019,11 @@ MonoBehaviour:
       - originConversationID: 16
         originDialogueID: 39
         destinationConversationID: 16
-        destinationDialogueID: 40
+        destinationDialogueID: 33
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: 'Variable["PlayerStats.improvisorKnowledge"]=false; '
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -36096,8 +36096,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4636.9214
-        y: 1847.6136
+        x: 4649.863
+        y: 1985.2606
         width: 160
         height: 30
     - id: 41
@@ -36163,8 +36163,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4636.9214
-        y: 1782.831
+        x: 4639.2744
+        y: 1641.6545
         width: 160
         height: 30
     - id: 42
@@ -36936,11 +36936,11 @@ MonoBehaviour:
       - originConversationID: 16
         originDialogueID: 51
         destinationConversationID: 16
-        destinationDialogueID: 58
+        destinationDialogueID: 52
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: 'Variable["PlayerStats.distractPercept"]=true; '
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -37289,11 +37289,11 @@ MonoBehaviour:
       - originConversationID: 16
         originDialogueID: 56
         destinationConversationID: 16
-        destinationDialogueID: 57
+        destinationDialogueID: 52
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: 'Variable["PlayerStats.distractPercept"]=false; '
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -37366,8 +37366,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 6584.2466
-        y: 1804.3932
+        x: 6590.129
+        y: 1944.3932
         width: 160
         height: 30
     - id: 58
@@ -37433,8 +37433,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 6583.399
-        y: 1746.7662
+        x: 6584.575
+        y: 1619.7074
         width: 160
         height: 30
     - id: 59
@@ -38015,8 +38015,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 1445.7015, y: 1529.4634}
-    canvasZoom: 0.75999975
+    canvasScrollPosition: {x: 1546.2593, y: 1558.8484}
+    canvasZoom: 0.84999967
   - id: 17
     fields:
     - title: Title
@@ -43797,8 +43797,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 5523.24, y: 1416.3694}
-    canvasZoom: 0.84999967
+    canvasScrollPosition: {x: 4183.745, y: 1396.792}
+    canvasZoom: 0.7299998
   - id: 18
     fields:
     - title: Title
