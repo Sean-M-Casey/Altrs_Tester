@@ -52,6 +52,15 @@ public class CharacterCreator : MonoBehaviour
     [SerializeField] GameObject[] ovTraits; //Odd = Dayholt || Even = Vaughn
     [SerializeField] GameObject[] ovAlignments; //Odd = Dayholt || Even = Vaughn
 
+    private void OnEnable()
+    {
+        //Shoober
+    }
+
+    private void OnDisable()
+    {
+        
+    }
 
     public void GutFeeling()
     {
