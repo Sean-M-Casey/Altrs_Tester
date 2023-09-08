@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dbbc84c70300ba489dc1fe1961516ec, type: 3}
   m_Name: CharacterFunctions
   m_EditorClassIdentifier: 
-  conditionFunctions: []
+  conditionFunctions:
+  - functionName: CheckWorkingRollResult
+    parameters: 01000000
+    returnValue: 1
   scriptFunctions:
   - functionName: GutStrats
     parameters: 00000000
@@ -43,4 +46,13 @@ MonoBehaviour:
     returnValue: 0
   - functionName: SetCharStateLua
     parameters: 01000000
+    returnValue: 0
+  - functionName: PrintVariable
+    parameters: 02000000
+    returnValue: 0
+  - functionName: PrintActorProperty
+    parameters: 0200000002000000
+    returnValue: 0
+  - functionName: ParseDiceCommand
+    parameters: 02000000
     returnValue: 0

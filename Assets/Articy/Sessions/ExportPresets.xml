@@ -15,7 +15,7 @@
   </Preset>
   <Preset DisplayName="" Type="XmlContentExport">
     <ExportSettings Type="XmlContentExport">
-      <Filename>C:\Users\jaspe\Documents\ALTRS.xml</Filename>
+      <Filename>C:\Users\jaspe\Documents\ALTRSDice.xml</Filename>
       <ExportMarkup>1</ExportMarkup>
       <ExportQueries>1</ExportQueries>
       <ApplyTransformations>0</ApplyTransformations>
