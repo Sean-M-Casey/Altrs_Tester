@@ -20752,8 +20752,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778868678}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 86.7}
+  m_LocalRotation: {x: -0, y: -0.40446803, z: -0, w: 0.91455215}
+  m_LocalPosition: {x: -7.2, y: 0, z: 133.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20766,7 +20766,7 @@ Transform:
   - {fileID: 496246999}
   m_Father: {fileID: 0}
   m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -47.716, z: 0}
 --- !u!1 &784210870
 GameObject:
   m_ObjectHideFlags: 0
@@ -26917,7 +26917,7 @@ MonoBehaviour:
   dieTen: {fileID: 0}
   dieEight: {fileID: 0}
   dieSix: {fileID: 0}
-  dieFour: {fileID: 788892897493979007, guid: a48f6cafe3b177b4897757bff8a5de4e, type: 3}
+  dieFour: {fileID: 8505944189192493618, guid: b565c607a0b44114dab083a05f6b5e0e, type: 3}
 --- !u!1 &1013449198
 GameObject:
   m_ObjectHideFlags: 0

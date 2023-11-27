@@ -39,20 +39,24 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
             rollingActorName = GetParameter(0, string.Empty);
             Debug.Log($"SEQUENCER: RollingActorName is {((rollingActorName != null) ? rollingActorName : "doing the nully")}");
 
-            contestingNPCName = GetParameter(3, string.Empty);
-            Debug.Log($"SEQUENCER: ContestingNPCName is {((contestingNPCName != null) ? contestingNPCName : "doing the nully")}");
-
             variableName = GetParameter(1, string.Empty);
             Debug.Log($"SEQUENCER: VariableName is {((variableName != null) ? variableName : "doing the nully")}");
 
             variableSide = GetParameterAsBool(2, false);
             Debug.Log($"SEQUENCER: VariableSide is {variableSide}");
 
+            contestingNPCName = GetParameter(3, string.Empty);
+            Debug.Log($"SEQUENCER: ContestingNPCName is {((contestingNPCName != null) ? contestingNPCName : "doing the nully")}");
+
             //diceEval = new DiceEval(GetParameterAsInt(3), GetParameterAsInt(4), GetParameterAsInt(5));
+
+
+            #region CreatingDiceRoll
+
+
             diceEval = EvalByDisposition(contestingNPCName);
             Debug.Log($"SEQUENCER: DiceEval has values of {diceEval.critSuccess}, {diceEval.pass}, {diceEval.critFailure}");
 
-            #region CreatingDiceRoll
             string rollType = string.Empty;
             List<Die> diceTypes = new List<Die>();
             //Debug.Log($"SEQUENCER: RollType is {((rollType == string.Empty) ? "Empty" : rollType)}.");

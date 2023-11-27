@@ -16,11 +16,11 @@ public class Die : MonoBehaviour
 
     public int DiceRollOut { get { return currentRoll; } }
 
-    //public bool showUp;
+    public bool showUp;
 
-    //public int index;
+    public int index;
 
-    //public bool setVector;
+    public bool setVector;
 
     public bool showRoll;
 
@@ -31,30 +31,30 @@ public class Die : MonoBehaviour
 
     private void Update()
     {
-        //if(showUp)
-        //{
-        //    foreach (Transform obj in diceSides)
-        //    {
-        //        Debug.Log($"Side {obj.name}'s up vector is {obj.up.y}");
-        //    }
-        //}
+        if (showUp)
+        {
+            foreach (Transform obj in diceSides)
+            {
+                Debug.Log($"Side {obj.name}'s up vector is {obj.up.y}");
+            }
+        }
 
-        //if(setVector)
-        //{
-        //    diceSides[index].up = Vector3.up;
-        //    setVector = false;
-        //}
+        if (setVector)
+        {
+            diceSides[index].up = Vector3.up;
+            setVector = false;
+        }
 
         if (dieRoll)
         {
             if (diceSides[rolledIndex].up.y <= 0.98f) CheckDiceRoll();
         }
 
-        //if (showRoll) 
-        //{ 
-        //    Debug.Log($"Dice Roll is {DiceRollOut}.");
-        //    showRoll = false;
-        //}
+        if (showRoll)
+        {
+            Debug.Log($"Dice Roll is {DiceRollOut}.");
+            showRoll = false;
+        }
     }
 
     public IEnumerator RollSelf(SequencerCommandDiceRoll commandDiceRoll, Vector3 direction, float forceStrength)
