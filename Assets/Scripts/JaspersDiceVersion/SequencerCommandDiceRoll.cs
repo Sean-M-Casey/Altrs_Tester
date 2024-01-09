@@ -9,133 +9,85 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
 {
 
     public class SequencerCommandDiceRoll : SequencerCommand
-    { // Rename to SequencerCommand<YourCommand>
+    { 
 
         DiceRollRecord rollRecord;
 
+        string actorIndex;
+        string conversantIndex;
+
         string rollingActorName;
-        string contestingNPCName;
+        string conversantName;
         string variableName;
-        bool variableSide;
+        int skillDC = 10;
 
         DiceRoll workingRoll;
         DiceEval diceEval;
 
-        bool hasWorkingRollBegan = false;
+        bool hasWorkingRollBegun = false;
         bool isWorkingRollFinished = false;
 
         public DiceRoll WorkingRollAccess { get { return workingRoll; } }
 
-        public bool WorkingRollComplete { get { return hasWorkingRollBegan == true && isWorkingRollFinished == true; } }
+        public bool WorkingRollComplete { get { return hasWorkingRollBegun == true && isWorkingRollFinished == true; } }
 
 
-        // DiceRoll("Dayholt", "PlayerStats.gutFeelingStrategic", false, 15, 10, 5);
-        // DiceRoll("Dayholt", "PlayerStats.gutFeelingStrategic", false, "Dmi");
         public void Awake()
         {
-            //Debug.Log("SEQUENCER: Commencing DiceRoll");
+            string rollType;
+            string rollTypeGroup;
+            List<Die> diceTypes;
+
+            Debug.Log("SEQUENCER: Commencing DiceRoll");
             if(rollRecord == null) rollRecord = FindObjectOfType<DiceRollRecord>();
 
-            rollingActorName = GetParameter(0, string.Empty);
-            Debug.Log($"SEQUENCER: RollingActorName is {((rollingActorName != null) ? rollingActorName : "doing the nully")}");
-
-            variableName = GetParameter(1, string.Empty);
+            variableName = GetParameter(0, string.Empty);
             Debug.Log($"SEQUENCER: VariableName is {((variableName != null) ? variableName : "doing the nully")}");
 
-            variableSide = GetParameterAsBool(2, false);
-            Debug.Log($"SEQUENCER: VariableSide is {variableSide}");
+            actorIndex = Lua.Run("return Variable['ActorIndex']").AsString;
 
-            contestingNPCName = GetParameter(3, string.Empty);
-            Debug.Log($"SEQUENCER: ContestingNPCName is {((contestingNPCName != null) ? contestingNPCName : "doing the nully")}");
+            rollingActorName = DialogueLua.GetActorField(actorIndex, "Name").AsString;
+            Debug.Log($"SEQUENCER: RollingActorName is {((rollingActorName != null) ? rollingActorName : "doing the nully")}");
 
-            //diceEval = new DiceEval(GetParameterAsInt(3), GetParameterAsInt(4), GetParameterAsInt(5));
-
+            ParseRollType(variableName, out diceTypes, out rollType, out rollTypeGroup);
 
             #region CreatingDiceRoll
 
-
-            diceEval = EvalByDisposition(contestingNPCName);
-            Debug.Log($"SEQUENCER: DiceEval has values of {diceEval.critSuccess}, {diceEval.pass}, {diceEval.critFailure}");
-
-            string rollType = string.Empty;
-            List<Die> diceTypes = new List<Die>();
-            //Debug.Log($"SEQUENCER: RollType is {((rollType == string.Empty) ? "Empty" : rollType)}.");
-
-            switch (variableName)
+            if (rollTypeGroup == "Policework")
             {
-                case "PlayerStats.gutFeelingStrategic":
-                    rollType = (variableSide) ? "GutFeeling" : "Strategic";
-                    Debug.Log($"SEQUENCER: RollType is now set to ({rollType}).");
 
-                    break;
-
-                case "PlayerStats.improvisorKnowledge":
-                    rollType = (variableSide) ? "Improvisor" : "Knowledge";
-                    Debug.Log($"SEQUENCER: RollType is now set to ({rollType}).");
-
-                    break;
-
-                case "PlayerStats.distractPercept":
-                    rollType = (variableSide) ? "EasilyDistracted" : "Perceptive";
-                    Debug.Log($"SEQUENCER: RollType is now set to ({rollType}).");
-
-                    break;
-
-                case "PlayerStats.friendlyCold":
-                    rollType = (variableSide) ? "Friendly" : "Cold";
-                    Debug.Log($"SEQUENCER: RollType is now set to ({rollType}).");
-
-                    break;
-
-                case "PlayerStats.trustingIntimidating":
-                    rollType = (variableSide) ? "Trusting" : "Intimidating";
-                    Debug.Log($"SEQUENCER: RollType is now set to ({rollType}).");
-
-                    break;
-
-                case "PlayerStats.empathContrarian":
-                    rollType = (variableSide) ? "Empathetic" : "Contrarian";
-                    Debug.Log($"SEQUENCER: RollType is now set to ({rollType}).");
-
-                    break;
-
-                case "PlayerStats.methodManIntegrated":
-                    rollType = (variableSide) ? "MethodMan" : "Integrated";
-                    Debug.Log($"SEQUENCER: RollType is now set to ({rollType}).");
-
-                    break;
-
-                case "PlayerStats.shreddedSlender":
-                    rollType = (variableSide) ? "Shredded" : "Slender";
-                    Debug.Log($"SEQUENCER: RollType is now set to ({rollType}).");
-
-                    break;
-
-                case "PlayerStats.wrenchMonkeyCoded":
-                    rollType = (variableSide) ? "WrenchMonkey" : "Coded";
-                    Debug.Log($"SEQUENCER: RollType is now set to ({rollType}).");
-
-                    break;
-
-                default:
-                    Debug.LogError("SEQUENCER: Variable name given is invalid, or not usable.");
-
-                    break;
             }
-
-            diceTypes.Add(rollRecord.D20);
-
-            if (DialogueLua.GetVariable(variableName).asBool == variableSide)
+            else if (rollTypeGroup == "Interpersonal")
             {
-                diceTypes.Add(rollRecord.D4);
-            }
+                conversantIndex = Lua.Run("return Variable['ConversantIndex']").AsString;
 
-            workingRoll = new DiceRoll(rollingActorName, rollType, diceTypes.ToArray(), diceEval);
-            workingRoll.isReady = true;
+                conversantName = DialogueLua.GetActorField(conversantIndex, "Name").AsString;
+                Debug.Log($"SEQUENCER: ContestingNPCName is {((conversantName != null) ? conversantName : "doing the nully")}");
+
+                diceEval = EvalByDisposition(conversantIndex);
+                Debug.Log($"SEQUENCER: DiceEval (by Disposition) has values of {diceEval.critSuccess}, {diceEval.pass}, {diceEval.critFailure}");
+
+                workingRoll = new DiceRoll(actorIndex, conversantIndex, rollType, RollType.Interpersonal, diceTypes.ToArray(), diceEval);
+                workingRoll.isReady = true;
+
+            }
+            else if (rollTypeGroup == "Interests")
+            {
+                skillDC = GetParameterAsInt(1);
+
+                diceEval = EvalBySkillDC(skillDC);
+                Debug.Log($"SEQUENCER: DiceEval (by SkillDC) has values of {diceEval.critSuccess}, {diceEval.pass}, {diceEval.critFailure}");
+
+                workingRoll = new DiceRoll(actorIndex, rollType, RollType.Interests, diceTypes.ToArray(), diceEval);
+                workingRoll.isReady = true;
+            } 
+            else 
+            {
+                
+            }
 
             #endregion
 
-            //Debug.Log("SEQUENCER: Working roll Created");
         }
 
         public void Start()
@@ -149,21 +101,25 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
             // Use it to clean up whatever needs cleaning at the end of the sequencer command.
             // If you don't need to do anything at the end, you can delete this method.
             Debug.Log("DESTROYSEQ: DestroyStart.");
+            actorIndex = string.Empty;
+            conversantIndex = string.Empty;
+            
             rollingActorName = string.Empty;
+            conversantName = string.Empty;
             variableName = string.Empty;
-            variableSide = false;
+            skillDC = 10;
 
-            hasWorkingRollBegan = false;
+            hasWorkingRollBegun = false;
             isWorkingRollFinished = false;
             Debug.Log("DESTROYSEQ: DestroyMid.");
             //workingRoll = new DiceRoll();
 
             workingRoll.isReady = false;
-            workingRoll.rollerName = string.Empty;
+            workingRoll.rollerIndex = string.Empty;
+            workingRoll.conversantIndex = string.Empty;
             workingRoll.rollType = string.Empty;
             workingRoll.rollState = RollState.Unrolled;
             workingRoll.diceEval = new DiceEval();
-            workingRoll.bonusesToRoll = new float[0];
             workingRoll.intendedDice = new Die[0];
             workingRoll.spawnedDice.Clear();
             workingRoll.finalRoll = 0;
@@ -171,14 +127,352 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
             Debug.Log("DESTROYSEQ: DestroyFin.");
         }
 
-        public DiceEval EvalByDisposition(string actorName)
+        void ParseRollType(string variable, out List<Die> toRoll, out string rollType, out string rollTypeGroup)
+        {
+            toRoll = new List<Die>();
+
+            rollType = string.Empty;
+
+            rollTypeGroup = string.Empty;
+
+            switch(variable)
+            {
+                case "GutFeeling":
+
+                    rollType = "GutFeeling";
+
+                    toRoll.Add(rollRecord.D20);
+
+                    if (DialogueLua.GetActorField(actorIndex, "Approach").AsInt == -1)
+                    {
+                        toRoll.Add(rollRecord.D4);
+                        
+                    }
+                    rollTypeGroup = "Policework";
+
+                    //if (DialogueLua.GetVariable("PlayerStats.gutFeelingStrategic").asBool) toRoll.Add(rollRecord.D4);
+
+                    break;
+
+                case "Strategic":
+
+                    rollType = "Strategic";
+
+                    toRoll.Add(rollRecord.D20);
+
+                    if (DialogueLua.GetActorField(actorIndex, "Approach").AsInt == 1)
+                    {
+                        toRoll.Add(rollRecord.D4);
+                    }
+
+                    rollTypeGroup = "Policework";
+
+                    //if (!DialogueLua.GetVariable("PlayerStats.gutFeelingStrategic").asBool) toRoll.Add(rollRecord.D4);
+
+                    break;
+
+                case "Improvisor":
+
+                    rollType = "Improvisor";
+
+                    toRoll.Add(rollRecord.D20);
+
+                    if (DialogueLua.GetActorField(actorIndex, "Procedure").AsInt == -1)
+                    {
+                        toRoll.Add(rollRecord.D4);
+                    }
+
+                    rollTypeGroup = "Policework";
+
+                    //if (DialogueLua.GetVariable("PlayerStats.improvisorKnowledge").asBool) toRoll.Add(rollRecord.D4);
+
+                    break;
+
+                case "Knowledge":
+
+                    rollType = "Knowledge";
+
+                    toRoll.Add(rollRecord.D20);
+
+                    if (DialogueLua.GetActorField(actorIndex, "Procedure").AsInt == 1)
+                    {
+                        toRoll.Add(rollRecord.D4);
+                    }
+
+                    rollTypeGroup = "Policework";
+
+                    //if (!DialogueLua.GetVariable("PlayerStats.improvisorKnowledge").asBool) toRoll.Add(rollRecord.D4);
+
+                    break;
+
+                case "EasilyDistracted":
+
+                    rollType = "EasilyDistracted";
+
+                    toRoll.Add(rollRecord.D20);
+
+                    if (DialogueLua.GetActorField(actorIndex, "Attentiveness").AsInt == -1)
+                    {
+                        toRoll.Add(rollRecord.D4);
+                    }
+
+                    rollTypeGroup = "Policework";
+
+                    //if (DialogueLua.GetVariable("PlayerStats.distractPercept").asBool) toRoll.Add(rollRecord.D4);
+
+                    break;
+
+                case "Perceptive":
+
+                    rollType = "Perceptive";
+
+                    toRoll.Add(rollRecord.D20);
+
+                    if (DialogueLua.GetActorField(actorIndex, "Attentiveness").AsInt == 1)
+                    {
+                        toRoll.Add(rollRecord.D4);
+                    }
+
+                    rollTypeGroup = "Policework";
+
+                    //if (!DialogueLua.GetVariable("PlayerStats.distractPercept").asBool) toRoll.Add(rollRecord.D4);
+
+                    break;
+
+                case "Friendly":
+
+                    rollType = "Friendly";
+
+                    toRoll.Add(rollRecord.D20);
+
+                    if (DialogueLua.GetActorField(actorIndex, "Attitude").AsInt == -1)
+                    {
+                        toRoll.Add(rollRecord.D4);
+                    }
+
+                    rollTypeGroup = "Interpersonal";
+
+
+                    //if (DialogueLua.GetVariable("PlayerStats.friendlyCold").asBool) toRoll.Add(rollRecord.D4);
+
+                    break;
+
+                case "Cold":
+
+                    rollType = "Cold";
+
+                    toRoll.Add(rollRecord.D20);
+
+                    if (DialogueLua.GetActorField(actorIndex, "Attitude").AsInt == 1)
+                    {
+                        toRoll.Add(rollRecord.D4);
+                    }
+
+                    rollTypeGroup = "Interpersonal";
+
+
+                    //if (!DialogueLua.GetVariable("PlayerStats.friendlyCold").asBool) toRoll.Add(rollRecord.D4);
+
+                    break;
+
+                case "Trusting":
+
+                    rollType = "Trusting";
+
+                    toRoll.Add(rollRecord.D20);
+
+                    if (DialogueLua.GetActorField(actorIndex, "Impression").AsInt == -1)
+                    {
+                        toRoll.Add(rollRecord.D4);
+                    }
+
+                    rollTypeGroup = "Interpersonal";
+
+
+                    //if (DialogueLua.GetVariable("PlayerStats.trustingIntimidating").asBool) toRoll.Add(rollRecord.D4);
+
+                    break;
+
+                case "Intimidating":
+
+                    rollType = "Intimidating";
+
+                    toRoll.Add(rollRecord.D20);
+
+                    if (DialogueLua.GetActorField(actorIndex, "Interpersonal").AsInt == 1)
+                    {
+                        toRoll.Add(rollRecord.D4);
+                    }
+
+                    rollTypeGroup = "Interpersonal";
+
+
+                    //if (!DialogueLua.GetVariable("PlayerStats.trustingIntimidating").asBool) toRoll.Add(rollRecord.D4);
+
+                    break;
+
+                case "Empathetic":
+
+                    rollType = "Empathetic";
+
+                    toRoll.Add(rollRecord.D20);
+
+                    if (DialogueLua.GetActorField(actorIndex, "Understanding").AsInt == -1)
+                    {
+                        toRoll.Add(rollRecord.D4);
+                    }
+
+                    rollTypeGroup = "Interpersonal";
+
+
+                    //if (DialogueLua.GetVariable("PlayerStats.empathContrarian").asBool) toRoll.Add(rollRecord.D4);
+
+                    break;
+
+                case "Contrarian":
+
+                    rollType = "Contrarian";
+
+                    toRoll.Add(rollRecord.D20);
+
+                    if (DialogueLua.GetActorField(actorIndex, "Understanding").AsInt == 1)
+                    {
+                        toRoll.Add(rollRecord.D4);
+                    }
+
+                    rollTypeGroup = "Interpersonal";
+
+
+                    //if (!DialogueLua.GetVariable("PlayerStats.empathContrarian").asBool) toRoll.Add(rollRecord.D4);
+
+                    break;
+
+                case "MethodMan":
+
+                    rollType = "MethodMan";
+
+                    toRoll.Add(rollRecord.D20);
+
+                    if (DialogueLua.GetActorField(actorIndex, "Technology").AsInt == -1)
+                    {
+                        toRoll.Add(rollRecord.D4);
+                    }
+
+                    rollTypeGroup = "Interests";
+
+
+                    //if (DialogueLua.GetVariable("PlayerStats.methodManIntegrated").asBool) toRoll.Add(rollRecord.D4);
+
+                    break;
+
+                case "Integrated":
+
+                    rollType = "Integrated";
+
+                    toRoll.Add(rollRecord.D20);
+
+                    if (DialogueLua.GetActorField(actorIndex, "Technology").AsInt == 1)
+                    {
+                        toRoll.Add(rollRecord.D4);
+                    }
+
+                    rollTypeGroup = "Interests";
+
+
+                    //if (!DialogueLua.GetVariable("PlayerStats.methodManIntegrated").asBool) toRoll.Add(rollRecord.D4);
+
+                    break;
+
+                case "Shredded":
+
+                    rollType = "Shredded";
+
+                    toRoll.Add(rollRecord.D20);
+
+                    if (DialogueLua.GetActorField(actorIndex, "Fitness").AsInt == -1)
+                    {
+                        toRoll.Add(rollRecord.D4);
+                    }
+
+                    rollTypeGroup = "Interests";
+
+
+                    //if (DialogueLua.GetVariable("PlayerStats.shreddedSlender").asBool) toRoll.Add(rollRecord.D4);
+
+                    break;
+
+                case "Slender":
+
+                    rollType = "Slender";
+
+                    toRoll.Add(rollRecord.D20);
+
+                    if (DialogueLua.GetActorField(actorIndex, "Fitness").AsInt == 1)
+                    {
+                        toRoll.Add(rollRecord.D4);
+                    }
+
+                    rollTypeGroup = "Interests";
+
+
+                    //if (!DialogueLua.GetVariable("PlayerStats.shreddedSlender").asBool) toRoll.Add(rollRecord.D4);
+
+                    break;
+
+                case "WrenchMonkey":
+
+                    rollType = "WrenchMonkey";
+
+                    toRoll.Add(rollRecord.D20);
+
+                    if (DialogueLua.GetActorField(actorIndex, "Expertise").AsInt == -1)
+                    {
+                        toRoll.Add(rollRecord.D4);
+                    }
+
+                    rollTypeGroup = "Interests";
+
+
+                    //if (DialogueLua.GetVariable("PlayerStats.wrenchMonkeyCoded").asBool) toRoll.Add(rollRecord.D4);
+
+                    break;
+
+                case "Coded":
+
+                    rollType = "Coded";
+
+                    toRoll.Add(rollRecord.D20);
+
+                    if (DialogueLua.GetActorField(actorIndex, "Expertise").AsInt == 1)
+                    {
+                        toRoll.Add(rollRecord.D4);
+                    }
+
+                    rollTypeGroup = "Interests";
+
+
+                    //if (!DialogueLua.GetVariable("PlayerStats.wrenchMonkeyCoded").asBool) toRoll.Add(rollRecord.D4);
+
+                    break;
+
+                default:
+
+                    Debug.LogError("SEQUENCER: Variable name given is invalid, or not usable.");
+
+                    break;
+            }
+
+            Debug.Log($"SEQUENCER: RollType is now set to \"{rollType}\", in group \"{rollTypeGroup}\". Rolled by {DialogueLua.GetActorField(actorIndex, "Name").AsString}");
+        }
+
+        public DiceEval EvalByDisposition(string conversantIndex)
         {
             int rollDC = 0;
 
-            int fondnessNum = DialogueLua.GetActorField(actorName, "DispoFondness").asInt;
-            int moodNum = DialogueLua.GetActorField(actorName, "DispoMood").asInt;
+            int fondnessNum = DialogueLua.GetActorField(conversantIndex, "DispoFondness").asInt;
+            int moodNum = DialogueLua.GetActorField(conversantIndex, "DispoMood").asInt;
 
-            Debug.Log($"EvalByDisposition -- Fondness {fondnessNum}, Mood {moodNum}");
+            Debug.Log($"SEQUENCER: EvalByDisposition -- Fondness {fondnessNum}, Mood {moodNum}");
 
             switch(fondnessNum)
             {
@@ -221,6 +515,16 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
             return new DiceEval(rollDC+6, rollDC, rollDC-6);
         }
 
+        public DiceEval EvalBySkillDC(int skillDC)
+        {
+            return new DiceEval(skillDC + 6, skillDC, skillDC - 6);
+        }
+
+        public IEnumerator PrepareDieBoardVisuals()
+        {
+            yield return null;
+        }
+
         public IEnumerator ProcessDiceRoll()
         {
             Debug.Log("ROLLPROCESS: ProcessDiceRoll Coroutine called.");
@@ -260,7 +564,7 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
             }
 
             workingRoll.rollState = RollState.Rolling;
-            hasWorkingRollBegan = true;
+            hasWorkingRollBegun = true;
 
 
             //Waits until roll is finished
@@ -286,12 +590,17 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
 
             int index = rollRecord.rolls.IndexOf(workingRoll);
 
-            Debug.Log($"ROLLREPORT: {workingRoll.rollerName} rolled for {workingRoll.rollType}. Result: Final Roll of {workingRoll.finalRoll}, evaluating as a {workingRoll.rollState}.");
+            Debug.Log($"ROLLREPORT: {workingRoll.rollerIndex} rolled for {workingRoll.rollType}. Result: Final Roll of {workingRoll.finalRoll}, evaluating as a {workingRoll.rollState}.");
 
             DialogueLua.SetVariable("DiceRoll.operativeIndex", index);
 
             Stop();
 
+        }
+
+        public IEnumerator FinaliseDiceRollVisuals()
+        {
+            yield return null;
         }
 
         public void CheckIfRollFinished(DiceRoll roll)
@@ -310,12 +619,6 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
 
             isWorkingRollFinished = isFinished;
         }
-
-        //public void PrintFullDiceRoll(DiceRoll dice)
-        //{
-        //    Debug.Log(
-        //        $"PRINTING DICE ROLL VARS \nIsReady = {dice.isReady}\nRollerName = {dice.rollerName}\nRollType = {dice.rollType}\nRollState = {dice.rollState}\nDiceEval = {dice.diceEval.critSuccess}/{dice.diceEval.pass}/{dice.diceEval.critFailure}\nFinalRoll = {dice.finalRoll}\n");
-        //}
     }
 
 }

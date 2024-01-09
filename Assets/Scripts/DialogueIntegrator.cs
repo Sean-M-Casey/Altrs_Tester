@@ -12,6 +12,10 @@ public class DialogueIntegrator : MonoBehaviour
         Lua.RegisterFunction(nameof(PrintVariable), this, SymbolExtensions.GetMethodInfo(() => PrintVariable(string.Empty)));
 
         Lua.RegisterFunction(nameof(CheckWorkingRollResult), this, SymbolExtensions.GetMethodInfo(() => CheckWorkingRollResult(0)));
+        Lua.RegisterFunction(nameof(CheckWorkingRollResultEnum), this, SymbolExtensions.GetMethodInfo(() => CheckWorkingRollResultEnum()));
+
+        Lua.RegisterFunction(nameof(NPCMoodToString), this, SymbolExtensions.GetMethodInfo(() => NPCMoodToString(0)));
+        Lua.RegisterFunction(nameof(NPCFondToString), this, SymbolExtensions.GetMethodInfo(() => NPCFondToString(0)));
     }
 
     private void OnDisable()
@@ -19,6 +23,10 @@ public class DialogueIntegrator : MonoBehaviour
         Lua.UnregisterFunction(nameof(PrintActorProperty));
         Lua.UnregisterFunction(nameof(PrintVariable));
         Lua.UnregisterFunction(nameof(CheckWorkingRollResult));
+        Lua.UnregisterFunction(nameof(CheckWorkingRollResultEnum));
+
+        Lua.UnregisterFunction(nameof(NPCMoodToString));
+        Lua.UnregisterFunction(nameof(NPCFondToString));
     }
 
     public void PrintActorProperty(string actor, string variable)
@@ -109,6 +117,105 @@ public class DialogueIntegrator : MonoBehaviour
         Debug.Log($"CHECKROLL: Finished Checking Roll at index {rollIndex}, result was {result}");
 
         return result;
+    }
+
+    public double CheckWorkingRollResultEnum()
+    {
+        Debug.Log($"CHECKROLL: Called Roll Check");
+
+        DiceRollRecord rollRecord = FindObjectOfType<DiceRollRecord>();
+
+        int rollIndex = DialogueLua.GetVariable("DiceRoll.operativeIndex").asInt;
+
+        int stateAsInt = (int)rollRecord.rolls[rollIndex].rollState;
+
+        return (double)stateAsInt;
+    }
+
+    public static string NPCMoodToString(double moodValue)
+    {
+        Debug.Log("TOSTRING: Mood called");
+
+        string moodAsString;
+        int moodValInt = (int)moodValue;
+
+        switch(moodValInt)
+        {
+            case -2:
+
+                moodAsString = "bad";
+
+                break;
+            case -1:
+
+                moodAsString = "poor";
+
+                break;
+            case 0:
+
+                moodAsString = "fine";
+
+                break;
+            case 1:
+
+                moodAsString = "good";
+
+                break;
+            case 2:
+
+                moodAsString = "great";
+
+                break;
+            default:
+
+                moodAsString = "indescribable";
+
+                break;
+        }
+
+        return moodAsString;
+    }
+
+    public static string NPCFondToString(double fondnessValue)
+    {
+        string fondnessAsString;
+        int fondnessValInt = (int)fondnessValue;
+
+        switch (fondnessValInt)
+        {
+            case -2:
+
+                fondnessAsString = " bad";
+
+                break;
+            case -1:
+
+                fondnessAsString = " poor";
+
+                break;
+            case 0:
+
+                fondnessAsString = " fine";
+
+                break;
+            case 1:
+
+                fondnessAsString = " good";
+
+                break;
+            case 2:
+
+                fondnessAsString = " great";
+
+                break;
+            default:
+
+                fondnessAsString = "n indescribable";
+
+                break;
+        }
+
+        return fondnessAsString;
     }
 
 }

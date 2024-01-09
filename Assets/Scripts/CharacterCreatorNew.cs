@@ -4,8 +4,28 @@ using UnityEngine;
 using UnityEngine.UI;
 using MoreMountains.Feedbacks;
 using PixelCrushers.DialogueSystem;
+using System.Security.Cryptography.X509Certificates;
 
 public enum CharacterTabStates { Overview, Policework, Interests, Interpersonal, Off }
+
+#region STATENUMS
+
+public enum Alignment_Policework { LooseUnit = -1, Unassigned = 0, ByTheBook = 1 }
+public enum Stat_Approach { GutFeeling = -1, Unassigned = 0, Strategic = 1 }
+public enum Stat_Procedure { Improvisor = -1, Unassigned = 0, Knowledge = 1 }
+public enum Stat_Attentiveness { EasilyDistracted = -1, Unassigned = 0, Perceptive = 1 }
+
+public enum Alignment_Interpersonal { GoodCop = -1, Unassigned = 0, BadCop = 1 }
+public enum Stat_Attitude { Friendly = -1, Unassigned = 0, Cold = 1 }
+public enum Stat_Impression { Trusting = -1, Unassigned = 0, Intimidating = 1 }
+public enum Stat_Understanding { Empathetic = -1, Unassigned = 0, Contrarian = 1 }
+
+public enum Alignment_Interests { MeatHead = -1, Unassigned = 0, HackerMan = 1 }
+public enum Stat_Technology { MethodMan = -1, Unassigned = 0, Integrated = 1 }
+public enum Stat_Fitness { Shredded = -1, Unassigned = 0, Slender = 1 }
+public enum Stat_Expertise { WrenchMonkey = -1, Unassigned = 0, Coded = 1, NotApplicable = 2 }
+
+#endregion
 
 public class CharacterCreatorNew : MonoBehaviour
 {
@@ -13,6 +33,11 @@ public class CharacterCreatorNew : MonoBehaviour
     /*Stat variables*/
 
     // Policework Stats //
+    Alignment_Policework policework = Alignment_Policework.Unassigned;
+    Stat_Approach approach = Stat_Approach.Unassigned;
+    Stat_Procedure procedure = Stat_Procedure.Unassigned;
+    Stat_Attentiveness attentiveness = Stat_Attentiveness.Unassigned;
+
     bool pStat1;        // true = gut feeling , false = strategic
     bool pStat2;        // true = improvisor , false = knowledge 
     bool pStat3;        // true = easily distracted , false = perceptive
@@ -23,6 +48,11 @@ public class CharacterCreatorNew : MonoBehaviour
     int byTheBook;
 
     // Interpersonal Stats // 
+    Alignment_Interpersonal interpersonal = Alignment_Interpersonal.Unassigned;
+    Stat_Attitude attitude = Stat_Attitude.Unassigned;
+    Stat_Impression impression = Stat_Impression.Unassigned;
+    Stat_Understanding understanding = Stat_Understanding.Unassigned;
+
     bool iStat1;        // true = friendly , false = cold
     bool iStat2;        // true = trusting , false = intimidating
     bool iStat3;        // true = empathetic , false = contrarian
@@ -33,6 +63,11 @@ public class CharacterCreatorNew : MonoBehaviour
     int badCop;
 
     // Interests Stats // 
+    Alignment_Interests interests = Alignment_Interests.Unassigned;
+    Stat_Technology technology = Stat_Technology.Unassigned;
+    Stat_Fitness fitness = Stat_Fitness.Unassigned;
+    Stat_Expertise expertise = Stat_Expertise.Unassigned;
+
     bool intStat1;      // true = method man , false = integrated 
     bool intStat2;      // true = shredded , false = slender
     bool intStat3;      // true = wrench monkey , false = coded
@@ -91,6 +126,9 @@ public class CharacterCreatorNew : MonoBehaviour
         Lua.RegisterFunction(nameof(WrenchCoded), this, SymbolExtensions.GetMethodInfo(() => WrenchCoded(false)));
 
         Lua.RegisterFunction(nameof(SetCharStateLua), this, SymbolExtensions.GetMethodInfo(() => SetCharStateLua(0)));
+        Lua.RegisterFunction(nameof(SetPlayerStat), this, SymbolExtensions.GetMethodInfo(() => SetPlayerStat(string.Empty, 0)));
+
+
     }
 
     private void OnDisable()
@@ -108,6 +146,7 @@ public class CharacterCreatorNew : MonoBehaviour
         Lua.UnregisterFunction(nameof(WrenchCoded));
 
         Lua.UnregisterFunction(nameof(SetCharStateLua));
+        Lua.UnregisterFunction(nameof(SetPlayerStat));
     }
 
     /// <summary>Calls SetCharacterSheetState method from Lua</summary>
@@ -304,6 +343,548 @@ public class CharacterCreatorNew : MonoBehaviour
         }
     }
 
+    public void SetPlayerStat(string stateName, double stateVal)
+    {
+        Debug.Log($"SETSTAT: Given stat name: {stateName}. State value is: {stateVal}");
+
+        int stateValInt = (int)stateVal;
+
+        switch(stateName)
+        {
+            case "Approach":
+
+                SetPlayerStatEnum((Stat_Approach)stateValInt);
+
+                break;
+
+            case "Procedure":
+
+                SetPlayerStatEnum((Stat_Procedure)stateValInt);
+
+                break;
+
+            case "Attentiveness":
+
+                SetPlayerStatEnum((Stat_Attentiveness)stateValInt);
+
+                break;
+
+            case "Attitude":
+
+                SetPlayerStatEnum((Stat_Attitude)stateValInt);
+
+                break;
+
+            case "Impression":
+
+                SetPlayerStatEnum((Stat_Impression)stateValInt);
+
+                break;
+
+            case "Understanding":
+
+                SetPlayerStatEnum((Stat_Understanding)stateValInt);
+
+                break;
+
+            case "Technology":
+
+                SetPlayerStatEnum((Stat_Technology)stateValInt);
+
+                break;
+
+            case "Fitness":
+
+                SetPlayerStatEnum((Stat_Fitness)stateValInt);
+
+                break;
+
+            case "Expertise":
+
+                SetPlayerStatEnum((Stat_Expertise)stateValInt);
+
+                break;
+
+            default:
+
+                Debug.Log($"SETSTAT: Could not find stat of name: {stateName}.");
+
+                break;
+        }
+        
+    }
+
+    #region PlayerStatEnumOverloads
+
+    public void SetPlayerStatEnum(Stat_Approach stat)
+    {
+        Debug.Log($"SETSTAT: Setting Approach Stat to {stat}.");
+
+        approach = stat;
+
+        Debug.Log($"SETSTAT: Approach Stat is set to {approach}.");
+
+        switch (approach)
+        {
+            case Stat_Approach.GutFeeling:
+
+                DialogueLua.SetActorField("Dayholt", "Approach", -1);
+                DialogueLua.SetActorField("Vaughn", "Approach", 1);
+
+                statButtons[0].GetComponent<Button>().interactable = false;
+                statButtons[1].GetComponent<Button>().interactable = true;
+
+                statToggle[0] = true;
+
+                break;
+
+            case Stat_Approach.Unassigned:
+
+                DialogueLua.SetActorField("Dayholt", "Approach", 0);
+                DialogueLua.SetActorField("Vaughn", "Approach", 0);
+
+                statButtons[0].GetComponent<Button>().interactable = true;
+                statButtons[1].GetComponent<Button>().interactable = true;
+
+                statToggle[0] = false;
+
+                break;
+
+            case Stat_Approach.Strategic:
+
+                DialogueLua.SetActorField("Dayholt", "Approach", 1);
+                DialogueLua.SetActorField("Vaughn", "Approach", -1);
+
+                statButtons[0].GetComponent<Button>().interactable = true;
+                statButtons[1].GetComponent<Button>().interactable = false;
+
+                statToggle[0] = true;
+
+                break;
+        }
+
+        SetAlignment(ref policework);
+        NewOverviewSetter();
+    }
+
+    public void SetPlayerStatEnum(Stat_Procedure stat)
+    {
+        procedure = stat;
+
+        switch (procedure)
+        {
+            case Stat_Procedure.Improvisor:
+
+                DialogueLua.SetActorField("Dayholt", "Procedure", -1);
+                DialogueLua.SetActorField("Vaughn", "Procedure", 1);
+
+                statButtons[2].GetComponent<Button>().interactable = false;
+                statButtons[3].GetComponent<Button>().interactable = true;
+
+                statToggle[1] = true;
+
+                break;
+
+            case Stat_Procedure.Unassigned:
+
+                DialogueLua.SetActorField("Dayholt", "Procedure", 0);
+                DialogueLua.SetActorField("Vaughn", "Procedure", 0);
+
+                statButtons[2].GetComponent<Button>().interactable = true;
+                statButtons[3].GetComponent<Button>().interactable = true;
+
+                statToggle[1] = false;
+
+                break;
+
+            case Stat_Procedure.Knowledge:
+
+                DialogueLua.SetActorField("Dayholt", "Procedure", 1);
+                DialogueLua.SetActorField("Vaughn", "Procedure", -1);
+
+                statButtons[2].GetComponent<Button>().interactable = true;
+                statButtons[3].GetComponent<Button>().interactable = false;
+
+                statToggle[1] = true;
+
+                break;
+        }
+
+        SetAlignment(ref policework);
+        NewOverviewSetter();
+    }
+
+    public void SetPlayerStatEnum(Stat_Attentiveness stat)
+    {
+        attentiveness = stat;
+
+        switch (attentiveness)
+        {
+            case Stat_Attentiveness.EasilyDistracted:
+
+                DialogueLua.SetActorField("Dayholt", "Attentiveness", -1);
+                DialogueLua.SetActorField("Vaughn", "Attentiveness", 1);
+
+                statButtons[4].GetComponent<Button>().interactable = false;
+                statButtons[5].GetComponent<Button>().interactable = true;
+
+                statToggle[2] = true;
+
+                break;
+
+            case Stat_Attentiveness.Unassigned:
+
+                DialogueLua.SetActorField("Dayholt", "Attentiveness", 0);
+                DialogueLua.SetActorField("Vaughn", "Attentiveness", 0);
+
+                statButtons[4].GetComponent<Button>().interactable = true;
+                statButtons[5].GetComponent<Button>().interactable = true;
+
+                statToggle[2] = false;
+
+                break;
+
+            case Stat_Attentiveness.Perceptive:
+
+                DialogueLua.SetActorField("Dayholt", "Attentiveness", 1);
+                DialogueLua.SetActorField("Vaughn", "Attentiveness", -1);
+
+                statButtons[4].GetComponent<Button>().interactable = true;
+                statButtons[5].GetComponent<Button>().interactable = false;
+
+                statToggle[2] = true;
+
+                break;
+        }
+
+        SetAlignment(ref policework);
+        NewOverviewSetter();
+    }
+
+    public void SetPlayerStatEnum(Stat_Attitude stat)
+    {
+        attitude = stat;
+
+        switch (attitude)
+        {
+            case Stat_Attitude.Friendly:
+
+                DialogueLua.SetActorField("Dayholt", "Attitude", -1);
+                DialogueLua.SetActorField("Vaughn", "Attitude", 1);
+
+                statButtons[6].GetComponent<Button>().interactable = false;
+                statButtons[15].GetComponent<Button>().interactable = true;
+
+                statToggle[3] = true;
+
+                break;
+
+            case Stat_Attitude.Unassigned:
+
+                DialogueLua.SetActorField("Dayholt", "Attitude", 0);
+                DialogueLua.SetActorField("Vaughn", "Attitude", 0);
+
+                statButtons[6].GetComponent<Button>().interactable = true;
+                statButtons[15].GetComponent<Button>().interactable = true;
+
+                statToggle[3] = false;
+
+                break;
+
+            case Stat_Attitude.Cold:
+
+                DialogueLua.SetActorField("Dayholt", "Attitude", 1);
+                DialogueLua.SetActorField("Vaughn", "Attitude", -1);
+
+                statButtons[6].GetComponent<Button>().interactable = true;
+                statButtons[15].GetComponent<Button>().interactable = false;
+
+                statToggle[3] = true;
+
+                break;
+        }
+
+        SetAlignment(ref interpersonal);
+        NewOverviewSetter();
+    }
+
+    public void SetPlayerStatEnum(Stat_Impression stat)
+    {
+        impression = stat;
+
+        switch (impression)
+        {
+            case Stat_Impression.Trusting:
+
+                DialogueLua.SetActorField("Dayholt", "Impression", -1);
+                DialogueLua.SetActorField("Vaughn", "Impression", 1);
+
+                statButtons[8].GetComponent<Button>().interactable = false;
+                statButtons[9].GetComponent<Button>().interactable = true;
+
+                statToggle[4] = true;
+
+                break;
+
+            case Stat_Impression.Unassigned:
+
+                DialogueLua.SetActorField("Dayholt", "Impression", 0);
+                DialogueLua.SetActorField("Vaughn", "Impression", 0);
+
+                statButtons[8].GetComponent<Button>().interactable = true;
+                statButtons[9].GetComponent<Button>().interactable = true;
+
+                statToggle[4] = false;
+
+                break;
+
+            case Stat_Impression.Intimidating:
+
+                DialogueLua.SetActorField("Dayholt", "Impression", 1);
+                DialogueLua.SetActorField("Vaughn", "Impression", -1);
+
+                statButtons[8].GetComponent<Button>().interactable = true;
+                statButtons[9].GetComponent<Button>().interactable = false;
+
+                statToggle[4] = true;
+
+                break;
+        }
+
+        SetAlignment(ref interpersonal);
+        NewOverviewSetter();
+    }
+
+    public void SetPlayerStatEnum(Stat_Understanding stat)
+    {
+        understanding = stat;
+
+        switch (understanding)
+        {
+            case Stat_Understanding.Empathetic:
+
+                DialogueLua.SetActorField("Dayholt", "Understanding", -1);
+                DialogueLua.SetActorField("Vaughn", "Understanding", 1);
+
+                statButtons[10].GetComponent<Button>().interactable = false;
+                statButtons[11].GetComponent<Button>().interactable = true;
+
+                statToggle[5] = true;
+
+                break;
+
+            case Stat_Understanding.Unassigned:
+
+                DialogueLua.SetActorField("Dayholt", "Understanding", 0);
+                DialogueLua.SetActorField("Vaughn", "Understanding", 0);
+
+                statButtons[10].GetComponent<Button>().interactable = true;
+                statButtons[11].GetComponent<Button>().interactable = true;
+
+                statToggle[5] = false;
+
+                break;
+
+            case Stat_Understanding.Contrarian:
+
+                DialogueLua.SetActorField("Dayholt", "Understanding", 1);
+                DialogueLua.SetActorField("Vaughn", "Understanding", -1);
+
+                statButtons[10].GetComponent<Button>().interactable = true;
+                statButtons[11].GetComponent<Button>().interactable = false;
+
+                statToggle[5] = true;
+
+                break;
+        }
+
+        SetAlignment(ref interpersonal);
+        NewOverviewSetter();
+    }
+
+    public void SetPlayerStatEnum(Stat_Technology stat)
+    {
+        technology = stat;
+
+        switch (technology)
+        {
+            case Stat_Technology.MethodMan:
+
+                DialogueLua.SetActorField("Dayholt", "Technology", -1);
+                DialogueLua.SetActorField("Vaughn", "Technology", 1);
+
+                statButtons[12].GetComponent<Button>().interactable = false;
+                statButtons[13].GetComponent<Button>().interactable = true;
+
+                statToggle[6] = true;
+
+                break;
+
+            case Stat_Technology.Unassigned:
+
+                DialogueLua.SetActorField("Dayholt", "Technology", 0);
+                DialogueLua.SetActorField("Vaughn", "Technology", 0);
+
+                statButtons[12].GetComponent<Button>().interactable = true;
+                statButtons[13].GetComponent<Button>().interactable = true;
+
+                statToggle[6] = false;
+
+                break;
+
+            case Stat_Technology.Integrated:
+
+                DialogueLua.SetActorField("Dayholt", "Technology", 1);
+                DialogueLua.SetActorField("Vaughn", "Technology", -1);
+
+                statButtons[12].GetComponent<Button>().interactable = true;
+                statButtons[13].GetComponent<Button>().interactable = false;
+
+                statToggle[6] = true;
+
+                break;
+        }
+
+        SetAlignment(ref interests);
+        NewOverviewSetter();
+    }
+
+    public void SetPlayerStatEnum(Stat_Fitness stat)
+    {
+        fitness = stat;
+
+        switch (fitness)
+        {
+            case Stat_Fitness.Shredded:
+
+                DialogueLua.SetActorField("Dayholt", "Fitness", -1);
+                DialogueLua.SetActorField("Vaughn", "Fitness", 1);
+
+                statButtons[14].GetComponent<Button>().interactable = false;
+                statButtons[15].GetComponent<Button>().interactable = true;
+
+                statToggle[7] = true;
+
+                break;
+
+            case Stat_Fitness.Unassigned:
+
+                DialogueLua.SetActorField("Dayholt", "Fitness", 0);
+                DialogueLua.SetActorField("Vaughn", "Fitness", 0);
+
+                statButtons[14].GetComponent<Button>().interactable = true;
+                statButtons[15].GetComponent<Button>().interactable = true;
+
+                statToggle[7] = false;
+
+                break;
+
+            case Stat_Fitness.Slender:
+
+                DialogueLua.SetActorField("Dayholt", "Fitness", 1);
+                DialogueLua.SetActorField("Vaughn", "Fitness", -1);
+
+                statButtons[14].GetComponent<Button>().interactable = true;
+                statButtons[15].GetComponent<Button>().interactable = false;
+
+                statToggle[7] = true;
+
+                break;
+        }
+
+        SetAlignment(ref interests);
+        NewOverviewSetter();
+    }
+
+    public void SetPlayerStatEnum(Stat_Expertise stat)
+    {
+        expertise = stat;
+
+        switch (expertise)
+        {
+            case Stat_Expertise.WrenchMonkey:
+
+                DialogueLua.SetActorField("Dayholt", "Expertise", -1);
+                DialogueLua.SetActorField("Vaughn", "Expertise", 2);
+
+                statButtons[16].GetComponent<Button>().interactable = false;
+                statButtons[17].GetComponent<Button>().interactable = true;
+
+                statToggle[8] = true;
+
+                break;
+
+            case Stat_Expertise.Unassigned:
+
+                DialogueLua.SetActorField("Dayholt", "Expertise", 0);
+                DialogueLua.SetActorField("Vaughn", "Expertise", 0);
+
+                statButtons[16].GetComponent<Button>().interactable = true;
+                statButtons[17].GetComponent<Button>().interactable = true;
+
+                statToggle[8] = false;
+
+                break;
+
+            case Stat_Expertise.Coded:
+
+                DialogueLua.SetActorField("Dayholt", "Expertise", 1);
+                DialogueLua.SetActorField("Vaughn", "Expertise", 2);
+
+                statButtons[16].GetComponent<Button>().interactable = true;
+                statButtons[17].GetComponent<Button>().interactable = false;
+
+                statToggle[8] = true;
+
+                break;
+        }
+
+        SetAlignment(ref interests);
+        NewOverviewSetter();
+    }
+
+    #endregion
+
+    #region PlayerStatButtonMethods
+
+    public void ApproachStat(int state)
+    {
+        SetPlayerStatEnum((Stat_Approach)state);
+    }
+    public void ProcedureStat(int state)
+    {
+        SetPlayerStatEnum((Stat_Procedure)state);
+    }
+    public void AttentivenessStat(int state)
+    {
+        SetPlayerStatEnum((Stat_Attentiveness)state);
+    }
+    public void AttitudeStat(int state)
+    {
+        SetPlayerStatEnum((Stat_Attitude)state);
+    }
+    public void ImpressionStat(int state)
+    {
+        SetPlayerStatEnum((Stat_Impression)state);
+    }
+    public void UnderstandingStat(int state)
+    {
+        SetPlayerStatEnum((Stat_Understanding)state);
+    }
+    public void TechnologyStat(int state)
+    {
+        SetPlayerStatEnum((Stat_Technology)state);
+    }
+    public void FitnessStat(int state)
+    {
+        SetPlayerStatEnum((Stat_Fitness)state);
+    }
+    public void ExpertiseStat(int state)
+    {
+        SetPlayerStatEnum((Stat_Expertise)state);
+    }
+
+    #endregion
 
 
     public void GutStrats(bool value)
@@ -448,7 +1029,7 @@ public class CharacterCreatorNew : MonoBehaviour
         iStat1 = value;
 
         statButtons[6].GetComponent<Button>().interactable = !iStat1;
-        statButtons[7].GetComponent<Button>().interactable = iStat1;
+        statButtons[15].GetComponent<Button>().interactable = iStat1;
 
         statToggle[3] = true;
 
@@ -715,6 +1296,45 @@ public class CharacterCreatorNew : MonoBehaviour
 
     void AlignmentAssignment()
     {
+        switch((int)policework)
+        {
+            case -1:
+
+                alignmentIcons[0].SetActive(true);
+                alignmentIcons[1].SetActive(false);
+                alignmentIcons[3].SetActive(true);
+                alignmentIcons[2].SetActive(false);
+
+                DialogueLua.SetActorField("Dayholt", "PoliceworkAlignment", -1);
+                DialogueLua.SetActorField("Vaughn", "PoliceworkAlignment", 1);
+
+                break;
+
+            case 0:
+
+                alignmentIcons[0].SetActive(false);
+                alignmentIcons[1].SetActive(false);
+                alignmentIcons[3].SetActive(false);
+                alignmentIcons[2].SetActive(false);
+
+                DialogueLua.SetActorField("Dayholt", "PoliceworkAlignment", 0);
+                DialogueLua.SetActorField("Vaughn", "PoliceworkAlignment", 0);
+
+                break;
+
+            case 1:
+
+                alignmentIcons[2].SetActive(true);
+                alignmentIcons[0].SetActive(false);
+                alignmentIcons[1].SetActive(true);
+                alignmentIcons[3].SetActive(false);
+
+                DialogueLua.SetActorField("Dayholt", "PoliceworkAlignment", 1);
+                DialogueLua.SetActorField("Vaughn", "PoliceworkAlignment", -1);
+
+                break;
+        }
+
         if (aligned1 == true)
         {
             if (looseUnit >= 2)
@@ -737,13 +1357,52 @@ public class CharacterCreatorNew : MonoBehaviour
             }
         }
 
+        switch ((int)interpersonal)
+        {
+            case -1:
+
+                alignmentIcons[4].SetActive(true);
+                alignmentIcons[5].SetActive(false);
+                alignmentIcons[15].SetActive(true);
+                alignmentIcons[6].SetActive(false);
+
+                DialogueLua.SetActorField("Dayholt", "InterpersonalAlignment", -1);
+                DialogueLua.SetActorField("Vaughn", "InterpersonalAlignment", 1);
+
+                break;
+
+            case 0:
+
+                alignmentIcons[4].SetActive(false);
+                alignmentIcons[5].SetActive(false);
+                alignmentIcons[6].SetActive(false);
+                alignmentIcons[15].SetActive(false);
+
+                DialogueLua.SetActorField("Dayholt", "InterpersonalAlignment", 0);
+                DialogueLua.SetActorField("Vaughn", "InterpersonalAlignment", 0);
+
+                break;
+
+            case 1:
+
+                alignmentIcons[5].SetActive(true);
+                alignmentIcons[4].SetActive(false);
+                alignmentIcons[6].SetActive(true);
+                alignmentIcons[15].SetActive(false);
+
+                DialogueLua.SetActorField("Dayholt", "InterpersonalAlignment", 1);
+                DialogueLua.SetActorField("Vaughn", "InterpersonalAlignment", -1);
+
+                break;
+        }
+
         if (aligned2 == true)
         {
             if (goodCop >= 2)
             {
                 alignmentIcons[4].SetActive(true);
                 alignmentIcons[5].SetActive(false);
-                alignmentIcons[7].SetActive(true);
+                alignmentIcons[15].SetActive(true);
                 alignmentIcons[6].SetActive(false);
 
                 DialogueLua.SetVariable("PlayerStats.goodCopBadCop", true);
@@ -753,10 +1412,49 @@ public class CharacterCreatorNew : MonoBehaviour
                 alignmentIcons[6].SetActive(true);
                 alignmentIcons[4].SetActive(false);
                 alignmentIcons[5].SetActive(true);
-                alignmentIcons[7].SetActive(false);
+                alignmentIcons[15].SetActive(false);
 
                 DialogueLua.SetVariable("PlayerStats.goodCopBadCop", false);
             }
+        }
+
+        switch ((int)interests)
+        {
+            case -1:
+
+                alignmentIcons[8].SetActive(true);
+                alignmentIcons[9].SetActive(false);
+                alignmentIcons[11].SetActive(true);
+                alignmentIcons[10].SetActive(false);
+
+                DialogueLua.SetActorField("Dayholt", "InterestsAlignment", -1);
+                DialogueLua.SetActorField("Vaughn", "InterestsAlignment", 1);
+
+                break;
+
+            case 0:
+
+                alignmentIcons[8].SetActive(false);
+                alignmentIcons[9].SetActive(false);
+                alignmentIcons[10].SetActive(false);
+                alignmentIcons[11].SetActive(false);
+
+                DialogueLua.SetActorField("Dayholt", "InterestsAlignment", 0);
+                DialogueLua.SetActorField("Vaughn", "InterestsAlignment", 0);
+
+                break;
+
+            case 1:
+
+                alignmentIcons[9].SetActive(true);
+                alignmentIcons[8].SetActive(false);
+                alignmentIcons[10].SetActive(true);
+                alignmentIcons[11].SetActive(false);
+
+                DialogueLua.SetActorField("Dayholt", "InterestsAlignment", 1);
+                DialogueLua.SetActorField("Vaughn", "InterestsAlignment", -1);
+
+                break;
         }
 
         if (aligned3 == true)
@@ -782,6 +1480,300 @@ public class CharacterCreatorNew : MonoBehaviour
         }
     }
 
+    void SetAlignment(ref Alignment_Policework alignment)
+    {
+        int statTotalValue = (int)approach + (int)procedure + (int)attentiveness;
+
+        int statToggleCount = StatToggleCount(statToggle[0], statToggle[1], statToggle[2]);
+
+        Debug.Log($"SETSTAT: Police stat value is set to {statTotalValue}.");
+
+        switch (statToggleCount)
+        {
+            case 0:
+
+                Debug.Log($"SETSTAT: Policework statToggleCount is {statToggleCount}.");
+
+                alignment = Alignment_Policework.Unassigned;
+
+                DialogueLua.SetActorField("Dayholt", "PoliceworkAlignment", 0);
+                DialogueLua.SetActorField("Vaughn", "PoliceworkAlignment", 0);
+                break;
+
+            case 1:
+
+                Debug.Log($"SETSTAT: Policework statToggleCount is {statToggleCount}.");
+
+                alignment = Alignment_Policework.Unassigned;
+
+                DialogueLua.SetActorField("Dayholt", "PoliceworkAlignment", 0);
+                DialogueLua.SetActorField("Vaughn", "PoliceworkAlignment", 0);
+                break;
+
+            case 2:
+
+                Debug.Log($"SETSTAT: Policework statToggleCount is {statToggleCount}.");
+
+                switch (statTotalValue)
+                {
+                    case -2:
+
+                        Debug.Log($"SETSTAT: Policework statToggleCount is {statToggleCount}, and statTotalValue is set to {statTotalValue}.");
+
+                        alignment = Alignment_Policework.LooseUnit;
+
+                        DialogueLua.SetActorField("Dayholt", "PoliceworkAlignment", -1);
+                        DialogueLua.SetActorField("Vaughn", "PoliceworkAlignment", 1);
+                        break;
+
+                    case 0:
+
+                        Debug.Log($"SETSTAT: Policework statToggleCount is {statToggleCount}, and statTotalValue is set to {statTotalValue}.");
+
+                        alignment = Alignment_Policework.Unassigned;
+
+                        DialogueLua.SetActorField("Dayholt", "PoliceworkAlignment", 0);
+                        DialogueLua.SetActorField("Vaughn", "PoliceworkAlignment", 0);
+                        break;
+
+                    case 2:
+
+                        Debug.Log($"SETSTAT: Policework statToggleCount is {statToggleCount}, and statTotalValue is set to {statTotalValue}.");
+
+                        alignment = Alignment_Policework.ByTheBook;
+
+                        DialogueLua.SetActorField("Dayholt", "PoliceworkAlignment", 1);
+                        DialogueLua.SetActorField("Vaughn", "PoliceworkAlignment", -1);
+                        break;
+                }
+
+                break;
+
+            case 3:
+
+                switch (statTotalValue)
+                {
+                    case -3: //All 3 stats LU
+
+                        alignment = Alignment_Policework.LooseUnit;
+
+                        DialogueLua.SetActorField("Dayholt", "PoliceworkAlignment", -1);
+                        DialogueLua.SetActorField("Vaughn", "PoliceworkAlignment", 1);
+                        break;
+
+                    case -1: //2 LU, 1 BtB
+
+                        alignment = Alignment_Policework.LooseUnit;
+
+                        DialogueLua.SetActorField("Dayholt", "PoliceworkAlignment", -1);
+                        DialogueLua.SetActorField("Vaughn", "PoliceworkAlignment", 1);
+                        break;
+
+                    case 1:
+                        alignment = Alignment_Policework.ByTheBook;
+
+                        DialogueLua.SetActorField("Dayholt", "PoliceworkAlignment", 1);
+                        DialogueLua.SetActorField("Vaughn", "PoliceworkAlignment", -1);
+                        break;
+
+                    case 3:
+                        alignment = Alignment_Policework.ByTheBook;
+
+                        DialogueLua.SetActorField("Dayholt", "PoliceworkAlignment", 1);
+                        DialogueLua.SetActorField("Vaughn", "PoliceworkAlignment", -1);
+                        break;
+                }
+
+                break;
+        }
+
+        LogAlignment(alignment);
+    }
+
+    void SetAlignment(ref Alignment_Interpersonal alignment)
+    {
+        int statTotalValue = (int)attitude + (int)impression + (int)understanding;
+
+        switch (StatToggleCount(statToggle[3], statToggle[4], statToggle[5]))
+        {
+            case 0:
+
+                alignment = Alignment_Interpersonal.Unassigned;
+
+                DialogueLua.SetActorField("Dayholt", "InterpersonalAlignment", 0);
+                DialogueLua.SetActorField("Vaughn", "InterpersonalAlignment", 0);
+                break;
+
+            case 1:
+
+                alignment = Alignment_Interpersonal.Unassigned;
+
+                DialogueLua.SetActorField("Dayholt", "InterpersonalAlignment", 0);
+                DialogueLua.SetActorField("Vaughn", "InterpersonalAlignment", 0);
+                break;
+
+            case 2:
+
+                switch (statTotalValue)
+                {
+                    case -2:
+
+                        alignment = Alignment_Interpersonal.GoodCop;
+
+                        DialogueLua.SetActorField("Dayholt", "InterpersonalAlignment", -1);
+                        DialogueLua.SetActorField("Vaughn", "InterpersonalAlignment", 1);
+                        break;
+
+                    case 0:
+                        alignment = Alignment_Interpersonal.Unassigned;
+
+                        DialogueLua.SetActorField("Dayholt", "InterpersonalAlignment", 0);
+                        DialogueLua.SetActorField("Vaughn", "InterpersonalAlignment", 0);
+                        break;
+
+                    case 2:
+                        alignment = Alignment_Interpersonal.BadCop;
+
+                        DialogueLua.SetActorField("Dayholt", "InterpersonalAlignment", 1);
+                        DialogueLua.SetActorField("Vaughn", "InterpersonalAlignment", -1);
+                        break;
+                }
+
+                break;
+
+            case 3:
+
+                switch (statTotalValue)
+                {
+                    case -3: //All 3 stats LU
+
+                        alignment = Alignment_Interpersonal.GoodCop;
+
+                        DialogueLua.SetActorField("Dayholt", "InterpersonalAlignment", -1);
+                        DialogueLua.SetActorField("Vaughn", "InterpersonalAlignment", 1);
+                        break;
+
+                    case -1: //2 LU, 1 BtB
+
+                        alignment = Alignment_Interpersonal.GoodCop;
+
+                        DialogueLua.SetActorField("Dayholt", "InterpersonalAlignment", -1);
+                        DialogueLua.SetActorField("Vaughn", "InterpersonalAlignment", 1);
+                        break;
+
+                    case 1:
+                        alignment = Alignment_Interpersonal.BadCop;
+
+                        DialogueLua.SetActorField("Dayholt", "InterpersonalAlignment", 1);
+                        DialogueLua.SetActorField("Vaughn", "InterpersonalAlignment", -1);
+                        break;
+
+                    case 3:
+                        alignment = Alignment_Interpersonal.BadCop;
+
+                        DialogueLua.SetActorField("Dayholt", "InterpersonalAlignment", 1);
+                        DialogueLua.SetActorField("Vaughn", "InterpersonalAlignment", -1);
+                        break;
+                }
+
+                break;
+        }
+
+        LogAlignment(alignment);
+    }
+
+    void SetAlignment(ref Alignment_Interests alignment)
+    {
+        int statTotalValue = (int)technology + (int)fitness + (int)expertise;
+
+        switch (StatToggleCount(statToggle[6], statToggle[7], statToggle[8]))
+        {
+            case 0:
+
+                alignment = Alignment_Interests.Unassigned;
+
+                DialogueLua.SetActorField("Dayholt", "InterestsAlignment", 0);
+                DialogueLua.SetActorField("Vaughn", "InterestsAlignment", 0);
+                break;
+
+            case 1:
+
+                alignment = Alignment_Interests.Unassigned;
+
+                DialogueLua.SetActorField("Dayholt", "InterestsAlignment", 0);
+                DialogueLua.SetActorField("Vaughn", "InterestsAlignment", 0);
+                break;
+
+            case 2:
+
+                switch (statTotalValue)
+                {
+                    case -2:
+
+                        alignment = Alignment_Interests.MeatHead;
+
+                        DialogueLua.SetActorField("Dayholt", "InterestsAlignment", -1);
+                        DialogueLua.SetActorField("Vaughn", "InterestsAlignment", 1);
+                        break;
+
+                    case 0:
+                        alignment = Alignment_Interests.Unassigned;
+
+                        DialogueLua.SetActorField("Dayholt", "InterestsAlignment", 0);
+                        DialogueLua.SetActorField("Vaughn", "InterestsAlignment", 0);
+                        break;
+
+                    case 2:
+                        alignment = Alignment_Interests.HackerMan;
+
+                        DialogueLua.SetActorField("Dayholt", "InterestsAlignment", 1);
+                        DialogueLua.SetActorField("Vaughn", "InterestsAlignment", -1);
+                        break;
+                }
+
+                break;
+
+            case 3:
+
+                switch (statTotalValue)
+                {
+                    case -3: //All 3 stats LU
+
+                        alignment = Alignment_Interests.MeatHead;
+
+                        DialogueLua.SetActorField("Dayholt", "InterestsAlignment", -1);
+                        DialogueLua.SetActorField("Vaughn", "InterestsAlignment", 1);
+                        break;
+
+                    case -1: //2 LU, 1 BtB
+
+                        alignment = Alignment_Interests.MeatHead;
+
+                        DialogueLua.SetActorField("Dayholt", "InterestsAlignment", -1);
+                        DialogueLua.SetActorField("Vaughn", "InterestsAlignment", 1);
+                        break;
+
+                    case 1:
+                        alignment = Alignment_Interests.HackerMan;
+
+                        DialogueLua.SetActorField("Dayholt", "InterestsAlignment", 1);
+                        DialogueLua.SetActorField("Vaughn", "InterestsAlignment", -1);
+                        break;
+
+                    case 3:
+                        alignment = Alignment_Interests.HackerMan;
+
+                        DialogueLua.SetActorField("Dayholt", "InterestsAlignment", 1);
+                        DialogueLua.SetActorField("Vaughn", "InterestsAlignment", -1);
+                        break;
+                }
+
+                break;
+        }
+
+        LogAlignment(alignment);
+    }
+
     int StatToggleCount(bool stat1, bool stat2, bool stat3)
     {
         int count = 0;
@@ -791,6 +1783,30 @@ public class CharacterCreatorNew : MonoBehaviour
         if (stat3 == true) count++;
 
         return count;
+    }
+
+    void LogAlignment(Alignment_Policework alignment)
+    {
+        Alignment_Policework alignmentDayholt = (Alignment_Policework)DialogueLua.GetActorField("Dayholt", "PoliceworkAlignment").asInt;
+        Alignment_Policework alignmentVaughn = (Alignment_Policework)DialogueLua.GetActorField("Vaughn", "PoliceworkAlignment").asInt;
+
+        Debug.Log($"SETSTAT: Dayholt's Policework is aligned to {alignmentDayholt}.\nVaughn's Policework is aligned to {alignmentVaughn}.");
+    }
+
+    void LogAlignment(Alignment_Interpersonal alignment)
+    {
+        Alignment_Interpersonal alignmentDayholt = (Alignment_Interpersonal)DialogueLua.GetActorField("Dayholt", "InterpersonalAlignment").asInt;
+        Alignment_Interpersonal alignmentVaughn = (Alignment_Interpersonal)DialogueLua.GetActorField("Vaughn", "InterpersonalAlignment").asInt;
+
+        Debug.Log($"SETSTAT: Dayholt's Interpersonal is aligned to {alignmentDayholt}.\nVaughn's Interpersonal is aligned to {alignmentVaughn}.");
+    }
+
+    void LogAlignment(Alignment_Interests alignment)
+    {
+        Alignment_Interests alignmentDayholt = (Alignment_Interests)DialogueLua.GetActorField("Dayholt", "InterestsAlignment").asInt;
+        Alignment_Interests alignmentVaughn = (Alignment_Interests)DialogueLua.GetActorField("Vaughn", "InterestsAlignment").asInt;
+
+        Debug.Log($"SETSTAT: Dayholt's Interests is aligned to {alignmentDayholt}.\nVaughn's Interests is aligned to {alignmentVaughn}.");
     }
 
     public void OverviewSetter()
@@ -874,8 +1890,8 @@ public class CharacterCreatorNew : MonoBehaviour
         {
             traitDIcons[6].SetActive(iStat1);
             traitVIcons[6].SetActive(!iStat1);
-            traitDIcons[7].SetActive(!iStat1);
-            traitVIcons[7].SetActive(iStat1);
+            traitDIcons[15].SetActive(!iStat1);
+            traitVIcons[15].SetActive(iStat1);
 
             traitDOverview[6].SetActive(iStat1);
             traitVOverview[6].SetActive(iStat1);
@@ -886,8 +1902,8 @@ public class CharacterCreatorNew : MonoBehaviour
         {
             traitDIcons[6].SetActive(false);
             traitVIcons[6].SetActive(false);
-            traitDIcons[7].SetActive(false);
-            traitVIcons[7].SetActive(false);
+            traitDIcons[15].SetActive(false);
+            traitVIcons[15].SetActive(false);
 
             traitDOverview[6].SetActive(false);
             traitVOverview[6].SetActive(false);
@@ -1013,17 +2029,104 @@ public class CharacterCreatorNew : MonoBehaviour
         }
     }
 
+    public void NewOverviewSetter()
+    {
+        traitDIcons[0].SetActive(DialogueLua.GetActorField("Dayholt", "Approach").AsInt == -1);
+        traitDIcons[1].SetActive(DialogueLua.GetActorField("Dayholt", "Approach").AsInt == 1);
 
-    //public void SetStatOverviewState(double overviewState)
-    //{
-    //    int overviewInt = (int)overviewState;
+        traitDIcons[2].SetActive(DialogueLua.GetActorField("Dayholt", "Procedure").AsInt == -1);
+        traitDIcons[3].SetActive(DialogueLua.GetActorField("Dayholt", "Procedure").AsInt == 1);
 
-    //    switch(overviewInt)
-    //    {
-    //        case 0:
+        traitDIcons[4].SetActive(DialogueLua.GetActorField("Dayholt", "Attentiveness").AsInt == -1);
+        traitDIcons[5].SetActive(DialogueLua.GetActorField("Dayholt", "Attentiveness").AsInt == 1);
 
-    //            break;
-    //    }
-    //}
+        traitDIcons[6].SetActive(DialogueLua.GetActorField("Dayholt", "Attitude").AsInt == -1);
+        traitDIcons[7].SetActive(DialogueLua.GetActorField("Dayholt", "Attitude").AsInt == 1);
+
+        traitDIcons[8].SetActive(DialogueLua.GetActorField("Dayholt", "Impression").AsInt == -1);
+        traitDIcons[9].SetActive(DialogueLua.GetActorField("Dayholt", "Impression").AsInt == 1);
+
+        traitDIcons[10].SetActive(DialogueLua.GetActorField("Dayholt", "Understanding").AsInt == -1);
+        traitDIcons[11].SetActive(DialogueLua.GetActorField("Dayholt", "Understanding").AsInt == 1);
+
+        traitDIcons[12].SetActive(DialogueLua.GetActorField("Dayholt", "Technology").AsInt == -1);
+        traitDIcons[13].SetActive(DialogueLua.GetActorField("Dayholt", "Technology").AsInt == 1);
+
+        traitDIcons[14].SetActive(DialogueLua.GetActorField("Dayholt", "Fitness").AsInt == -1);
+        traitDIcons[15].SetActive(DialogueLua.GetActorField("Dayholt", "Fitness").AsInt == 1);
+
+        traitDIcons[16].SetActive(DialogueLua.GetActorField("Dayholt", "Expertise").AsInt == -1);
+        traitDIcons[17].SetActive(DialogueLua.GetActorField("Dayholt", "Expertise").AsInt == 1);
+
+
+        traitVIcons[0].SetActive(DialogueLua.GetActorField("Vaughn", "Approach").AsInt == -1);
+        traitVIcons[1].SetActive(DialogueLua.GetActorField("Vaughn", "Approach").AsInt == 1);
+
+        traitVIcons[2].SetActive(DialogueLua.GetActorField("Vaughn", "Procedure").AsInt == -1);
+        traitVIcons[3].SetActive(DialogueLua.GetActorField("Vaughn", "Procedure").AsInt == 1);
+
+        traitVIcons[4].SetActive(DialogueLua.GetActorField("Vaughn", "Attentiveness").AsInt == -1);
+        traitVIcons[5].SetActive(DialogueLua.GetActorField("Vaughn", "Attentiveness").AsInt == 1);
+
+        traitVIcons[6].SetActive(DialogueLua.GetActorField("Vaughn", "Attitude").AsInt == -1);
+        traitVIcons[7].SetActive(DialogueLua.GetActorField("Vaughn", "Attitude").AsInt == 1);
+
+        traitVIcons[8].SetActive(DialogueLua.GetActorField("Vaughn", "Impression").AsInt == -1);
+        traitVIcons[9].SetActive(DialogueLua.GetActorField("Vaughn", "Impression").AsInt == 1);
+
+        traitVIcons[10].SetActive(DialogueLua.GetActorField("Vaughn", "Understanding").AsInt == -1);
+        traitVIcons[11].SetActive(DialogueLua.GetActorField("Vaughn", "Understanding").AsInt == 1);
+
+        traitVIcons[12].SetActive(DialogueLua.GetActorField("Vaughn", "Technology").AsInt == -1);
+        traitVIcons[13].SetActive(DialogueLua.GetActorField("Vaughn", "Technology").AsInt == 1);
+
+        traitVIcons[14].SetActive(DialogueLua.GetActorField("Vaughn", "Fitness").AsInt == -1);
+        traitVIcons[15].SetActive(DialogueLua.GetActorField("Vaughn", "Fitness").AsInt == 1);
+
+
+        traitDOverview[0].SetActive(DialogueLua.GetActorField("Dayholt", "Approach").AsInt == -1);
+        traitVOverview[0].SetActive(DialogueLua.GetActorField("Dayholt", "Approach").AsInt == -1);
+        traitDOverview[1].SetActive(DialogueLua.GetActorField("Dayholt", "Approach").AsInt == 1);
+        traitVOverview[1].SetActive(DialogueLua.GetActorField("Dayholt", "Approach").AsInt == 1);
+
+        traitDOverview[2].SetActive(DialogueLua.GetActorField("Dayholt", "Procedure").AsInt == -1);
+        traitVOverview[2].SetActive(DialogueLua.GetActorField("Dayholt", "Procedure").AsInt == -1);
+        traitDOverview[3].SetActive(DialogueLua.GetActorField("Dayholt", "Procedure").AsInt == 1);
+        traitVOverview[3].SetActive(DialogueLua.GetActorField("Dayholt", "Procedure").AsInt == 1);
+
+        traitDOverview[4].SetActive(DialogueLua.GetActorField("Dayholt", "Attentiveness").AsInt == -1);
+        traitVOverview[4].SetActive(DialogueLua.GetActorField("Dayholt", "Attentiveness").AsInt == -1);
+        traitDOverview[5].SetActive(DialogueLua.GetActorField("Dayholt", "Attentiveness").AsInt == 1);
+        traitVOverview[5].SetActive(DialogueLua.GetActorField("Dayholt", "Attentiveness").AsInt == 1);
+
+        traitDOverview[6].SetActive(DialogueLua.GetActorField("Dayholt", "Attitude").AsInt == -1);
+        traitVOverview[6].SetActive(DialogueLua.GetActorField("Dayholt", "Attitude").AsInt == -1);
+        traitDOverview[7].SetActive(DialogueLua.GetActorField("Dayholt", "Attitude").AsInt == 1);
+        traitVOverview[7].SetActive(DialogueLua.GetActorField("Dayholt", "Attitude").AsInt == 1);
+
+        traitDOverview[8].SetActive(DialogueLua.GetActorField("Dayholt", "Impression").AsInt == -1);
+        traitVOverview[8].SetActive(DialogueLua.GetActorField("Dayholt", "Impression").AsInt == -1);
+        traitDOverview[9].SetActive(DialogueLua.GetActorField("Dayholt", "Impression").AsInt == 1);
+        traitVOverview[9].SetActive(DialogueLua.GetActorField("Dayholt", "Impression").AsInt == 1);
+
+        traitDOverview[10].SetActive(DialogueLua.GetActorField("Dayholt", "Understanding").AsInt == -1);
+        traitVOverview[10].SetActive(DialogueLua.GetActorField("Dayholt", "Understanding").AsInt == -1);
+        traitDOverview[11].SetActive(DialogueLua.GetActorField("Dayholt", "Understanding").AsInt == 1);
+        traitVOverview[11].SetActive(DialogueLua.GetActorField("Dayholt", "Understanding").AsInt == 1);
+
+        traitDOverview[12].SetActive(DialogueLua.GetActorField("Dayholt", "Technology").AsInt == -1);
+        traitVOverview[12].SetActive(DialogueLua.GetActorField("Dayholt", "Technology").AsInt == -1);
+        traitDOverview[13].SetActive(DialogueLua.GetActorField("Dayholt", "Technology").AsInt == 1);
+        traitVOverview[13].SetActive(DialogueLua.GetActorField("Dayholt", "Technology").AsInt == 1);
+
+        traitDOverview[14].SetActive(DialogueLua.GetActorField("Dayholt", "Fitness").AsInt == -1);
+        traitVOverview[14].SetActive(DialogueLua.GetActorField("Dayholt", "Fitness").AsInt == -1);
+        traitDOverview[15].SetActive(DialogueLua.GetActorField("Dayholt", "Fitness").AsInt == 1);
+        traitVOverview[15].SetActive(DialogueLua.GetActorField("Dayholt", "Fitness").AsInt == 1);
+
+        traitDOverview[16].SetActive(DialogueLua.GetActorField("Dayholt", "Expertise").AsInt == -1);
+        traitDOverview[17].SetActive(DialogueLua.GetActorField("Dayholt", "Expertise").AsInt == 1);
+    }
+    
 
 }

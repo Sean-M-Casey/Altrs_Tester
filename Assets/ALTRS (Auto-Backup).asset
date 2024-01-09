@@ -886,67 +886,67 @@ MonoBehaviour:
     - title: Articy Id
       value: 0x010000000000017A
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Technical Name
       value: PC_Dayholt
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Motivation
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: InnerConflict
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Skills
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Fears
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Habits
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: FurtherDetails
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Age
-      value: 
+      value: 0
       type: 1
       typeString: CustomFieldType_Number
     - title: Species
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: BornIn
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Sex
-      value: 
+      value: 0
       type: 1
       typeString: CustomFieldType_Number
     - title: Occupation
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Accent
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Personality
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Appearance
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     portrait: {fileID: 0}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
@@ -1963,8 +1963,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 210
+        y: 20
         width: 160
         height: 30
     - id: 1
@@ -2020,8 +2020,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 210
+        y: 70
         width: 160
         height: 30
     - id: 3
@@ -2105,8 +2105,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 20
+        y: 20
         width: 160
         height: 30
     - id: 4
@@ -2172,8 +2172,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 20
+        y: 70
         width: 160
         height: 30
     - id: 5
@@ -2239,8 +2239,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 20
+        y: 120
         width: 160
         height: 30
     - id: 6
@@ -2306,8 +2306,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 20
+        y: 170
         width: 160
         height: 30
     - id: 7
@@ -2363,8 +2363,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 20
+        y: 220
         width: 160
         height: 30
     - id: 8
@@ -2426,8 +2426,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 20
+        y: 270
         width: 160
         height: 30
     - id: 9
@@ -2493,8 +2493,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 20
+        y: 320
         width: 160
         height: 30
     - id: 10
@@ -2556,8 +2556,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 20
+        y: 370
         width: 160
         height: 30
     - id: 11
@@ -2623,8 +2623,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 20
+        y: 420
         width: 160
         height: 30
     - id: 12
@@ -2690,8 +2690,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 20
+        y: 470
         width: 160
         height: 30
     entryGroups: []
@@ -30986,8 +30986,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 30
+        y: 20
         width: 160
         height: 30
     - id: 1
@@ -31043,8 +31043,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 30
+        y: 70
         width: 160
         height: 30
     entryGroups: []
@@ -31477,7 +31477,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
@@ -31540,7 +31540,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
@@ -31645,7 +31645,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: DiceRoll(Dayholt, PlayerStats.empathContrarian, true, Dmi)
+        value: DiceRoll(Empathetic);
         type: 0
         typeString: 
       - title: Articy Id
@@ -31876,7 +31876,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: DiceRoll(Dayholt, PlayerStats.empathContrarian, false, Dmi)
+        value: 'DiceRoll(Contrarian);
+
+'
         type: 0
         typeString: 
       - title: Articy Id
@@ -31920,7 +31922,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 950.9083
+        x: 949.7318
         y: 1786.8153
         width: 160
         height: 30
@@ -32357,7 +32359,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
@@ -33816,7 +33818,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
@@ -35166,7 +35168,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
@@ -35316,7 +35318,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
@@ -35391,7 +35393,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
@@ -37420,8 +37422,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 2601.093, y: 1285.5559}
-    canvasZoom: 0.73000026
+    canvasScrollPosition: {x: 562.9882, y: 1177.0261}
+    canvasZoom: 0.6700003
   - id: 17
     fields:
     - title: Title

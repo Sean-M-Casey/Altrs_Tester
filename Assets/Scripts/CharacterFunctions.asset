@@ -16,6 +16,9 @@ MonoBehaviour:
   - functionName: CheckWorkingRollResult
     parameters: 01000000
     returnValue: 1
+  - functionName: CheckWorkingRollResultEnum
+    parameters: 07000000
+    returnValue: 2
   scriptFunctions:
   - functionName: GutStrats
     parameters: 00000000
@@ -56,3 +59,12 @@ MonoBehaviour:
   - functionName: ParseDiceCommand
     parameters: 02000000
     returnValue: 0
+  - functionName: SetPlayerStat
+    parameters: 0200000001000000
+    returnValue: 0
+  - functionName: NPCMoodToString
+    parameters: 01000000
+    returnValue: 3
+  - functionName: NPCFondToString
+    parameters: 01000000
+    returnValue: 3

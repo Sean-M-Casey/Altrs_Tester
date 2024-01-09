@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 935899b62f48ae5498594680ed17d133, type: 3}
-  m_Name: ALTRS
+  m_Name: ALTRS 4
   m_EditorClassIdentifier: 
-  version: 6/09/2023 2:45:26 AM
+  version: 1/01/2024 4:00:21 AM
   author: articy:draft 3.2.2
   description: 
   globalUserScript: 
@@ -40,7 +40,7 @@ MonoBehaviour:
     - title: Name
       value: Desmon
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: Pictures
       value: '[file:///C:/Users/User/Documents/Desmon Head.PNG]'
       type: 0
@@ -48,7 +48,7 @@ MonoBehaviour:
     - title: Description
       value: 
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: IsPlayer
       value: False
       type: 2
@@ -114,7 +114,7 @@ MonoBehaviour:
     - title: Name
       value: Kolt
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: Pictures
       value: '[file:///C:/Users/User/Downloads/Kolt.PNG]'
       type: 0
@@ -122,7 +122,7 @@ MonoBehaviour:
     - title: Description
       value: 
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: IsPlayer
       value: False
       type: 2
@@ -188,15 +188,15 @@ MonoBehaviour:
     - title: Name
       value: Callahan
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: Pictures
-      value: '[file:///C:/Users/User/Downloads/Callahan.jfif]'
+      value: '[file:///C:/Users/jaspe/Desktop/Converted PNG pics/Callahan.png]'
       type: 0
       typeString: CustomFieldType_Files
     - title: Description
       value: 
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: IsPlayer
       value: False
       type: 2
@@ -262,15 +262,15 @@ MonoBehaviour:
     - title: Name
       value: Constable Wellow
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: Pictures
-      value: '[file:///C:/Users/User/Downloads/Constable Wellows.jfif]'
+      value: '[file:///C:/Users/jaspe/Desktop/Converted PNG pics/Constable_Wellows.png]'
       type: 0
       typeString: CustomFieldType_Files
     - title: Description
       value: 
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: IsPlayer
       value: False
       type: 2
@@ -278,51 +278,51 @@ MonoBehaviour:
     - title: Articy Id
       value: 0x010000000000014C
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: Technical Name
       value: Ntt_403F3051
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: DispoFondness
-      value: 0
+      value: 
       type: 1
       typeString: CustomFieldType_Number
     - title: DispoMood
-      value: 0
+      value: 
       type: 1
       typeString: CustomFieldType_Number
     - title: Age
-      value: 0
+      value: 
       type: 1
       typeString: CustomFieldType_Number
     - title: Species
       value: 
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: BornIn
       value: 
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: Sex
-      value: 0
+      value: 
       type: 1
       typeString: CustomFieldType_Number
     - title: Occupation
       value: 
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: Accent
       value: 
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: Personality
       value: 
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: Appearance
       value: 
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: IsNPC
       value: True
       type: 2
@@ -336,15 +336,15 @@ MonoBehaviour:
     - title: Name
       value: Constable Hahlo
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: Pictures
-      value: '[file:///C:/Users/User/Downloads/Hahlo.jfif]'
+      value: '[file:///C:/Users/jaspe/Desktop/Converted PNG pics/Hahlo.png]'
       type: 0
       typeString: CustomFieldType_Files
     - title: Description
       value: 
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: IsPlayer
       value: False
       type: 2
@@ -410,15 +410,15 @@ MonoBehaviour:
     - title: Name
       value: Mahm
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: Pictures
-      value: '[file:///C:/Users/User/Downloads/Mahm.jfif]'
+      value: '[file:///C:/Users/jaspe/Desktop/Converted PNG pics/Mahm.png]'
       type: 0
       typeString: CustomFieldType_Files
     - title: Description
       value: 
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: IsPlayer
       value: False
       type: 2
@@ -484,15 +484,15 @@ MonoBehaviour:
     - title: Name
       value: Ursa
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: Pictures
-      value: '[file:///C:/Users/User/Downloads/Ursa.jfif]'
+      value: '[file:///C:/Users/jaspe/Desktop/Converted PNG pics/Ursa.png]'
       type: 0
       typeString: CustomFieldType_Files
     - title: Description
       value: 
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: IsPlayer
       value: False
       type: 2
@@ -558,15 +558,15 @@ MonoBehaviour:
     - title: Name
       value: Idelle
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: Pictures
-      value: '[file:///C:/Users/User/Downloads/Idelle Phillips.jfif]'
+      value: '[file:///C:/Users/jaspe/Desktop/Converted PNG pics/Idelle_Phillips.png]'
       type: 0
       typeString: CustomFieldType_Files
     - title: Description
       value: 
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: IsPlayer
       value: False
       type: 2
@@ -632,15 +632,15 @@ MonoBehaviour:
     - title: Name
       value: Narrator
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: Pictures
-      value: '[file:///C:/Users/User/Downloads/Narrator.jfif]'
+      value: '[file:///C:/Users/jaspe/Desktop/Converted PNG pics/Narrator.png]'
       type: 0
       typeString: CustomFieldType_Files
     - title: Description
       value: 
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: IsPlayer
       value: False
       type: 2
@@ -708,7 +708,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
-      value: '[file:///C:/Users/User/Downloads/Dmi.jfif]'
+      value: '[file:///C:/Users/jaspe/Desktop/Converted PNG pics/Dmi.png]'
       type: 0
       typeString: CustomFieldType_Files
     - title: Description
@@ -722,51 +722,51 @@ MonoBehaviour:
     - title: Articy Id
       value: 0x010000000000016C
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Technical Name
       value: Ntt_1DDEB590
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: DispoFondness
-      value: 
+      value: 0
       type: 1
       typeString: CustomFieldType_Number
     - title: DispoMood
-      value: 
+      value: -1
       type: 1
       typeString: CustomFieldType_Number
     - title: Age
-      value: 
+      value: 0
       type: 1
       typeString: CustomFieldType_Number
     - title: Species
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: BornIn
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Sex
-      value: 
+      value: 0
       type: 1
       typeString: CustomFieldType_Number
     - title: Occupation
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Accent
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Personality
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Appearance
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: IsNPC
       value: True
       type: 2
@@ -782,7 +782,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
-      value: '[file:///C:/Users/User/Downloads/Vaughn.jfif]'
+      value: '[file:///C:/Users/jaspe/Desktop/Converted PNG pics/Vaughn.png]'
       type: 0
       typeString: CustomFieldType_Files
     - title: Description
@@ -796,67 +796,115 @@ MonoBehaviour:
     - title: Articy Id
       value: 0x0100000000000170
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Technical Name
       value: Ntt_C94ABA6B
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Motivation
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: InnerConflict
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Skills
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Fears
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Habits
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: FurtherDetails
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
+    - title: PoliceworkAlignment
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Approach
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Procedure
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Attentiveness
+      value: -1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Impression
+      value: -1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: InterpersonalAlignment
+      value: -1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Attitude
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Understanding
+      value: -1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Technology
+      value: -1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Fitness
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Expertise
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: InterestsAlignment
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
     - title: Age
-      value: 
+      value: 0
       type: 1
       typeString: CustomFieldType_Number
     - title: Species
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: BornIn
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Sex
-      value: 
+      value: 0
       type: 1
       typeString: CustomFieldType_Number
     - title: Occupation
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Accent
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Personality
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Appearance
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: IsNPC
       value: True
       type: 2
@@ -872,7 +920,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
-      value: '[file:///C:/Users/User/Downloads/Dayholt.jfif]'
+      value: '[file:///C:/Users/jaspe/Desktop/Converted PNG pics/Dayholt.png]'
       type: 0
       typeString: CustomFieldType_Files
     - title: Description
@@ -915,6 +963,54 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: CustomFieldType_Text
+    - title: PoliceworkAlignment
+      value: -1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Approach
+      value: -1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Procedure
+      value: -1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Attentiveness
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Impression
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: InterpersonalAlignment
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Attitude
+      value: -1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Understanding
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Technology
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Fitness
+      value: -1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Expertise
+      value: -1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: InterestsAlignment
+      value: -1
+      type: 1
+      typeString: CustomFieldType_Number
     - title: Age
       value: 0
       type: 1
@@ -956,7 +1052,7 @@ MonoBehaviour:
     - title: Name
       value: UI Popup
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: Pictures
       value: '[file:///C:/Users/User/Downloads/UI popup.png]'
       type: 0
@@ -964,7 +1060,7 @@ MonoBehaviour:
     - title: Description
       value: 
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: IsPlayer
       value: False
       type: 2
@@ -1030,15 +1126,15 @@ MonoBehaviour:
     - title: Name
       value: Sahle
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: Pictures
-      value: '[file:///C:/Users/User/Downloads/Sahle.jfif]'
+      value: '[file:///C:/Users/jaspe/Desktop/Converted PNG pics/Sahle.png]'
       type: 0
       typeString: CustomFieldType_Files
     - title: Description
       value: 
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: IsPlayer
       value: False
       type: 2
@@ -1104,7 +1200,7 @@ MonoBehaviour:
     - title: Name
       value: Owen
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: Pictures
       value: '[file:///C:/Users/User/Downloads/Owen.png]'
       type: 0
@@ -1112,7 +1208,7 @@ MonoBehaviour:
     - title: Description
       value: 
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: IsPlayer
       value: False
       type: 2
@@ -1178,15 +1274,15 @@ MonoBehaviour:
     - title: Name
       value: Body Parts
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: Pictures
-      value: '[file:///C:/Users/User/Downloads/Aldwyn Henrrick.png]'
+      value: '[file:///C:/Users/jaspe/Desktop/Converted PNG pics/Aldwyn_Henrrick.png]'
       type: 0
       typeString: CustomFieldType_Files
     - title: Description
       value: 
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: IsPlayer
       value: False
       type: 2
@@ -1240,7 +1336,7 @@ MonoBehaviour:
     - title: Name
       value: Pebbles
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: Pictures
       value: '[file:///C:/Users/User/AppData/Local/FoundryVTT/Data/Ups/ALTRs/Pebbles_Token.png]'
       type: 0
@@ -1248,7 +1344,7 @@ MonoBehaviour:
     - title: Description
       value: 
       type: 0
-      typeString: CustomFieldType_Text
+      typeString: 
     - title: IsPlayer
       value: False
       type: 2
@@ -1305,6 +1401,48 @@ MonoBehaviour:
       value: True
       type: 2
       typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    spritePortrait: {fileID: 0}
+    alternatePortraits: []
+    spritePortraits: []
+  - id: 18
+    fields:
+    - title: Name
+      value: TestDie
+      type: 0
+      typeString: 
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Articy Id
+      value: 0x0100000000005E84
+      type: 0
+      typeString: 
+    - title: Technical Name
+      value: Ntt_CA29922A
+      type: 0
+      typeString: 
+    - title: Dice_Roll_Finished
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Die_Type
+      value: 
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Dice_Rolled_Value
+      value: 
+      type: 1
+      typeString: CustomFieldType_Number
     portrait: {fileID: 0}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
@@ -1855,6 +1993,20 @@ MonoBehaviour:
       value: Index of WorkingRoll in roll array
       type: 0
       typeString: 
+  - id: 39
+    fields:
+    - title: Name
+      value: Dispo.Mood
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: ' bad| poor| fine| good|n indescribable'
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
   conversations:
   - id: 1
     fields:
@@ -1963,8 +2115,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 210
-        y: 20
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 1
@@ -2020,8 +2172,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 210
-        y: 70
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 3
@@ -2105,8 +2257,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 20
-        y: 20
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 4
@@ -2172,8 +2324,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 20
-        y: 70
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 5
@@ -2239,8 +2391,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 20
-        y: 120
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 6
@@ -2306,8 +2458,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 20
-        y: 170
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 7
@@ -2363,8 +2515,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 20
-        y: 220
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 8
@@ -2426,8 +2578,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 20
-        y: 270
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 9
@@ -2493,8 +2645,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 20
-        y: 320
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 10
@@ -2556,8 +2708,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 20
-        y: 370
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 11
@@ -2623,8 +2775,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 20
-        y: 420
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 12
@@ -2690,8 +2842,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 20
-        y: 470
+        x: 0
+        y: 0
         width: 160
         height: 30
     entryGroups: []
@@ -30986,8 +31138,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 20
+        x: 0
+        y: 0
         width: 160
         height: 30
     - id: 1
@@ -31043,8 +31195,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 70
+        x: 0
+        y: 0
         width: 160
         height: 30
     entryGroups: []
@@ -31477,7 +31629,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Block
+      falseConditionAction: 
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
@@ -31493,8 +31645,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 410.90833
-        y: 1686.8153
+        x: 235.9996
+        y: 1256.998
         width: 160
         height: 30
     - id: 1
@@ -31556,8 +31708,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 590.9083
-        y: 1686.8153
+        x: 415.9996
+        y: 1256.998
         width: 160
         height: 30
     - id: 2
@@ -31613,8 +31765,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4550.906
-        y: 1553.4819
+        x: 3656
+        y: 1256.998
         width: 160
         height: 30
     - id: 3
@@ -31679,7 +31831,7 @@ MonoBehaviour:
       - originConversationID: 16
         originDialogueID: 3
         destinationConversationID: 16
-        destinationDialogueID: 79
+        destinationDialogueID: 57
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -31689,8 +31841,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 950.9083
-        y: 1586.8153
+        x: 775.99976
+        y: 1156.998
         width: 160
         height: 30
     - id: 4
@@ -31716,8 +31868,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Well ain't this just my lucky day! I'm in a <b>poor mood </b>now.
-          Nothing will cheer me up.
+        value: Well ain't this just my lucky day! I'm in a<b>[lua(NPCMoodToString(Actor["Dmi"].DispoMood))]</b>
+          now. Nothing will cheer me up.
         type: 0
         typeString: 
       - title: Sequence
@@ -31761,95 +31913,21 @@ MonoBehaviour:
       - originConversationID: 16
         originDialogueID: 4
         destinationConversationID: 16
-        destinationDialogueID: 6
+        destinationDialogueID: 5
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'Actor["Dmi"].DispoFondness = 0;
-
-        Actor["Dmi"].DispoMood
-        = -1;
-
-        PrintActorProperty("Dmi","DispoFondness");
-
-        PrintActorProperty("Dmi","DispoMood");'
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 770.9083
-        y: 1686.8153
+        x: 595.99963
+        y: 1256.998
         width: 160
         height: 30
     - id: 5
-      fields:
-      - title: Title
-        value: 'dispositionChecks.Fondness = 3;
-
-          dispositionChecks.Mood
-          = 2;'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 10
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 12
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: Continue()
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x010000000000586E
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x0100000000005870
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x0100000000005871
-        type: 0
-        typeString: 
-      conversationID: 16
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: 
-      userScript: 'Variable["dispositionChecks.Fondness"] = 3;
-
-        Variable["dispositionChecks.Mood"]
-        = 2; '
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 20
-        y: 20
-        width: 160
-        height: 30
-    - id: 6
       fields:
       - title: Title
         value: "Dayholt: \"[\U0001F3B2Contrarian] Cheer up\""
@@ -31876,9 +31954,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'DiceRoll(Contrarian);
-
-'
+        value: DiceRoll(Contrarian);
         type: 0
         typeString: 
       - title: Articy Id
@@ -31910,9 +31986,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 6
+        originDialogueID: 5
         destinationConversationID: 16
-        destinationDialogueID: 80
+        destinationDialogueID: 58
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -31922,1181 +31998,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 949.7318
-        y: 1786.8153
+        x: 775.99976
+        y: 1356.9982
         width: 160
         height: 30
-    - id: 7
-      fields:
-      - title: Title
-        value: CheckWorkingRollResult(1)
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 10
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 12
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x0100000000005887
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x0100000000005889
-        type: 0
-        typeString: 
-      conversationID: 16
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 16
-        originDialogueID: 7
-        destinationConversationID: 16
-        destinationDialogueID: 8
-        isConnector: 0
-        priority: 2
-      - originConversationID: 16
-        originDialogueID: 7
-        destinationConversationID: 16
-        destinationDialogueID: 9
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 1310.9084
-        y: 1586.8153
-        width: 160
-        height: 30
-    - id: 8
-      fields:
-      - title: Title
-        value: CheckWorkingRollResult(1)
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 10
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 12
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x0100000000005887
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x010000000000588A
-        type: 0
-        typeString: 
-      conversationID: 16
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 16
-        originDialogueID: 8
-        destinationConversationID: 16
-        destinationDialogueID: 13
-        isConnector: 0
-        priority: 2
-      conditionsString: CheckWorkingRollResult(1)
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 1490.908
-        y: 1536.8153
-        width: 160
-        height: 30
-    - id: 9
-      fields:
-      - title: Title
-        value: '!(CheckWorkingRollResult(1))'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 10
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 12
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x0100000000005887
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x010000000000588B
-        type: 0
-        typeString: 
-      conversationID: 16
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 16
-        originDialogueID: 9
-        destinationConversationID: 16
-        destinationDialogueID: 16
-        isConnector: 0
-        priority: 2
-      conditionsString: (CheckWorkingRollResult(1)) == false
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 1490.908
-        y: 1636.8153
-        width: 160
-        height: 30
-    - id: 10
-      fields:
-      - title: Title
-        value: CheckWorkingRollResult(1)
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 10
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 12
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x010000000000588D
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x010000000000588E
-        type: 0
-        typeString: 
-      conversationID: 16
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 16
-        originDialogueID: 10
-        destinationConversationID: 16
-        destinationDialogueID: 11
-        isConnector: 0
-        priority: 2
-      - originConversationID: 16
-        originDialogueID: 10
-        destinationConversationID: 16
-        destinationDialogueID: 12
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 1310.9084
-        y: 1786.8153
-        width: 160
-        height: 30
-    - id: 11
-      fields:
-      - title: Title
-        value: CheckWorkingRollResult(1)
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 10
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 12
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x010000000000588D
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x010000000000588F
-        type: 0
-        typeString: 
-      conversationID: 16
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 16
-        originDialogueID: 11
-        destinationConversationID: 16
-        destinationDialogueID: 19
-        isConnector: 0
-        priority: 2
-      conditionsString: CheckWorkingRollResult(1)
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 1490.908
-        y: 1736.8153
-        width: 160
-        height: 30
-    - id: 12
-      fields:
-      - title: Title
-        value: '!(CheckWorkingRollResult(1))'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 10
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 12
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x010000000000588D
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x0100000000005890
-        type: 0
-        typeString: 
-      conversationID: 16
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 16
-        originDialogueID: 12
-        destinationConversationID: 16
-        destinationDialogueID: 22
-        isConnector: 0
-        priority: 2
-      conditionsString: (CheckWorkingRollResult(1)) == false
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 1490.908
-        y: 1836.8153
-        width: 160
-        height: 30
-    - id: 13
-      fields:
-      - title: Title
-        value: CheckWorkingRollResult(0)
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 10
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 12
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x010000000000589F
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x01000000000058A0
-        type: 0
-        typeString: 
-      conversationID: 16
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 16
-        originDialogueID: 13
-        destinationConversationID: 16
-        destinationDialogueID: 14
-        isConnector: 0
-        priority: 2
-      - originConversationID: 16
-        originDialogueID: 13
-        destinationConversationID: 16
-        destinationDialogueID: 15
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 1670.908
-        y: 1536.8153
-        width: 160
-        height: 30
-    - id: 14
-      fields:
-      - title: Title
-        value: CheckWorkingRollResult(0)
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 10
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 12
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x010000000000589F
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x01000000000058A1
-        type: 0
-        typeString: 
-      conversationID: 16
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 16
-        originDialogueID: 14
-        destinationConversationID: 16
-        destinationDialogueID: 25
-        isConnector: 0
-        priority: 2
-      conditionsString: CheckWorkingRollResult(0)
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 1850.908
-        y: 1511.8153
-        width: 160
-        height: 30
-    - id: 15
-      fields:
-      - title: Title
-        value: '!(CheckWorkingRollResult(0))'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 10
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 12
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x010000000000589F
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x01000000000058A2
-        type: 0
-        typeString: 
-      conversationID: 16
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 16
-        originDialogueID: 15
-        destinationConversationID: 16
-        destinationDialogueID: 26
-        isConnector: 0
-        priority: 2
-      conditionsString: (CheckWorkingRollResult(0)) == false
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 1850.908
-        y: 1561.8153
-        width: 160
-        height: 30
-    - id: 16
-      fields:
-      - title: Title
-        value: CheckWorkingRollResult(2)
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 10
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 12
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x01000000000058A5
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x01000000000058A6
-        type: 0
-        typeString: 
-      conversationID: 16
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 16
-        originDialogueID: 16
-        destinationConversationID: 16
-        destinationDialogueID: 17
-        isConnector: 0
-        priority: 2
-      - originConversationID: 16
-        originDialogueID: 16
-        destinationConversationID: 16
-        destinationDialogueID: 18
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 1670.908
-        y: 1636.8153
-        width: 160
-        height: 30
-    - id: 17
-      fields:
-      - title: Title
-        value: CheckWorkingRollResult(2)
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 10
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 12
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x01000000000058A5
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x01000000000058A7
-        type: 0
-        typeString: 
-      conversationID: 16
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 16
-        originDialogueID: 17
-        destinationConversationID: 16
-        destinationDialogueID: 27
-        isConnector: 0
-        priority: 2
-      conditionsString: CheckWorkingRollResult(2)
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 1850.908
-        y: 1611.8153
-        width: 160
-        height: 30
-    - id: 18
-      fields:
-      - title: Title
-        value: '!(CheckWorkingRollResult(2))'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 10
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 12
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x01000000000058A5
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x01000000000058A8
-        type: 0
-        typeString: 
-      conversationID: 16
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 16
-        originDialogueID: 18
-        destinationConversationID: 16
-        destinationDialogueID: 28
-        isConnector: 0
-        priority: 2
-      conditionsString: (CheckWorkingRollResult(2)) == false
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 1850.908
-        y: 1661.8153
-        width: 160
-        height: 30
-    - id: 19
-      fields:
-      - title: Title
-        value: CheckWorkingRollResult(0)
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 10
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 12
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x01000000000058AD
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x01000000000058AE
-        type: 0
-        typeString: 
-      conversationID: 16
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 16
-        originDialogueID: 19
-        destinationConversationID: 16
-        destinationDialogueID: 20
-        isConnector: 0
-        priority: 2
-      - originConversationID: 16
-        originDialogueID: 19
-        destinationConversationID: 16
-        destinationDialogueID: 21
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 1670.908
-        y: 1736.8153
-        width: 160
-        height: 30
-    - id: 20
-      fields:
-      - title: Title
-        value: CheckWorkingRollResult(0)
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 10
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 12
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x01000000000058AD
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x01000000000058AF
-        type: 0
-        typeString: 
-      conversationID: 16
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 16
-        originDialogueID: 20
-        destinationConversationID: 16
-        destinationDialogueID: 29
-        isConnector: 0
-        priority: 2
-      conditionsString: CheckWorkingRollResult(0)
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 1850.908
-        y: 1711.8153
-        width: 160
-        height: 30
-    - id: 21
-      fields:
-      - title: Title
-        value: '!(CheckWorkingRollResult(0))'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 10
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 12
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x01000000000058AD
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x01000000000058B0
-        type: 0
-        typeString: 
-      conversationID: 16
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 16
-        originDialogueID: 21
-        destinationConversationID: 16
-        destinationDialogueID: 30
-        isConnector: 0
-        priority: 2
-      conditionsString: (CheckWorkingRollResult(0)) == false
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 1850.908
-        y: 1761.8153
-        width: 160
-        height: 30
-    - id: 22
-      fields:
-      - title: Title
-        value: CheckWorkingRollResult(2)
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 10
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 12
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x01000000000058B2
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x01000000000058B3
-        type: 0
-        typeString: 
-      conversationID: 16
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 16
-        originDialogueID: 22
-        destinationConversationID: 16
-        destinationDialogueID: 23
-        isConnector: 0
-        priority: 2
-      - originConversationID: 16
-        originDialogueID: 22
-        destinationConversationID: 16
-        destinationDialogueID: 24
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 1670.908
-        y: 1836.8153
-        width: 160
-        height: 30
-    - id: 23
-      fields:
-      - title: Title
-        value: CheckWorkingRollResult(2)
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 10
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 12
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x01000000000058B2
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x01000000000058B4
-        type: 0
-        typeString: 
-      conversationID: 16
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 16
-        originDialogueID: 23
-        destinationConversationID: 16
-        destinationDialogueID: 31
-        isConnector: 0
-        priority: 2
-      conditionsString: CheckWorkingRollResult(2)
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 1850.908
-        y: 1811.8153
-        width: 160
-        height: 30
-    - id: 24
-      fields:
-      - title: Title
-        value: '!(CheckWorkingRollResult(2))'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 10
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 12
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x01000000000058B2
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x01000000000058B5
-        type: 0
-        typeString: 
-      conversationID: 16
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 16
-        originDialogueID: 24
-        destinationConversationID: 16
-        destinationDialogueID: 32
-        isConnector: 0
-        priority: 2
-      conditionsString: (CheckWorkingRollResult(2)) == false
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 1850.908
-        y: 1861.8153
-        width: 160
-        height: 30
-    - id: 25
+    - id: 6
       fields:
       - title: Title
         value: 'Dmi: "[Critical Success] Thank you! It''s..."'
@@ -33156,32 +32062,29 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 25
+        originDialogueID: 6
         destinationConversationID: 16
-        destinationDialogueID: 33
+        destinationDialogueID: 14
         isConnector: 0
         priority: 2
       - originConversationID: 16
-        originDialogueID: 25
+        originDialogueID: 6
         destinationConversationID: 16
-        destinationDialogueID: 34
+        destinationDialogueID: 15
         isConnector: 0
         priority: 2
-      conditionsString: 
-      userScript: 'Actor["Dmi"].DispoFondness = Actor["Dmi"].DispoFondness + 1;
-
-        PrintActorProperty("Dmi",
-        "DispoFondness");'
+      conditionsString: CheckWorkingRollResultEnum() == 2
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2030.9077
-        y: 1511.8153
+        x: 1136
+        y: 1081.9982
         width: 160
         height: 30
-    - id: 26
+    - id: 7
       fields:
       - title: Title
         value: 'Dmi: "[Success] Thanks Mr!"'
@@ -33236,33 +32139,33 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 26
+        originDialogueID: 7
         destinationConversationID: 16
-        destinationDialogueID: 33
+        destinationDialogueID: 14
         isConnector: 0
         priority: 2
       - originConversationID: 16
-        originDialogueID: 26
+        originDialogueID: 7
         destinationConversationID: 16
-        destinationDialogueID: 34
+        destinationDialogueID: 15
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: CheckWorkingRollResultEnum() == 3
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2030.9077
-        y: 1561.8153
+        x: 1136
+        y: 1131.998
         width: 160
         height: 30
-    - id: 27
+    - id: 8
       fields:
       - title: Title
         value: 'Dmi: "[Critical Failure] After losing a l..."'
@@ -33322,32 +32225,29 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 27
+        originDialogueID: 8
         destinationConversationID: 16
-        destinationDialogueID: 35
+        destinationDialogueID: 16
         isConnector: 0
         priority: 2
       - originConversationID: 16
-        originDialogueID: 27
+        originDialogueID: 8
         destinationConversationID: 16
-        destinationDialogueID: 36
+        destinationDialogueID: 17
         isConnector: 0
         priority: 2
-      conditionsString: 
-      userScript: 'Actor["Dmi"].DispoFondness = Actor["Dmi"].DispoFondness - 1;
-
-        PrintActorProperty("Dmi",
-        "DispoFondness")'
+      conditionsString: CheckWorkingRollResultEnum() == 5
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2030.9077
-        y: 1611.8153
+        x: 1136
+        y: 1181.998
         width: 160
         height: 30
-    - id: 28
+    - id: 9
       fields:
       - title: Title
         value: 'Dmi: "[Failure] After losing a leg... you..."'
@@ -33407,29 +32307,29 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 28
+        originDialogueID: 9
         destinationConversationID: 16
-        destinationDialogueID: 35
+        destinationDialogueID: 16
         isConnector: 0
         priority: 2
       - originConversationID: 16
-        originDialogueID: 28
+        originDialogueID: 9
         destinationConversationID: 16
-        destinationDialogueID: 36
+        destinationDialogueID: 17
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: CheckWorkingRollResultEnum() == 4;
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2030.9077
-        y: 1661.8153
+        x: 1136
+        y: 1231.9982
         width: 160
         height: 30
-    - id: 29
+    - id: 10
       fields:
       - title: Title
         value: 'Dmi: "[Critical Success] Hah! And just li..."'
@@ -33490,32 +32390,29 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 29
+        originDialogueID: 10
         destinationConversationID: 16
-        destinationDialogueID: 37
+        destinationDialogueID: 18
         isConnector: 0
         priority: 2
       - originConversationID: 16
-        originDialogueID: 29
+        originDialogueID: 10
         destinationConversationID: 16
-        destinationDialogueID: 38
+        destinationDialogueID: 19
         isConnector: 0
         priority: 2
-      conditionsString: 
-      userScript: 'Actor["Dmi"].DispoMood = Actor["Dmi"].DispoMood + 1;
-
-        PrintActorProperty("Dmi",
-        "DispoMood")'
+      conditionsString: CheckWorkingRollResultEnum() == 2
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2030.9077
-        y: 1711.8153
+        x: 1136
+        y: 1281.998
         width: 160
         height: 30
-    - id: 30
+    - id: 11
       fields:
       - title: Title
         value: 'Dmi: "[Success] I always find that a funn..."'
@@ -33575,29 +32472,29 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 30
+        originDialogueID: 11
         destinationConversationID: 16
-        destinationDialogueID: 37
+        destinationDialogueID: 18
         isConnector: 0
         priority: 2
       - originConversationID: 16
-        originDialogueID: 30
+        originDialogueID: 11
         destinationConversationID: 16
-        destinationDialogueID: 38
+        destinationDialogueID: 19
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: CheckWorkingRollResultEnum() == 3
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2030.9077
-        y: 1761.8153
+        x: 1136
+        y: 1331.998
         width: 160
         height: 30
-    - id: 31
+    - id: 12
       fields:
       - title: Title
         value: 'Dmi: "[Critical Failure] ...and thats mea..."'
@@ -33657,32 +32554,29 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 31
+        originDialogueID: 12
         destinationConversationID: 16
-        destinationDialogueID: 39
+        destinationDialogueID: 20
         isConnector: 0
         priority: 2
       - originConversationID: 16
-        originDialogueID: 31
+        originDialogueID: 12
         destinationConversationID: 16
-        destinationDialogueID: 40
+        destinationDialogueID: 21
         isConnector: 0
         priority: 2
-      conditionsString: 
-      userScript: 'Actor["Dmi"].DispoMood = Actor["Dmi"].DispoMood - 1;
-
-        PrintActorProperty("Dmi",
-        "DispoMood")'
+      conditionsString: CheckWorkingRollResultEnum() == 5
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2030.9077
-        y: 1811.8153
+        x: 1136
+        y: 1381.9982
         width: 160
         height: 30
-    - id: 32
+    - id: 13
       fields:
       - title: Title
         value: 'Dmi: "[Failure] and how is that meant to..."'
@@ -33737,33 +32631,33 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 32
+        originDialogueID: 13
         destinationConversationID: 16
-        destinationDialogueID: 39
+        destinationDialogueID: 20
         isConnector: 0
         priority: 2
       - originConversationID: 16
-        originDialogueID: 32
+        originDialogueID: 13
         destinationConversationID: 16
-        destinationDialogueID: 40
+        destinationDialogueID: 21
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: CheckWorkingRollResultEnum() == 4
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2030.9077
-        y: 1861.8153
+        x: 1136
+        y: 1431.998
         width: 160
         height: 30
-    - id: 33
+    - id: 14
       fields:
       - title: Title
         value: 'Dayholt: "Anytime. It must be rough falling f..."'
@@ -33822,9 +32716,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 33
+        originDialogueID: 14
         destinationConversationID: 16
-        destinationDialogueID: 41
+        destinationDialogueID: 22
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -33834,11 +32728,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2210.9082
-        y: 1511.8153
+        x: 1316
+        y: 1081.9982
         width: 160
         height: 30
-    - id: 34
+    - id: 15
       fields:
       - title: Title
         value: 'Dayholt: "Of course. I have never plummeted 1..."'
@@ -33894,13 +32788,13 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 34
+        originDialogueID: 15
         destinationConversationID: 16
-        destinationDialogueID: 41
+        destinationDialogueID: 22
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -33910,11 +32804,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2210.9082
-        y: 1561.8153
+        x: 1316
+        y: 1131.998
         width: 160
         height: 30
-    - id: 35
+    - id: 16
       fields:
       - title: Title
         value: 'Dayholt: "Sorry! I just kinda treat people th..."'
@@ -33969,13 +32863,13 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 35
+        originDialogueID: 16
         destinationConversationID: 16
-        destinationDialogueID: 42
+        destinationDialogueID: 23
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -33985,11 +32879,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2210.9082
-        y: 1611.8153
+        x: 1316
+        y: 1181.998
         width: 160
         height: 30
-    - id: 36
+    - id: 17
       fields:
       - title: Title
         value: 'Dayholt: "I mean, being understanding can go..."'
@@ -34045,13 +32939,13 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 36
+        originDialogueID: 17
         destinationConversationID: 16
-        destinationDialogueID: 42
+        destinationDialogueID: 23
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -34061,11 +32955,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2210.9082
-        y: 1661.8153
+        x: 1316
+        y: 1231.9982
         width: 160
         height: 30
-    - id: 37
+    - id: 18
       fields:
       - title: Title
         value: 'Dayholt: "The amount of times that people don..."'
@@ -34125,9 +33019,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 37
+        originDialogueID: 18
         destinationConversationID: 16
-        destinationDialogueID: 43
+        destinationDialogueID: 24
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -34137,11 +33031,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2210.9082
-        y: 1711.8153
+        x: 1316
+        y: 1281.998
         width: 160
         height: 30
-    - id: 38
+    - id: 19
       fields:
       - title: Title
         value: 'Dayholt: "Good. We don''t want you being in a..."'
@@ -34200,9 +33094,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 38
+        originDialogueID: 19
         destinationConversationID: 16
-        destinationDialogueID: 43
+        destinationDialogueID: 24
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -34212,11 +33106,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2210.9082
-        y: 1761.8153
+        x: 1316
+        y: 1331.998
         width: 160
         height: 30
-    - id: 39
+    - id: 20
       fields:
       - title: Title
         value: 'Dayholt: "I too would be in a bad mood if I f..."'
@@ -34276,9 +33170,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 39
+        originDialogueID: 20
         destinationConversationID: 16
-        destinationDialogueID: 44
+        destinationDialogueID: 25
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -34288,11 +33182,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2210.9082
-        y: 1811.8153
+        x: 1316
+        y: 1381.9982
         width: 160
         height: 30
-    - id: 40
+    - id: 21
       fields:
       - title: Title
         value: 'Dayholt: "Through the act of humour."'
@@ -34351,9 +33245,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 40
+        originDialogueID: 21
         destinationConversationID: 16
-        destinationDialogueID: 44
+        destinationDialogueID: 25
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -34363,11 +33257,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2210.9082
-        y: 1861.8153
+        x: 1316
+        y: 1431.998
         width: 160
         height: 30
-    - id: 41
+    - id: 22
       fields:
       - title: Title
         value: 'Dmi: "Yeah it didn''t feel great.... still..."'
@@ -34422,30 +33316,27 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Block
+      falseConditionAction: 
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 41
+        originDialogueID: 22
         destinationConversationID: 16
-        destinationDialogueID: 46
+        destinationDialogueID: 27
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'PrintActorProperty("Dmi", "DispoFondness");
-
-        PrintActorProperty("Dmi",
-        "DispoMood")'
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2390.9072
-        y: 1536.8153
+        x: 1496
+        y: 1106.9982
         width: 160
         height: 30
-    - id: 42
+    - id: 23
       fields:
       - title: Title
         value: 'Dmi: "I understand sorry. Today just isn''..."'
@@ -34500,30 +33391,27 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Block
+      falseConditionAction: 
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 42
+        originDialogueID: 23
         destinationConversationID: 16
-        destinationDialogueID: 46
+        destinationDialogueID: 27
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'PrintActorProperty("Dmi", "DispoFondness");
-
-        PrintActorProperty("Dmi",
-        "DispoMood")'
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2390.9072
-        y: 1636.8153
+        x: 1496
+        y: 1206.9982
         width: 160
         height: 30
-    - id: 43
+    - id: 24
       fields:
       - title: Title
         value: 'Dmi: "Its a laugh of a thought. Humorous..."'
@@ -34578,30 +33466,27 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Block
+      falseConditionAction: 
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 43
+        originDialogueID: 24
         destinationConversationID: 16
-        destinationDialogueID: 46
+        destinationDialogueID: 27
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'PrintActorProperty("Dmi", "DispoFondness");
-
-        PrintActorProperty("Dmi",
-        "DispoMood")'
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2390.9072
-        y: 1736.8153
+        x: 1496
+        y: 1306.998
         width: 160
         height: 30
-    - id: 44
+    - id: 25
       fields:
       - title: Title
         value: 'Dmi: "Do you have an off button?"'
@@ -34656,30 +33541,27 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Block
+      falseConditionAction: 
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 44
+        originDialogueID: 25
         destinationConversationID: 16
-        destinationDialogueID: 45
+        destinationDialogueID: 26
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'PrintActorProperty("Dmi", "DispoFondness");
-
-        PrintActorProperty("Dmi",
-        "DispoMood")'
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2390.9072
-        y: 1836.8153
+        x: 1496
+        y: 1406.998
         width: 160
         height: 30
-    - id: 45
+    - id: 26
       fields:
       - title: Title
         value: 'Vaughn: "No... I''ve tried looking. Found not..."'
@@ -34738,9 +33620,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 45
+        originDialogueID: 26
         destinationConversationID: 16
-        destinationDialogueID: 46
+        destinationDialogueID: 27
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -34750,11 +33632,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2570.9072
-        y: 1786.8153
+        x: 1676
+        y: 1356.9982
         width: 160
         height: 30
-    - id: 46
+    - id: 27
       fields:
       - title: Title
         value: 'Dmi: "So I suppose you''re here to try and..."'
@@ -34814,9 +33696,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 46
+        originDialogueID: 27
         destinationConversationID: 16
-        destinationDialogueID: 47
+        destinationDialogueID: 28
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -34826,11 +33708,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2750.9072
-        y: 1786.8153
+        x: 1856
+        y: 1356.9982
         width: 160
         height: 30
-    - id: 47
+    - id: 28
       fields:
       - title: Title
         value: "Dayholt: \"[\U0001F3B2Trusting] I want to do a quick s...\""
@@ -34858,7 +33740,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: DiceRoll(Dayholt, PlayerStats.trustingIntimidating, true, Dmi)
+        value: DiceRoll(Trusting);
         type: 0
         typeString: 
       - title: Articy Id
@@ -34890,9 +33772,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 47
+        originDialogueID: 28
         destinationConversationID: 16
-        destinationDialogueID: 48
+        destinationDialogueID: 59
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -34902,218 +33784,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2750.9072
-        y: 1586.8153
+        x: 1856
+        y: 1156.998
         width: 160
         height: 30
-    - id: 48
-      fields:
-      - title: Title
-        value: dispositionChecks.rollSuccess
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 10
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 12
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x0100000000005973
-        type: 0
-        typeString: 
-      - title: InputId
-        value: 0x0100000000005975
-        type: 0
-        typeString: 
-      conversationID: 16
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 16
-        originDialogueID: 48
-        destinationConversationID: 16
-        destinationDialogueID: 49
-        isConnector: 0
-        priority: 2
-      - originConversationID: 16
-        originDialogueID: 48
-        destinationConversationID: 16
-        destinationDialogueID: 50
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 2930.9072
-        y: 1686.8153
-        width: 160
-        height: 30
-    - id: 49
-      fields:
-      - title: Title
-        value: dispositionChecks.rollSuccess
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 10
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 12
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x0100000000005973
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x0100000000005976
-        type: 0
-        typeString: 
-      conversationID: 16
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 16
-        originDialogueID: 49
-        destinationConversationID: 16
-        destinationDialogueID: 51
-        isConnector: 0
-        priority: 2
-      - originConversationID: 16
-        originDialogueID: 49
-        destinationConversationID: 16
-        destinationDialogueID: 54
-        isConnector: 0
-        priority: 2
-      - originConversationID: 16
-        originDialogueID: 49
-        destinationConversationID: 16
-        destinationDialogueID: 53
-        isConnector: 0
-        priority: 2
-      conditionsString: Variable["dispositionChecks.rollSuccess"]
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 3110.9072
-        y: 1586.8153
-        width: 160
-        height: 30
-    - id: 50
-      fields:
-      - title: Title
-        value: '!(dispositionChecks.rollSuccess)'
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 10
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 12
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Articy Id
-        value: 0x0100000000005973
-        type: 0
-        typeString: 
-      - title: OutputId
-        value: 0x0100000000005977
-        type: 0
-        typeString: 
-      conversationID: 16
-      isRoot: 0
-      isGroup: 1
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 16
-        originDialogueID: 50
-        destinationConversationID: 16
-        destinationDialogueID: 52
-        isConnector: 0
-        priority: 2
-      conditionsString: (Variable["dispositionChecks.rollSuccess"]) == false
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 3110.9072
-        y: 1786.8153
-        width: 160
-        height: 30
-    - id: 51
+    - id: 29
       fields:
       - title: Title
         value: 'Dmi: "Sure, anything to help would be gre..."'
@@ -35172,23 +33847,23 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 51
+        originDialogueID: 29
         destinationConversationID: 16
-        destinationDialogueID: 55
+        destinationDialogueID: 33
         isConnector: 0
         priority: 2
-      conditionsString: Variable["dispositionChecks.Fondness"] == 4
+      conditionsString: CheckWorkingRollResultEnum() == 2
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 3290.9072
-        y: 1536.8153
+        x: 2216
+        y: 1106.9982
         width: 160
         height: 30
-    - id: 52
+    - id: 30
       fields:
       - title: Title
         value: 'Dmi: "I don''t want you to, but I also don..."'
@@ -35243,27 +33918,27 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 52
+        originDialogueID: 30
         destinationConversationID: 16
-        destinationDialogueID: 57
+        destinationDialogueID: 35
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: CheckWorkingRollResultEnum() == 5
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 3290.9072
-        y: 1836.8153
+        x: 2216
+        y: 1406.998
         width: 160
         height: 30
-    - id: 53
+    - id: 31
       fields:
       - title: Title
         value: 'Dmi: "Okay... but I''d prefer it not be yo..."'
@@ -35322,23 +33997,23 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 53
+        originDialogueID: 31
         destinationConversationID: 16
-        destinationDialogueID: 56
+        destinationDialogueID: 34
         isConnector: 0
         priority: 2
-      conditionsString: Variable["dispositionChecks.Fondness"] == 2
+      conditionsString: CheckWorkingRollResultEnum() == 4
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 3290.9072
-        y: 1736.8153
+        x: 2216
+        y: 1306.998
         width: 160
         height: 30
-    - id: 54
+    - id: 32
       fields:
       - title: Title
         value: 'Dmi: "Go for it."'
@@ -35397,23 +34072,23 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 54
+        originDialogueID: 32
         destinationConversationID: 16
-        destinationDialogueID: 55
+        destinationDialogueID: 33
         isConnector: 0
         priority: 2
-      conditionsString: Variable["dispositionChecks.Fondness"] == 3
+      conditionsString: CheckWorkingRollResultEnum() == 3
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 3290.9072
-        y: 1636.8153
+        x: 2216
+        y: 1206.9982
         width: 160
         height: 30
-    - id: 55
+    - id: 33
       fields:
       - title: Title
         value: 'Vaughn: "We will be careful. Don''t you worry..."'
@@ -35472,9 +34147,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 55
+        originDialogueID: 33
         destinationConversationID: 16
-        destinationDialogueID: 58
+        destinationDialogueID: 36
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -35484,11 +34159,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 3470.9072
-        y: 1553.4819
+        x: 2396
+        y: 1123.6648
         width: 160
         height: 30
-    - id: 56
+    - id: 34
       fields:
       - title: Title
         value: 'Vaughn: "I think its your face. You just don..."'
@@ -35548,9 +34223,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 56
+        originDialogueID: 34
         destinationConversationID: 16
-        destinationDialogueID: 59
+        destinationDialogueID: 37
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -35560,11 +34235,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 3470.9072
-        y: 1686.8153
+        x: 2396
+        y: 1256.998
         width: 160
         height: 30
-    - id: 57
+    - id: 35
       fields:
       - title: Title
         value: 'Vaughn: "I think its your face. You just don..."'
@@ -35623,9 +34298,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 57
+        originDialogueID: 35
         destinationConversationID: 16
-        destinationDialogueID: 58
+        destinationDialogueID: 36
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -35635,11 +34310,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 3470.9072
-        y: 1820.1487
+        x: 2396
+        y: 1390.3314
         width: 160
         height: 30
-    - id: 58
+    - id: 36
       fields:
       - title: Title
         value: "Dayholt: \"[\U0001F3B2 Integrated] I will have a quick...\""
@@ -35667,7 +34342,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: DiceRoll(Integrated, 12)
         type: 0
         typeString: 
       - title: Articy Id
@@ -35695,25 +34370,13 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 58
+        originDialogueID: 36
         destinationConversationID: 16
-        destinationDialogueID: 71
-        isConnector: 0
-        priority: 2
-      - originConversationID: 16
-        originDialogueID: 58
-        destinationConversationID: 16
-        destinationDialogueID: 72
-        isConnector: 0
-        priority: 2
-      - originConversationID: 16
-        originDialogueID: 58
-        destinationConversationID: 16
-        destinationDialogueID: 73
+        destinationDialogueID: 60
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -35723,11 +34386,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 3650.9072
-        y: 1586.8153
+        x: 2576
+        y: 1156.998
         width: 160
         height: 30
-    - id: 59
+    - id: 37
       fields:
       - title: Title
         value: "Dayholt: \"[\U0001F3B2 Integrated] Vaughn, can you hav...\""
@@ -35783,13 +34446,13 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 59
+        originDialogueID: 37
         destinationConversationID: 16
-        destinationDialogueID: 60
+        destinationDialogueID: 38
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -35799,11 +34462,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 3650.9072
-        y: 1786.8153
+        x: 2576
+        y: 1356.9982
         width: 160
         height: 30
-    - id: 60
+    - id: 38
       fields:
       - title: Title
         value: 'Vaughn: "On it!"'
@@ -35830,7 +34493,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: DiceRoll(Integrated, 12)
         type: 0
         typeString: 
       - title: Articy Id
@@ -35858,13 +34521,13 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 60
+        originDialogueID: 38
         destinationConversationID: 16
-        destinationDialogueID: 61
+        destinationDialogueID: 39
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -35874,11 +34537,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 3830.9072
-        y: 1836.8153
+        x: 2756
+        y: 1356.9982
         width: 160
         height: 30
-    - id: 61
+    - id: 39
       fields:
       - title: Title
         value: 'Narrator: "Vaughn walks up to the damaged ALTR..."'
@@ -35938,27 +34601,27 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 61
+        originDialogueID: 39
         destinationConversationID: 16
-        destinationDialogueID: 62
+        destinationDialogueID: 40
         isConnector: 0
         priority: 2
       - originConversationID: 16
-        originDialogueID: 61
+        originDialogueID: 39
         destinationConversationID: 16
-        destinationDialogueID: 63
+        destinationDialogueID: 41
         isConnector: 0
         priority: 2
       - originConversationID: 16
-        originDialogueID: 61
+        originDialogueID: 39
         destinationConversationID: 16
-        destinationDialogueID: 65
+        destinationDialogueID: 43
         isConnector: 0
         priority: 2
       - originConversationID: 16
-        originDialogueID: 61
+        originDialogueID: 39
         destinationConversationID: 16
-        destinationDialogueID: 64
+        destinationDialogueID: 42
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -35968,11 +34631,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4010.9072
-        y: 1846.8153
+        x: 2936
+        y: 1406.998
         width: 160
         height: 30
-    - id: 62
+    - id: 40
       fields:
       - title: Title
         value: 'Vaughn: "[Critical Success] She is in overal..."'
@@ -36033,23 +34696,23 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 62
+        originDialogueID: 40
         destinationConversationID: 16
-        destinationDialogueID: 66
+        destinationDialogueID: 44
         isConnector: 0
         priority: 2
-      conditionsString: Variable["skillChecks.rollResult"] >=18
+      conditionsString: CheckWorkingRollResultEnum() == 2
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4190.9062
-        y: 1711.8153
+        x: 3116
+        y: 1281.998
         width: 160
         height: 30
-    - id: 63
+    - id: 41
       fields:
       - title: Title
         value: 'Vaughn: "[Success] Day...It appears her neur..."'
@@ -36110,26 +34773,23 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 63
+        originDialogueID: 41
         destinationConversationID: 16
-        destinationDialogueID: 69
+        destinationDialogueID: 47
         isConnector: 0
         priority: 2
-      conditionsString: '-- Success but not Critical Success
-
-        Variable["skillChecks.rollResult"]
-        >=12  and  Variable["skillChecks.rollResult"] < 18'
+      conditionsString: CheckWorkingRollResultEnum() == 3
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4190.9062
-        y: 1761.8153
+        x: 3116
+        y: 1331.998
         width: 160
         height: 30
-    - id: 64
+    - id: 42
       fields:
       - title: Title
         value: 'Vaughn: "I think shes fine.... I pulled this..."'
@@ -36189,23 +34849,23 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 64
+        originDialogueID: 42
         destinationConversationID: 16
-        destinationDialogueID: 67
+        destinationDialogueID: 45
         isConnector: 0
         priority: 2
-      conditionsString: Variable["skillChecks.rollResult"] <=6
+      conditionsString: CheckWorkingRollResultEnum() == 5
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4190.9062
-        y: 1861.8153
+        x: 3116
+        y: 1431.998
         width: 160
         height: 30
-    - id: 65
+    - id: 43
       fields:
       - title: Title
         value: 'Vaughn: "[Failure] She appears to be in alri..."'
@@ -36266,24 +34926,23 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 65
+        originDialogueID: 43
         destinationConversationID: 16
-        destinationDialogueID: 68
+        destinationDialogueID: 46
         isConnector: 0
         priority: 2
-      conditionsString: Variable["skillChecks.rollResult"] <=12  and  Variable["skillChecks.rollResult"]
-        >7
+      conditionsString: CheckWorkingRollResultEnum() == 4
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4190.9062
-        y: 1811.8153
+        x: 3116
+        y: 1381.9982
         width: 160
         height: 30
-    - id: 66
+    - id: 44
       fields:
       - title: Title
         value: 'Vaughn: "Also, It appears her neuro-link is..."'
@@ -36344,9 +35003,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 66
+        originDialogueID: 44
         destinationConversationID: 16
-        destinationDialogueID: 70
+        destinationDialogueID: 48
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -36356,11 +35015,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4370.906
-        y: 1653.4819
+        x: 3296
+        y: 1314.1409
         width: 160
         height: 30
-    - id: 67
+    - id: 45
       fields:
       - title: Title
         value: 'Narrator: "[Critical Failure] Looking at the s..."'
@@ -36420,9 +35079,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 67
+        originDialogueID: 45
         destinationConversationID: 16
-        destinationDialogueID: 78
+        destinationDialogueID: 56
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -36432,11 +35091,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4370.906
-        y: 1853.482
+        x: 3296
+        y: 1428.4268
         width: 160
         height: 30
-    - id: 68
+    - id: 46
       fields:
       - title: Title
         value: 'Narrator: "The three of you stare blankely at..."'
@@ -36496,7 +35155,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 68
+        originDialogueID: 46
         destinationConversationID: 16
         destinationDialogueID: 2
         isConnector: 0
@@ -36508,11 +35167,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4370.906
-        y: 1786.8153
+        x: 3296
+        y: 1371.2838
         width: 160
         height: 30
-    - id: 69
+    - id: 47
       fields:
       - title: Title
         value: 'Narrator: "Well thats something... best find o..."'
@@ -36568,11 +35227,11 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 69
+        originDialogueID: 47
         destinationConversationID: 16
         destinationDialogueID: 2
         isConnector: 0
@@ -36584,11 +35243,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4370.906
-        y: 1720.1487
+        x: 3296
+        y: 1142.7124
         width: 160
         height: 30
-    - id: 70
+    - id: 48
       fields:
       - title: Title
         value: 'Narrator: "Interesting, it sounds like there i..."'
@@ -36645,11 +35304,11 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 70
+        originDialogueID: 48
         destinationConversationID: 16
         destinationDialogueID: 2
         isConnector: 0
@@ -36661,11 +35320,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4550.906
-        y: 1686.8153
+        x: 3476
+        y: 1123.6648
         width: 160
         height: 30
-    - id: 71
+    - id: 49
       fields:
       - title: Title
         value: 'Narrator: "All things considered, you observe..."'
@@ -36721,33 +35380,34 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 71
+        originDialogueID: 49
         destinationConversationID: 16
-        destinationDialogueID: 74
+        destinationDialogueID: 52
         isConnector: 0
         priority: 2
       - originConversationID: 16
-        originDialogueID: 71
+        originDialogueID: 49
         destinationConversationID: 16
-        destinationDialogueID: 76
+        destinationDialogueID: 54
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: CheckWorkingRollResultEnum() == 2 or CheckWorkingRollResultEnum()
+        == 3
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 3830.9072
-        y: 1536.8153
+        x: 2936
+        y: 1106.9982
         width: 160
         height: 30
-    - id: 72
+    - id: 50
       fields:
       - title: Title
         value: 'Narrator: "[Failure] Looking over her, the dis..."'
@@ -36809,24 +35469,23 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 72
+        originDialogueID: 50
         destinationConversationID: 16
-        destinationDialogueID: 68
+        destinationDialogueID: 46
         isConnector: 0
         priority: 2
-      conditionsString: Variable["skillChecks.rollResult"] <=12  and  Variable["skillChecks.rollResult"]
-        >7
+      conditionsString: CheckWorkingRollResultEnum() == 4
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 3830.9072
-        y: 1636.8153
+        x: 2936
+        y: 1206.9982
         width: 160
         height: 30
-    - id: 73
+    - id: 51
       fields:
       - title: Title
         value: 'Narrator: "You see something that doesn''t look..."'
@@ -36887,23 +35546,23 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 73
+        originDialogueID: 51
         destinationConversationID: 16
-        destinationDialogueID: 77
+        destinationDialogueID: 55
         isConnector: 0
         priority: 2
-      conditionsString: Variable["skillChecks.rollResult"] <=6
+      conditionsString: CheckWorkingRollResultEnum() == 5
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 3830.9072
-        y: 1736.8153
+        x: 2936
+        y: 1306.998
         width: 160
         height: 30
-    - id: 74
+    - id: 52
       fields:
       - title: Title
         value: 'Narrator: "[Critical Success] You''re all acros..."'
@@ -36964,23 +35623,23 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 74
+        originDialogueID: 52
         destinationConversationID: 16
-        destinationDialogueID: 75
+        destinationDialogueID: 53
         isConnector: 0
         priority: 2
-      conditionsString: Variable["skillChecks.rollResult"] >=18
+      conditionsString: CheckWorkingRollResultEnum() == 2
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4010.9072
-        y: 1526.8153
+        x: 3116
+        y: 1081.9982
         width: 160
         height: 30
-    - id: 75
+    - id: 53
       fields:
       - title: Title
         value: 'Narrator: "Her neuro-link transmission light i..."'
@@ -37037,13 +35696,13 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 75
+        originDialogueID: 53
         destinationConversationID: 16
-        destinationDialogueID: 70
+        destinationDialogueID: 48
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -37053,11 +35712,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4190.9062
-        y: 1511.8153
+        x: 3296
+        y: 1085.5695
         width: 160
         height: 30
-    - id: 76
+    - id: 54
       fields:
       - title: Title
         value: 'Narrator: "[Success] Her neuro-link transmissi..."'
@@ -37118,24 +35777,23 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 76
+        originDialogueID: 54
         destinationConversationID: 16
-        destinationDialogueID: 69
+        destinationDialogueID: 47
         isConnector: 0
         priority: 2
-      conditionsString: Variable["skillChecks.rollResult"] >=12  and  Variable["skillChecks.rollResult"]
-        < 18
+      conditionsString: CheckWorkingRollResultEnum() == 3
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4010.9072
-        y: 1606.8153
+        x: 3116
+        y: 1131.998
         width: 160
         height: 30
-    - id: 77
+    - id: 55
       fields:
       - title: Title
         value: 'Vaughn: "[Critical Failure] Day... you just..."'
@@ -37195,9 +35853,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 77
+        originDialogueID: 55
         destinationConversationID: 16
-        destinationDialogueID: 78
+        destinationDialogueID: 56
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -37207,11 +35865,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4010.9072
-        y: 1766.8153
+        x: 3116
+        y: 1231.9982
         width: 160
         height: 30
-    - id: 78
+    - id: 56
       fields:
       - title: Title
         value: 'Narrator: "After making the realisation you lo..."'
@@ -37271,7 +35929,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 78
+        originDialogueID: 56
         destinationConversationID: 16
         destinationDialogueID: 2
         isConnector: 0
@@ -37283,14 +35941,17 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4550.906
-        y: 1820.1487
+        x: 3476
+        y: 1390.3314
         width: 160
         height: 30
-    - id: 79
+    - id: 57
       fields:
       - title: Title
-        value: 
+        value: //Hello, I am a Delay, the DialogueSystem pre-evals nodes 1 step ahead
+          of where you are at any moment, so that condition ahead might get checked
+          too early if I wasn't here. Maybe it would work fine, but there is nothing
+          wrong with preparation.
         type: 0
         typeString: 
       - title: Description
@@ -37338,26 +35999,50 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 79
+        originDialogueID: 57
+        destinationConversationID: 16
+        destinationDialogueID: 6
+        isConnector: 0
+        priority: 2
+      - originConversationID: 16
+        originDialogueID: 57
         destinationConversationID: 16
         destinationDialogueID: 7
         isConnector: 0
         priority: 2
+      - originConversationID: 16
+        originDialogueID: 57
+        destinationConversationID: 16
+        destinationDialogueID: 8
+        isConnector: 0
+        priority: 2
+      - originConversationID: 16
+        originDialogueID: 57
+        destinationConversationID: 16
+        destinationDialogueID: 9
+        isConnector: 0
+        priority: 2
       conditionsString: 
-      userScript: 
+      userScript: '--Hello, I am a Delay, the DialogueSystem pre-evals nodes 1 step
+        ahead of where you are at any moment, so that condition ahead might get checked
+        too early if I wasn''t here. Maybe it would work fine, but there is nothing
+        wrong with preparation.; '
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1130.9084
-        y: 1586.8153
+        x: 955.99963
+        y: 1156.998
         width: 160
         height: 30
-    - id: 80
+    - id: 58
       fields:
       - title: Title
-        value: 
+        value: //Hello, I am a Delay, the DialogueSystem pre-evals nodes 1 step ahead
+          of where you are at any moment, so that condition ahead might get checked
+          too early if I wasn't here. Maybe it would work fine, but there is nothing
+          wrong with preparation.
         type: 0
         typeString: 
       - title: Description
@@ -37405,25 +36090,222 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
-        originDialogueID: 80
+        originDialogueID: 58
         destinationConversationID: 16
         destinationDialogueID: 10
         isConnector: 0
         priority: 2
+      - originConversationID: 16
+        originDialogueID: 58
+        destinationConversationID: 16
+        destinationDialogueID: 11
+        isConnector: 0
+        priority: 2
+      - originConversationID: 16
+        originDialogueID: 58
+        destinationConversationID: 16
+        destinationDialogueID: 12
+        isConnector: 0
+        priority: 2
+      - originConversationID: 16
+        originDialogueID: 58
+        destinationConversationID: 16
+        destinationDialogueID: 13
+        isConnector: 0
+        priority: 2
       conditionsString: 
-      userScript: 
+      userScript: '--Hello, I am a Delay, the DialogueSystem pre-evals nodes 1 step
+        ahead of where you are at any moment, so that condition ahead might get checked
+        too early if I wasn''t here. Maybe it would work fine, but there is nothing
+        wrong with preparation.; '
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1130.9084
-        y: 1786.8153
+        x: 955.99963
+        y: 1356.9982
+        width: 160
+        height: 30
+    - id: 59
+      fields:
+      - title: Title
+        value: //Hello, I am a Delay, the DialogueSystem pre-evals nodes 1 step ahead
+          of where you are at any moment, so that condition ahead might get checked
+          too early if I wasn't here. Maybe it would work fine, but there is nothing
+          wrong with preparation.
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 10
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 12
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: Continue()
+        type: 0
+        typeString: 
+      - title: Articy Id
+        value: 0x0100000000005CDE
+        type: 0
+        typeString: 
+      - title: InputId
+        value: 0x0100000000005CDF
+        type: 0
+        typeString: 
+      - title: OutputId
+        value: 0x0100000000005CE0
+        type: 0
+        typeString: 
+      conversationID: 16
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: 
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 16
+        originDialogueID: 59
+        destinationConversationID: 16
+        destinationDialogueID: 29
+        isConnector: 0
+        priority: 2
+      - originConversationID: 16
+        originDialogueID: 59
+        destinationConversationID: 16
+        destinationDialogueID: 32
+        isConnector: 0
+        priority: 2
+      - originConversationID: 16
+        originDialogueID: 59
+        destinationConversationID: 16
+        destinationDialogueID: 31
+        isConnector: 0
+        priority: 2
+      - originConversationID: 16
+        originDialogueID: 59
+        destinationConversationID: 16
+        destinationDialogueID: 30
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: '--Hello, I am a Delay, the DialogueSystem pre-evals nodes 1 step
+        ahead of where you are at any moment, so that condition ahead might get checked
+        too early if I wasn''t here. Maybe it would work fine, but there is nothing
+        wrong with preparation.; '
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 2036
+        y: 1256.998
+        width: 160
+        height: 30
+    - id: 60
+      fields:
+      - title: Title
+        value: //Hello, I am a Delay, the DialogueSystem pre-evals nodes 1 step ahead
+          of where you are at any moment, so that condition ahead might get checked
+          too early if I wasn't here. Maybe it would work fine, but there is nothing
+          wrong with preparation.
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 10
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 12
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: Continue()
+        type: 0
+        typeString: 
+      - title: Articy Id
+        value: 0x0100000000006129
+        type: 0
+        typeString: 
+      - title: InputId
+        value: 0x010000000000612B
+        type: 0
+        typeString: 
+      - title: OutputId
+        value: 0x010000000000612C
+        type: 0
+        typeString: 
+      conversationID: 16
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: 
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 16
+        originDialogueID: 60
+        destinationConversationID: 16
+        destinationDialogueID: 49
+        isConnector: 0
+        priority: 2
+      - originConversationID: 16
+        originDialogueID: 60
+        destinationConversationID: 16
+        destinationDialogueID: 50
+        isConnector: 0
+        priority: 2
+      - originConversationID: 16
+        originDialogueID: 60
+        destinationConversationID: 16
+        destinationDialogueID: 51
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: '--Hello, I am a Delay, the DialogueSystem pre-evals nodes 1 step
+        ahead of where you are at any moment, so that condition ahead might get checked
+        too early if I wasn''t here. Maybe it would work fine, but there is nothing
+        wrong with preparation.; '
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 2756
+        y: 1156.998
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 562.9882, y: 1177.0261}
-    canvasZoom: 0.6700003
+    canvasScrollPosition: {x: 138.68036, y: 1013.3675}
+    canvasZoom: 0.85000014
   - id: 17
     fields:
     - title: Title
@@ -37536,8 +36418,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 20
+        x: 590
+        y: 1815
         width: 160
         height: 30
     - id: 1
@@ -37599,8 +36481,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 70
+        x: 770
+        y: 1815
         width: 160
         height: 30
     - id: 2
@@ -37662,8 +36544,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 1970
+        x: 7610
+        y: 1815
         width: 160
         height: 30
     - id: 4
@@ -37738,8 +36620,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 120
+        x: 950
+        y: 1815
         width: 160
         height: 30
     - id: 5
@@ -37798,7 +36680,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -37814,8 +36696,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 540
-        y: 670
+        x: 1128.3601
+        y: 1817.732
         width: 160
         height: 30
     - id: 6
@@ -37901,8 +36783,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 120
-        y: 520
+        x: 2390
+        y: 1765
         width: 160
         height: 30
     - id: 7
@@ -37976,8 +36858,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 60
-        y: 670
+        x: 2930
+        y: 1748.3333
         width: 160
         height: 30
     - id: 8
@@ -38035,7 +36917,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -38051,8 +36933,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 570
+        x: 2570
+        y: 1740
         width: 160
         height: 30
     - id: 9
@@ -38126,8 +37008,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 210
-        y: 570
+        x: 2570
+        y: 1790
         width: 160
         height: 30
     - id: 10
@@ -38189,8 +37071,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 210
-        y: 620
+        x: 2750
+        y: 1790
         width: 160
         height: 30
     - id: 11
@@ -38252,8 +37134,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 390
-        y: 620
+        x: 2750
+        y: 1840
         width: 160
         height: 30
     - id: 12
@@ -38327,8 +37209,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 570
-        y: 570
+        x: 2570
+        y: 1890
         width: 160
         height: 30
     - id: 13
@@ -38394,8 +37276,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 570
-        y: 620
+        x: 2750
+        y: 1890
         width: 160
         height: 30
     - id: 14
@@ -38445,7 +37327,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -38461,8 +37343,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 620
+        x: 2750
+        y: 1740
         width: 160
         height: 30
     - id: 15
@@ -38536,8 +37418,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 720
+        x: 3110
+        y: 1815
         width: 160
         height: 30
     - id: 16
@@ -38612,8 +37494,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 540
-        y: 1170
+        x: 4730
+        y: 1881.6665
         width: 160
         height: 30
     - id: 17
@@ -38688,8 +37570,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 820
+        x: 3470
+        y: 1815
         width: 160
         height: 30
     - id: 18
@@ -38764,8 +37646,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 870
+        x: 3650
+        y: 1815
         width: 160
         height: 30
     - id: 19
@@ -38843,8 +37725,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 1170
+        x: 4730
+        y: 1815
         width: 160
         height: 30
     - id: 20
@@ -38919,8 +37801,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 60
-        y: 970
+        x: 4010
+        y: 1748.3333
         width: 160
         height: 30
     - id: 21
@@ -38995,8 +37877,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 970
+        x: 4010
+        y: 1815
         width: 160
         height: 30
     - id: 22
@@ -39072,8 +37954,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 220
+        x: 1310
+        y: 1815
         width: 160
         height: 30
     - id: 23
@@ -39149,8 +38031,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 370
+        x: 1850
+        y: 1815
         width: 160
         height: 30
     - id: 24
@@ -39226,8 +38108,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 270
+        x: 1490
+        y: 1815
         width: 160
         height: 30
     - id: 25
@@ -39301,8 +38183,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 320
+        x: 1670
+        y: 1815
         width: 160
         height: 30
     - id: 26
@@ -39377,8 +38259,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 60
-        y: 470
+        x: 2210
+        y: 1748.3333
         width: 160
         height: 30
     - id: 27
@@ -39437,7 +38319,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -39453,8 +38335,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 470
+        x: 2222.3289
+        y: 1872.5342
         width: 160
         height: 30
     - id: 28
@@ -39513,7 +38395,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -39541,8 +38423,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 480
-        y: 520
+        x: 2306.3933
+        y: 1976.4755
         width: 160
         height: 30
     - id: 29
@@ -39616,8 +38498,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 390
-        y: 570
+        x: 2570
+        y: 1840
         width: 160
         height: 30
     - id: 30
@@ -39667,7 +38549,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -39695,8 +38577,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 670
+        x: 2031.3696
+        y: 1816.3699
         width: 160
         height: 30
     - id: 31
@@ -39783,8 +38665,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 120
-        y: 1020
+        x: 4190
+        y: 1765
         width: 160
         height: 30
     - id: 32
@@ -39871,8 +38753,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 480
-        y: 1020
+        x: 4190
+        y: 1865
         width: 160
         height: 30
     - id: 33
@@ -39946,8 +38828,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 60
-        y: 1170
+        x: 4730
+        y: 1748.3333
         width: 160
         height: 30
     - id: 34
@@ -40022,8 +38904,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 1070
+        x: 4370
+        y: 1740
         width: 160
         height: 30
     - id: 35
@@ -40097,8 +38979,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 390
-        y: 1070
+        x: 4370
+        y: 1840
         width: 160
         height: 30
     - id: 36
@@ -40160,8 +39042,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 390
-        y: 1120
+        x: 4550
+        y: 1840
         width: 160
         height: 30
     - id: 37
@@ -40223,8 +39105,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 210
-        y: 1120
+        x: 4550
+        y: 1790
         width: 160
         height: 30
     - id: 38
@@ -40298,8 +39180,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 210
-        y: 1070
+        x: 4370
+        y: 1790
         width: 160
         height: 30
     - id: 39
@@ -40374,8 +39256,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 570
-        y: 1070
+        x: 4370
+        y: 1890
         width: 160
         height: 30
     - id: 40
@@ -40441,8 +39323,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 570
-        y: 1120
+        x: 4550
+        y: 1890
         width: 160
         height: 30
     - id: 41
@@ -40508,8 +39390,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 1120
+        x: 4550
+        y: 1740
         width: 160
         height: 30
     - id: 42
@@ -40583,8 +39465,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 540
-        y: 1670
+        x: 6530
+        y: 1881.6665
         width: 160
         height: 30
     - id: 43
@@ -40659,8 +39541,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 1270
+        x: 5090
+        y: 1815
         width: 160
         height: 30
     - id: 44
@@ -40736,8 +39618,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 1320
+        x: 5270
+        y: 1815
         width: 160
         height: 30
     - id: 45
@@ -40813,8 +39695,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 1370
+        x: 5450
+        y: 1815
         width: 160
         height: 30
     - id: 46
@@ -40889,8 +39771,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 60
-        y: 1470
+        x: 5810
+        y: 1748.3333
         width: 160
         height: 30
     - id: 47
@@ -40965,8 +39847,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 1470
+        x: 5810
+        y: 1815
         width: 160
         height: 30
     - id: 48
@@ -41040,8 +39922,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 390
-        y: 1570
+        x: 6170
+        y: 1840
         width: 160
         height: 30
     - id: 49
@@ -41128,8 +40010,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 120
-        y: 1520
+        x: 5990
+        y: 1765
         width: 160
         height: 30
     - id: 50
@@ -41216,8 +40098,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 480
-        y: 1520
+        x: 5990
+        y: 1865
         width: 160
         height: 30
     - id: 51
@@ -41291,8 +40173,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 1570
+        x: 6170
+        y: 1740
         width: 160
         height: 30
     - id: 52
@@ -41367,8 +40249,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 60
-        y: 1670
+        x: 6530
+        y: 1748.3333
         width: 160
         height: 30
     - id: 53
@@ -41430,8 +40312,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 390
-        y: 1620
+        x: 6350
+        y: 1840
         width: 160
         height: 30
     - id: 54
@@ -41493,8 +40375,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 210
-        y: 1620
+        x: 6350
+        y: 1790
         width: 160
         height: 30
     - id: 55
@@ -41568,8 +40450,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 210
-        y: 1570
+        x: 6170
+        y: 1790
         width: 160
         height: 30
     - id: 56
@@ -41644,8 +40526,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 570
-        y: 1570
+        x: 6170
+        y: 1890
         width: 160
         height: 30
     - id: 57
@@ -41711,8 +40593,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 570
-        y: 1620
+        x: 6350
+        y: 1890
         width: 160
         height: 30
     - id: 58
@@ -41778,8 +40660,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 1620
+        x: 6350
+        y: 1740
         width: 160
         height: 30
     - id: 59
@@ -41857,8 +40739,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 1670
+        x: 6530
+        y: 1815
         width: 160
         height: 30
     - id: 60
@@ -41932,8 +40814,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 1720
+        x: 6710
+        y: 1815
         width: 160
         height: 30
     - id: 61
@@ -42001,8 +40883,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 1770
+        x: 6890
+        y: 1815
         width: 160
         height: 30
     - id: 62
@@ -42064,8 +40946,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 120
-        y: 1820
+        x: 7070
+        y: 1765
         width: 160
         height: 30
     - id: 63
@@ -42127,8 +41009,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 480
-        y: 1820
+        x: 7070
+        y: 1865
         width: 160
         height: 30
     - id: 64
@@ -42203,8 +41085,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 480
-        y: 1870
+        x: 7250
+        y: 1865
         width: 160
         height: 30
     - id: 65
@@ -42279,8 +41161,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 120
-        y: 1870
+        x: 7250
+        y: 1765
         width: 160
         height: 30
     - id: 66
@@ -42355,13 +41237,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 1920
+        x: 7430
+        y: 1815
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 1552.776, y: 1519.66}
+    canvasZoom: 0.7299998
   - id: 18
     fields:
     - title: Title
@@ -61936,10 +60818,9 @@ MonoBehaviour:
     syncItemsDatabase: {fileID: 0}
     syncLocationsDatabase: {fileID: 0}
     syncVariablesDatabase: {fileID: 0}
-  templateJson: '{"treatItemsAsQuests":true,"actorFields":[{"title":"Name","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Pictures","value":"[]","type":3,"typeString":"CustomFieldType_Files"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"IsPlayer","value":"False","type":2,"typeString":"CustomFieldType_Boolean"}],"itemFields":[{"title":"Name","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Pictures","value":"[]","type":3,"typeString":"CustomFieldType_Files"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Is
-    Item","value":"True","type":2,"typeString":"CustomFieldType_Boolean"}],"questFields":[{"title":"Name","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Pictures","value":"[]","type":3,"typeString":"CustomFieldType_Files"},{"title":"Description","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Success
-    Description","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"Failure
-    Description","value":"","type":0,"typeString":"CustomFieldType_Text"},{"title":"State","value":"unassigned","type":0,"typeString":"CustomFieldType_QuestState"},{"title":"Is
+  templateJson: '{"treatItemsAsQuests":true,"actorFields":[{"title":"Name","value":"","type":0,"typeString":""},{"title":"Pictures","value":"[]","type":3,"typeString":"CustomFieldType_Files"},{"title":"Description","value":"","type":0,"typeString":""},{"title":"IsPlayer","value":"False","type":2,"typeString":"CustomFieldType_Boolean"}],"itemFields":[{"title":"Name","value":"","type":0,"typeString":""},{"title":"Pictures","value":"[]","type":3,"typeString":"CustomFieldType_Files"},{"title":"Description","value":"","type":0,"typeString":""},{"title":"Is
+    Item","value":"True","type":2,"typeString":"CustomFieldType_Boolean"}],"questFields":[{"title":"Name","value":"","type":0,"typeString":""},{"title":"Pictures","value":"[]","type":3,"typeString":"CustomFieldType_Files"},{"title":"Description","value":"","type":0,"typeString":""},{"title":"Success
+    Description","value":"","type":0,"typeString":""},{"title":"Failure Description","value":"","type":0,"typeString":""},{"title":"State","value":"unassigned","type":0,"typeString":""},{"title":"Is
     Item","value":"False","type":2,"typeString":"CustomFieldType_Boolean"}],"locationFields":[{"title":"Name","value":"","type":0,"typeString":""},{"title":"Description","value":"","type":0,"typeString":""}],"variableFields":[{"title":"Name","value":"","type":0,"typeString":""},{"title":"Initial
     Value","value":"","type":0,"typeString":""},{"title":"Description","value":"","type":0,"typeString":""}],"conversationFields":[{"title":"Title","value":"","type":0,"typeString":""},{"title":"Description","value":"","type":0,"typeString":""},{"title":"Actor","value":"0","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Conversant","value":"0","type":5,"typeString":"CustomFieldType_Actor"}],"dialogueEntryFields":[{"title":"Title","value":"","type":0,"typeString":""},{"title":"Description","value":"","type":0,"typeString":""},{"title":"Actor","value":"","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Conversant","value":"","type":5,"typeString":"CustomFieldType_Actor"},{"title":"Menu
     Text","value":"","type":0,"typeString":""},{"title":"Dialogue Text","value":"","type":0,"typeString":""},{"title":"Sequence","value":"","type":0,"typeString":""}],"actorPrimaryFieldTitles":[],"itemPrimaryFieldTitles":[],"questPrimaryFieldTitles":[],"locationPrimaryFieldTitles":[],"variablePrimaryFieldTitles":[],"conversationPrimaryFieldTitles":[],"dialogueEntryPrimaryFieldTitles":[],"npcLineColor":{"r":1.0,"g":0.0,"b":0.0,"a":1.0},"pcLineColor":{"r":0.0,"g":0.0,"b":1.0,"a":1.0},"repeatLineColor":{"r":0.5,"g":0.5,"b":0.5,"a":1.0}}'

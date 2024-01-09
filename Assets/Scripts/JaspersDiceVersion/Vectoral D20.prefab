@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 298393060}
   - component: {fileID: 298393061}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   m_Component:
   - component: {fileID: 387309365}
   - component: {fileID: 387309366}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 468600038}
   - component: {fileID: 468600039}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 492969484}
   - component: {fileID: 492969485}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: 20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,7 +190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 494197350}
   - component: {fileID: 494197351}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,7 +235,7 @@ GameObject:
   m_Component:
   - component: {fileID: 508995604}
   - component: {fileID: 508995605}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1141629187}
   - component: {fileID: 1141629188}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -325,7 +325,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1224222292}
   - component: {fileID: 1224222293}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -370,7 +370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1364396928}
   - component: {fileID: 1364396929}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,7 +415,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1449345310}
   - component: {fileID: 1449345311}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -460,7 +460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1453770440}
   - component: {fileID: 1453770441}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: 16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -505,7 +505,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1489891164}
   - component: {fileID: 1489891165}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: 19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -550,7 +550,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1530468846}
   - component: {fileID: 1530468847}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: 17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -595,7 +595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1535794141}
   - component: {fileID: 1535794142}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: 18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -639,7 +639,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1609325915}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dice Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -691,7 +691,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1638288512}
   - component: {fileID: 1638288513}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -736,7 +736,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1752940333}
   - component: {fileID: 1752940334}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -781,7 +781,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2004226933}
   - component: {fileID: 2004226934}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -826,7 +826,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2065577408}
   - component: {fileID: 2065577409}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -871,7 +871,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2110747328}
   - component: {fileID: 2110747329}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -916,7 +916,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2111729139}
   - component: {fileID: 2111729140}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -965,7 +965,7 @@ GameObject:
   - component: {fileID: 9110862093615271024}
   - component: {fileID: 5570882041805016934}
   - component: {fileID: 788892897493979007}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Vectoral D20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1105,3 +1105,5 @@ MonoBehaviour:
   showUp: 0
   index: 0
   setVector: 0
+  showRoll: 0
+  dieRoll: 0

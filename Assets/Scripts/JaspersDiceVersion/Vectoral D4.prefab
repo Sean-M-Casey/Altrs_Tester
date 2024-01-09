@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5315293050962569366}
   - component: {fileID: 4306646069599724028}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 5183210896416551664}
   - component: {fileID: -1550979734041232240}
   - component: {fileID: 8505944189192493618}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Vectoral D4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -195,7 +195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8161227641709998084}
   - component: {fileID: 8166452035273430864}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,7 +240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8647724530143036928}
   - component: {fileID: 3159855120131896636}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -284,7 +284,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6929391107115150154}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dice Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -320,7 +320,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1980640956355512986}
   - component: {fileID: 537928289592595217}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

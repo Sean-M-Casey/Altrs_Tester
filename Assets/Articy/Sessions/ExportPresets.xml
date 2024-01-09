@@ -1,10 +1,24 @@
-<ExportPresets LastType="Unreal4Export">
+<ExportPresets LastType="XmlContentExport">
   <Preset DisplayName="" Type="Unity3DExport">
     <ExportSettings Type="Unity3DExport">
       <Filename>D:\Unity\ALTRS_Git\Altrs_experiments\Assets\ALTRS.articyu3d</Filename>
       <CustomSettings>
         <Option Name="set_Localization" Value="False"/>
         <Option Name="set_TextFormatter" Value="TextMeshPro"/>
+        <Option Name="set_IncludedNodes" Value="Settings, Project, GlobalVariables, ObjectDefinitions, Packages, ScriptMethods, Hierarchy, Assets"/>
+      </CustomSettings>
+      <PackageStates>
+        <State Id="72057594037928194" Enabled="1"/>
+      </PackageStates>
+      <SelectedRuleSet>72057594037928191</SelectedRuleSet>
+    </ExportSettings>
+  </Preset>
+  <Preset DisplayName="" Type="Unreal4Export">
+    <ExportSettings Type="Unreal4Export">
+      <Filename>C:\Users\jaspe\Documents\Unreal Projects\AltrsMigrate\Content\ALTRS.articyue4</Filename>
+      <CustomSettings>
+        <Option Name="set_Localization" Value="False"/>
+        <Option Name="set_TextFormatter" Value=""/>
         <Option Name="set_IncludedNodes" Value="Settings, Project, GlobalVariables, ObjectDefinitions, Packages, ScriptMethods, Hierarchy, Assets"/>
       </CustomSettings>
       <PackageStates>
@@ -21,20 +35,6 @@
       <ApplyTransformations>0</ApplyTransformations>
       <WriteNamespace>1</WriteNamespace>
       <WriteAllVariables>0</WriteAllVariables>
-    </ExportSettings>
-  </Preset>
-  <Preset DisplayName="" Type="Unreal4Export">
-    <ExportSettings Type="Unreal4Export">
-      <Filename>C:\Users\jaspe\Documents\Unreal Projects\AltrsMigrate\Content\ALTRS.articyue4</Filename>
-      <CustomSettings>
-        <Option Name="set_Localization" Value="False"/>
-        <Option Name="set_TextFormatter" Value=""/>
-        <Option Name="set_IncludedNodes" Value="Settings, Project, GlobalVariables, ObjectDefinitions, Packages, ScriptMethods, Hierarchy, Assets"/>
-      </CustomSettings>
-      <PackageStates>
-        <State Id="72057594037928194" Enabled="1"/>
-      </PackageStates>
-      <SelectedRuleSet>72057594037928191</SelectedRuleSet>
     </ExportSettings>
   </Preset>
 </ExportPresets>
