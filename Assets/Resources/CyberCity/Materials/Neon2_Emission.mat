@@ -12,8 +12,6 @@ Material:
   m_ValidKeywords:
   - _ALPHATEST_ON
   - _EMISSION
-  - _PARALLAXMAP
-  - _SPECGLOSSMAP
   m_InvalidKeywords: []
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
@@ -46,7 +44,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 73de53128ae88f5459dcd7d4afac164d, type: 3}
+        m_Texture: {fileID: 2800000, guid: f137180f61f04aa4ab1e1d0b96cbf655, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
