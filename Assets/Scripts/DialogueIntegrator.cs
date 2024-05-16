@@ -4,6 +4,9 @@ using UnityEngine;
 using PixelCrushers.DialogueSystem;
 using PixelCrushers.DialogueSystem.ChatMapper;
 
+public enum DispoMood { Bad = -2, Poor = -1, Fine = 0, Good = 1, Great = 2 }
+public enum DispoFondness { Dispise = -2, Dislike = -1, Indifferent = 0, Like = 1, Love = 2 }
+
 public class DialogueIntegrator : MonoBehaviour
 {
     private void OnEnable()
@@ -121,8 +124,6 @@ public class DialogueIntegrator : MonoBehaviour
 
     public double CheckWorkingRollResultEnum()
     {
-        Debug.Log($"CHECKROLL: Called Roll Check");
-
         DiceRollRecord rollRecord = FindObjectOfType<DiceRollRecord>();
 
         int rollIndex = DialogueLua.GetVariable("DiceRoll.operativeIndex").asInt;
@@ -134,34 +135,31 @@ public class DialogueIntegrator : MonoBehaviour
 
     public static string NPCMoodToString(double moodValue)
     {
-        Debug.Log("TOSTRING: Mood called");
+        DispoMood mood = (DispoMood)moodValue;
 
-        string moodAsString;
-        int moodValInt = (int)moodValue;
-
-        switch(moodValInt)
+        /*switch (mood)
         {
-            case -2:
+            case DispoMood.Bad:
 
-                moodAsString = "bad";
+                moodAsString = DispoMood.Bad.ToString();
 
                 break;
-            case -1:
+            case DispoMood.Poor:
 
                 moodAsString = "poor";
 
                 break;
-            case 0:
+            case DispoMood.Fine:
 
                 moodAsString = "fine";
 
                 break;
-            case 1:
+            case DispoMood.Good:
 
                 moodAsString = "good";
 
                 break;
-            case 2:
+            case DispoMood.Great:
 
                 moodAsString = "great";
 
@@ -171,17 +169,16 @@ public class DialogueIntegrator : MonoBehaviour
                 moodAsString = "indescribable";
 
                 break;
-        }
+        }*/
 
-        return moodAsString;
+        return mood.ToString();
     }
 
     public static string NPCFondToString(double fondnessValue)
     {
-        string fondnessAsString;
-        int fondnessValInt = (int)fondnessValue;
+        DispoFondness fondness = (DispoFondness)fondnessValue;
 
-        switch (fondnessValInt)
+        /*switch (fondnessValInt)
         {
             case -2:
 
@@ -213,9 +210,9 @@ public class DialogueIntegrator : MonoBehaviour
                 fondnessAsString = "n indescribable";
 
                 break;
-        }
+        }*/
 
-        return fondnessAsString;
+        return fondness.ToString();
     }
 
 }

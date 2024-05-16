@@ -20,33 +20,6 @@ MonoBehaviour:
     parameters: 07000000
     returnValue: 2
   scriptFunctions:
-  - functionName: GutStrats
-    parameters: 00000000
-    returnValue: 0
-  - functionName: ImprovKnow
-    parameters: 00000000
-    returnValue: 0
-  - functionName: Distraceptive
-    parameters: 00000000
-    returnValue: 0
-  - functionName: FriendCold
-    parameters: 00000000
-    returnValue: 0
-  - functionName: TrustIntimidating
-    parameters: 00000000
-    returnValue: 0
-  - functionName: EmpathContra
-    parameters: 00000000
-    returnValue: 0
-  - functionName: MethodInteg
-    parameters: 00000000
-    returnValue: 0
-  - functionName: ShredSlend
-    parameters: 00000000
-    returnValue: 0
-  - functionName: WrenchCoded
-    parameters: 00000000
-    returnValue: 0
   - functionName: SetCharStateLua
     parameters: 01000000
     returnValue: 0

@@ -15,6 +15,12 @@ public enum RollState { Unrolled, Rolling, CritPass, Pass, Fail, CritFail }
 
 public class DiceRollRecord : MonoBehaviour
 {
+    public GameObject rollDeterminer;
+
+    public GameObject rollScreen;
+    public GameObject rollDisplayer;
+    public RollDisplay rollDisplayPrefab;
+
     public List<DiceRoll> rolls = new List<DiceRoll>();
 
     public GameObject[] spawnPoints;
@@ -42,9 +48,7 @@ public class DiceRollRecord : MonoBehaviour
         InitializeSpawnDirection();
     }
 
-    /// <summary>
-    /// Initializes facing direction of dice spawn points.
-    /// </summary>
+    /// <summary>Initializes facing direction of dice spawn points.</summary>
     void InitializeSpawnDirection()
     {
         foreach (GameObject t in spawnPoints) 
@@ -74,6 +78,31 @@ public class DiceRollRecord : MonoBehaviour
         selectedSpawnPoints.Clear();
     }
 
+    public void AddDiceRoll(DiceRoll diceRoll)
+    {
+        rolls.Add(diceRoll);
+
+        RollDisplay display = GameObject.Instantiate(rollDisplayPrefab, rollDisplayer.transform);
+
+        display.ActorName = DialogueLua.GetActorField(diceRoll.rollerIndex, "Name").AsString;
+        Debug.Log($"ROLLDISPLAY: {display.ActorName}");
+
+        display.ConversantName = DialogueLua.GetActorField(diceRoll.conversantIndex, "Name").AsString;
+        Debug.Log($"ROLLDISPLAY: {display.ConversantName}");
+
+        display.RollGroup = diceRoll.rollTypeGroup.ToString();
+        Debug.Log($"ROLLDISPLAY: {display.RollGroup}");
+
+        display.RollType = diceRoll.rollType;
+        Debug.Log($"ROLLDISPLAY: {display.RollType}");
+
+        display.RollValue = diceRoll.finalRoll.ToString();
+        Debug.Log($"ROLLDISPLAY: {display.RollValue}");
+
+        display.Evaluation = diceRoll.rollState.ToString();
+        Debug.Log($"ROLLDISPLAY: {display.Evaluation}");
+    }
+
 }
 
 
@@ -82,9 +111,7 @@ public struct DiceEval
 {
     public int critSuccess, pass, critFailure;
 
-    /// <summary>
-    /// Contains threshold values for evaluating DiceRoll.
-    /// </summary>
+    /// <summary>Contains threshold values for evaluating DiceRoll.</summary>
     /// <param name="critSuccess">Roll is Critical Success if roll is equal or greater than this value.</param>
     /// <param name="pass">Roll is Success if roll is equal or greater than this value, and Fail if roll is less than this value.</param>
     /// <param name="critFailure">Roll is Critical Fail if roll is less than this value.</param>
@@ -137,8 +164,6 @@ public struct DiceRoll
 
         this.finalRoll = 0;
 
-        Debug.Log($"DICEROLL: RollType is {rollType}.");
-
     }
 
     public DiceRoll(string rollerIndex, string rollType, RollType rollTypeGroup, Die[] dice, DiceEval diceEval)
@@ -156,8 +181,6 @@ public struct DiceRoll
 
         this.finalRoll = 0;
 
-        Debug.Log($"DICEROLL: RollType is {rollType}.");
-
     }
 
     #endregion
@@ -174,6 +197,11 @@ public struct DiceRoll
         this.finalRoll = rollTotal;
     }
 
+    public void FinalRollDetermination(int roll)
+    {
+        this.finalRoll = roll;
+    }
+
     public void EvaluateDiceRoll()
     {
         if(this.finalRoll >= this.diceEval.pass)
@@ -183,6 +211,31 @@ public struct DiceRoll
         else
         {
             this.rollState = (this.finalRoll >= this.diceEval.critFailure) ? RollState.Fail : RollState.CritFail;
+        }
+    }
+
+    public void CleanRoll()
+    {
+        foreach(Die die in this.spawnedDice)
+        {
+            GameObject.Destroy(die.gameObject, 1f);
+        }
+        this.spawnedDice.Clear();
+    }
+
+    public void LogRollDetails()
+    {
+        if (this.rollTypeGroup == RollType.Policework) 
+        { 
+            Debug.Log($"DICEROLLLOG:\n "); 
+        }
+        else if (this.rollTypeGroup == RollType.Interpersonal)
+        {
+            Debug.Log($"DICEROLLLOG:\n Rolling Actor: {DialogueLua.GetActorField(rollerIndex, "Name").AsString} \n Contesting Actor: {DialogueLua.GetActorField(conversantIndex, "Name").AsString} \n Roll Type: {rollType} \n Roll State: {rollState} \n Rolled Value: {finalRoll} \n");
+        }
+        else if (this.rollTypeGroup == RollType.Interests)
+        {
+            Debug.Log($"DICEROLLLOG:\n ");
         }
     }
     

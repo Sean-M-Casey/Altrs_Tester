@@ -89,4 +89,5 @@ public class Die : MonoBehaviour
         showRoll = true;
         currentRoll = int.Parse(diceSides[rolledIndex].name);
     }
+
 }

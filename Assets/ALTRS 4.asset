@@ -31545,11 +31545,11 @@ MonoBehaviour:
     - title: Title
       value: For Testing/Dice Rolling Test
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Description
       value: Test of dice rolls based on skills
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Actor
       value: 12
       type: 5
@@ -31561,7 +31561,7 @@ MonoBehaviour:
     - title: Articy Id
       value: 0x010000000000583B
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     overrideSettings:
       useOverrides: 0
       overrideSubtitleSettings: 0
@@ -33641,11 +33641,11 @@ MonoBehaviour:
       - title: Title
         value: 'Dmi: "So I suppose you''re here to try and..."'
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 10
         type: 5
@@ -33657,42 +33657,42 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: So I suppose you're here to try and either fix me, or to see what
           part of my hardware is missing?
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Articy Id
         value: 0x010000000000595B
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: ReferenceSlot
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: MediumTextValue
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: InputId
         value: 0x010000000000595E
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: OutputId
         value: 0x010000000000595F
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 16
       isRoot: 0
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
@@ -34481,7 +34481,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 12
+        value: 10
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -36177,7 +36177,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 16
@@ -36304,8 +36304,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 138.68036, y: 1013.3675}
-    canvasZoom: 0.85000014
+    canvasScrollPosition: {x: 1986.3032, y: 853.7048}
+    canvasZoom: 0.73000026
   - id: 17
     fields:
     - title: Title
@@ -36544,8 +36544,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 7610
-        y: 1815
+        x: 8085.258
+        y: 1773.1394
         width: 160
         height: 30
     - id: 4
@@ -36697,7 +36697,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 1128.3601
-        y: 1817.732
+        y: 1813.4767
         width: 160
         height: 30
     - id: 6
@@ -36755,7 +36755,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -36783,8 +36783,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2390
-        y: 1765
+        x: 2442.8442
+        y: 1758.6171
         width: 160
         height: 30
     - id: 7
@@ -36842,7 +36842,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -36858,8 +36858,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2930
-        y: 1748.3333
+        x: 3065.7722
+        y: 1785.1189
         width: 160
         height: 30
     - id: 8
@@ -36933,8 +36933,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2570
-        y: 1740
+        x: 2675.4849
+        y: 1758.75
         width: 160
         height: 30
     - id: 9
@@ -36992,7 +36992,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -37008,8 +37008,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2570
-        y: 1790
+        x: 2678.163
+        y: 1687.3214
         width: 160
         height: 30
     - id: 10
@@ -37055,7 +37055,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -37071,8 +37071,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2750
-        y: 1790
+        x: 2030.4841
+        y: 1693.5713
         width: 160
         height: 30
     - id: 11
@@ -37118,7 +37118,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -37134,8 +37134,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2750
-        y: 1840
+        x: 1127.3116
+        y: 1877.234
         width: 160
         height: 30
     - id: 12
@@ -37209,8 +37209,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2570
-        y: 1890
+        x: 2672.8062
+        y: 1814.1072
         width: 160
         height: 30
     - id: 13
@@ -37260,7 +37260,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -37270,14 +37270,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'Variable["PlayerStats.gutFeelingStrategic"]=false; '
+      userScript: SetPlayerStat("Approach", 1);
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2750
-        y: 1890
+        x: 2852.8062
+        y: 1814.1072
         width: 160
         height: 30
     - id: 14
@@ -37337,14 +37337,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'Variable["PlayerStats.gutFeelingStrategic"]=true; '
+      userScript: SetPlayerStat("Approach", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2750
-        y: 1740
+        x: 2855.4849
+        y: 1758.75
         width: 160
         height: 30
     - id: 15
@@ -37402,7 +37402,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -37418,8 +37418,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 3110
-        y: 1815
+        x: 3266.0747
+        y: 1784.2858
         width: 160
         height: 30
     - id: 16
@@ -37478,7 +37478,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -37494,8 +37494,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4730
-        y: 1881.6665
+        x: 3466.8418
+        y: 1782.9823
         width: 160
         height: 30
     - id: 17
@@ -37570,8 +37570,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 3470
-        y: 1815
+        x: 3655.2317
+        y: 1780.8978
         width: 160
         height: 30
     - id: 18
@@ -37646,8 +37646,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 3650
-        y: 1815
+        x: 3835.232
+        y: 1780.8978
         width: 160
         height: 30
     - id: 19
@@ -37697,7 +37697,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -37725,8 +37725,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4730
-        y: 1815
+        x: 4027.3677
+        y: 1780.7897
         width: 160
         height: 30
     - id: 20
@@ -37752,8 +37752,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Improve class! I like to be able to think and react quickly on my
-          feet. Not be surprised and play things cool.
+        value: Improv class! I like to be able to think and react quickly on my feet.
+          Not be surprised and play things cool.
         type: 0
         typeString: 
       - title: Sequence
@@ -37785,7 +37785,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -37801,8 +37801,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4010
-        y: 1748.3333
+        x: 4222.2915
+        y: 1716.8505
         width: 160
         height: 30
     - id: 21
@@ -37861,7 +37861,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -37877,8 +37877,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4010
-        y: 1815
+        x: 4218.344
+        y: 1849.3069
         width: 160
         height: 30
     - id: 22
@@ -38243,7 +38243,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -38259,8 +38259,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2210
-        y: 1748.3333
+        x: 2248.0989
+        y: 1759.7795
         width: 160
         height: 30
     - id: 27
@@ -38335,8 +38335,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2222.3289
-        y: 1872.5342
+        x: 2249.5872
+        y: 1817.04
         width: 160
         height: 30
     - id: 28
@@ -38423,8 +38423,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2306.3933
-        y: 1976.4755
+        x: 2443.28
+        y: 1813.7095
         width: 160
         height: 30
     - id: 29
@@ -38482,7 +38482,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -38498,8 +38498,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2570
-        y: 1840
+        x: 2248.3757
+        y: 1876.1702
         width: 160
         height: 30
     - id: 30
@@ -38637,7 +38637,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -38665,8 +38665,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4190
-        y: 1765
+        x: 4421.5786
+        y: 1716.3157
         width: 160
         height: 30
     - id: 32
@@ -38725,7 +38725,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -38753,8 +38753,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4190
-        y: 1865
+        x: 4421.5786
+        y: 1850.5273
         width: 160
         height: 30
     - id: 33
@@ -38812,7 +38812,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -38828,8 +38828,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4730
-        y: 1748.3333
+        x: 5015.078
+        y: 1782.3757
         width: 160
         height: 30
     - id: 34
@@ -38888,7 +38888,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -38904,8 +38904,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4370
-        y: 1740
+        x: 4625.6797
+        y: 1716.8293
         width: 160
         height: 30
     - id: 35
@@ -38963,7 +38963,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -38979,8 +38979,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4370
-        y: 1840
+        x: 4219.5825
+        y: 1931.4634
         width: 160
         height: 30
     - id: 36
@@ -39026,7 +39026,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -39042,8 +39042,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4550
-        y: 1840
+        x: 3469.0942
+        y: 1925.3657
         width: 160
         height: 30
     - id: 37
@@ -39089,7 +39089,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -39105,8 +39105,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4550
-        y: 1790
+        x: 4220.314
+        y: 1780.2438
         width: 160
         height: 30
     - id: 38
@@ -39164,7 +39164,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -39180,8 +39180,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4370
-        y: 1790
+        x: 4620.8022
+        y: 1783.9023
         width: 160
         height: 30
     - id: 39
@@ -39240,7 +39240,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -39256,8 +39256,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4370
-        y: 1890
+        x: 4622.0996
+        y: 1850.6382
         width: 160
         height: 30
     - id: 40
@@ -39307,7 +39307,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -39317,14 +39317,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'Variable["PlayerStats.improvisorKnowledge"]=false; '
+      userScript: SetPlayerStat("Procedure", 1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4550
-        y: 1890
+        x: 4820.1846
+        y: 1847.4468
         width: 160
         height: 30
     - id: 41
@@ -39374,7 +39374,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -39384,14 +39384,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'Variable["PlayerStats.improvisorKnowledge"]=true; '
+      userScript: SetPlayerStat("Procedure", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 4550
-        y: 1740
+        x: 4815.436
+        y: 1715.6097
         width: 160
         height: 30
     - id: 42
@@ -39449,7 +39449,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -39465,8 +39465,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 6530
-        y: 1881.6665
+        x: 5211.914
+        y: 1781.6665
         width: 160
         height: 30
     - id: 43
@@ -39541,8 +39541,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 5090
-        y: 1815
+        x: 5402.9087
+        y: 1781.0103
         width: 160
         height: 30
     - id: 44
@@ -39618,8 +39618,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 5270
-        y: 1815
+        x: 5582.9087
+        y: 1781.0103
         width: 160
         height: 30
     - id: 45
@@ -39695,8 +39695,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 5450
-        y: 1815
+        x: 5762.9087
+        y: 1781.0103
         width: 160
         height: 30
     - id: 46
@@ -39755,7 +39755,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -39771,8 +39771,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 5810
-        y: 1748.3333
+        x: 6156.267
+        y: 1727.5251
         width: 160
         height: 30
     - id: 47
@@ -39831,7 +39831,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -39847,8 +39847,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 5810
-        y: 1815
+        x: 6152.3203
+        y: 1838.9288
         width: 160
         height: 30
     - id: 48
@@ -39906,7 +39906,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -39922,8 +39922,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 6170
-        y: 1840
+        x: 6148.2573
+        y: 1909.1395
         width: 160
         height: 30
     - id: 49
@@ -39982,7 +39982,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -40010,8 +40010,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 5990
-        y: 1765
+        x: 6356.4663
+        y: 1726.4362
         width: 160
         height: 30
     - id: 50
@@ -40070,7 +40070,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -40098,8 +40098,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 5990
-        y: 1865
+        x: 6355.3677
+        y: 1839.6229
         width: 160
         height: 30
     - id: 51
@@ -40157,7 +40157,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -40173,8 +40173,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 6170
-        y: 1740
+        x: 6566.2573
+        y: 1721.1394
         width: 160
         height: 30
     - id: 52
@@ -40233,7 +40233,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -40249,8 +40249,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 6530
-        y: 1748.3333
+        x: 6973.2573
+        y: 1773.4727
         width: 160
         height: 30
     - id: 53
@@ -40296,7 +40296,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -40312,8 +40312,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 6350
-        y: 1840
+        x: 5213.257
+        y: 1906.4124
         width: 160
         height: 30
     - id: 54
@@ -40359,7 +40359,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -40375,8 +40375,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 6350
-        y: 1790
+        x: 6356.2573
+        y: 1781.1394
         width: 160
         height: 30
     - id: 55
@@ -40434,7 +40434,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -40450,8 +40450,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 6170
-        y: 1790
+        x: 6574.258
+        y: 1779.1394
         width: 160
         height: 30
     - id: 56
@@ -40526,8 +40526,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 6170
-        y: 1890
+        x: 6567.2573
+        y: 1839.1394
         width: 160
         height: 30
     - id: 57
@@ -40577,7 +40577,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -40587,14 +40587,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'Variable["PlayerStats.distractPercept"]=false; '
+      userScript: SetPlayerStat("Attentiveness", 1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 6350
-        y: 1890
+        x: 6747.2573
+        y: 1839.1394
         width: 160
         height: 30
     - id: 58
@@ -40644,7 +40644,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -40654,14 +40654,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'Variable["PlayerStats.distractPercept"]=true; '
+      userScript: SetPlayerStat("Attentiveness", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 6350
-        y: 1740
+        x: 6749.2573
+        y: 1718.1394
         width: 160
         height: 30
     - id: 59
@@ -40711,7 +40711,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -40739,8 +40739,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 6530
-        y: 1815
+        x: 5953.899
+        y: 1779.7185
         width: 160
         height: 30
     - id: 60
@@ -40798,7 +40798,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -40814,8 +40814,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 6710
-        y: 1815
+        x: 7185.258
+        y: 1773.1394
         width: 160
         height: 30
     - id: 61
@@ -40861,7 +40861,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -40883,8 +40883,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 6890
-        y: 1815
+        x: 7365.258
+        y: 1773.1394
         width: 160
         height: 30
     - id: 62
@@ -40930,7 +40930,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -40939,15 +40939,16 @@ MonoBehaviour:
         destinationDialogueID: 65
         isConnector: 0
         priority: 2
-      conditionsString: Variable["PlayerStats.looseUnitByTheBook"]== true
+      conditionsString: (Actor["Dayholt"].PoliceworkAlignment == -1) and (Actor["Vaughn"].PoliceworkAlignment
+        == 1)
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 7070
-        y: 1765
+        x: 7545.258
+        y: 1723.1394
         width: 160
         height: 30
     - id: 63
@@ -40993,7 +40994,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 17
@@ -41002,15 +41003,16 @@ MonoBehaviour:
         destinationDialogueID: 64
         isConnector: 0
         priority: 2
-      conditionsString: (Variable["PlayerStats.looseUnitByTheBook"]== true) == false
+      conditionsString: (Actor["Dayholt"].PoliceworkAlignment == 1) and (Actor["Vaughn"].PoliceworkAlignment
+        == -1)
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 7070
-        y: 1865
+        x: 7545.258
+        y: 1823.1394
         width: 160
         height: 30
     - id: 64
@@ -41085,8 +41087,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 7250
-        y: 1865
+        x: 7725.258
+        y: 1823.1394
         width: 160
         height: 30
     - id: 65
@@ -41161,8 +41163,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 7250
-        y: 1765
+        x: 7725.258
+        y: 1723.1394
         width: 160
         height: 30
     - id: 66
@@ -41237,13 +41239,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 7430
-        y: 1815
+        x: 7905.258
+        y: 1773.1394
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 1552.776, y: 1519.66}
-    canvasZoom: 0.7299998
+    canvasScrollPosition: {x: 2282.8625, y: 1206.6615}
+    canvasZoom: 0.54999995
   - id: 18
     fields:
     - title: Title
@@ -41356,8 +41358,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 366.1527
+        y: 1914.6095
         width: 160
         height: 30
     - id: 1
@@ -41419,8 +41421,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 546.1527
+        y: 1914.6095
         width: 160
         height: 30
     - id: 2
@@ -41466,7 +41468,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -41482,8 +41484,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 7918.122
+        y: 1898.3807
         width: 160
         height: 30
     - id: 3
@@ -41542,7 +41544,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -41564,8 +41566,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 732.2417
+        y: 1915.3342
         width: 160
         height: 30
     - id: 4
@@ -41615,7 +41617,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -41649,8 +41651,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1842.994
+        y: 1910.6621
         width: 160
         height: 30
     - id: 5
@@ -41708,7 +41710,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -41724,8 +41726,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2044.3916
+        y: 1844.5221
         width: 160
         height: 30
     - id: 6
@@ -41784,7 +41786,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -41800,8 +41802,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2041.1665
+        y: 1987.887
         width: 160
         height: 30
     - id: 7
@@ -41860,7 +41862,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -41888,8 +41890,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2249.7578
+        y: 1844.3909
         width: 160
         height: 30
     - id: 8
@@ -41948,7 +41950,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -41976,8 +41978,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2246.7488
+        y: 1988.604
         width: 160
         height: 30
     - id: 9
@@ -42035,7 +42037,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -42051,8 +42053,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2853.3782
+        y: 1912.2554
         width: 160
         height: 30
     - id: 10
@@ -42111,7 +42113,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -42127,8 +42129,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2452.2817
+        y: 1843.5337
         width: 160
         height: 30
     - id: 11
@@ -42186,7 +42188,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -42202,8 +42204,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2045.4329
+        y: 1776.4104
         width: 160
         height: 30
     - id: 12
@@ -42249,7 +42251,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -42265,8 +42267,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 733.6527
+        y: 1785.7424
         width: 160
         height: 30
     - id: 13
@@ -42312,7 +42314,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -42328,8 +42330,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2047.3508
+        y: 1913.6538
         width: 160
         height: 30
     - id: 14
@@ -42387,7 +42389,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -42403,8 +42405,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2453.6519
+        y: 1914.0815
         width: 160
         height: 30
     - id: 15
@@ -42462,7 +42464,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -42478,8 +42480,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2450.912
+        y: 1989.4241
         width: 160
         height: 30
     - id: 16
@@ -42529,7 +42531,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -42539,14 +42541,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'Variable["PlayerStats.friendlyCold"]=false; '
+      userScript: SetPlayerStat("Attitude", 1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2656.9397
+        y: 1987.9688
         width: 160
         height: 30
     - id: 17
@@ -42596,7 +42598,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -42606,14 +42608,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'Variable["PlayerStats.friendlyCold"]=true; '
+      userScript: SetPlayerStat("Attitude", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2651.4602
+        y: 1840.1946
         width: 160
         height: 30
     - id: 18
@@ -42687,8 +42689,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 932.0144
+        y: 1848.6613
         width: 160
         height: 30
     - id: 19
@@ -42762,8 +42764,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 932.0144
+        y: 1973.6613
         width: 160
         height: 30
     - id: 20
@@ -42837,8 +42839,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1112.014
+        y: 1848.6613
         width: 160
         height: 30
     - id: 21
@@ -42912,8 +42914,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1112.014
+        y: 1973.6613
         width: 160
         height: 30
     - id: 22
@@ -42989,8 +42991,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1292.0138
+        y: 1911.1613
         width: 160
         height: 30
     - id: 23
@@ -43065,8 +43067,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1472.0138
+        y: 1911.1613
         width: 160
         height: 30
     - id: 24
@@ -43141,8 +43143,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1652.0138
+        y: 1911.1613
         width: 160
         height: 30
     - id: 25
@@ -43202,7 +43204,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -43218,8 +43220,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2039.354
+        y: 2057.624
         width: 160
         height: 30
     - id: 26
@@ -43278,7 +43280,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -43294,8 +43296,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2246.2546
+        y: 2054.2644
         width: 160
         height: 30
     - id: 27
@@ -43353,7 +43355,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -43369,8 +43371,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3055.296
+        y: 1912.0267
         width: 160
         height: 30
     - id: 28
@@ -43430,7 +43432,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -43446,8 +43448,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3261.7717
+        y: 1910.243
         width: 160
         height: 30
     - id: 29
@@ -43505,7 +43507,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -43521,8 +43523,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3466.6997
+        y: 1909.1304
         width: 160
         height: 30
     - id: 30
@@ -43572,7 +43574,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -43600,8 +43602,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3664.512
+        y: 1908.017
         width: 160
         height: 30
     - id: 31
@@ -43660,7 +43662,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -43676,8 +43678,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3866.9946
+        y: 1844.4736
         width: 160
         height: 30
     - id: 32
@@ -43735,7 +43737,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -43751,8 +43753,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3862.1165
+        y: 1979.0266
         width: 160
         height: 30
     - id: 33
@@ -43811,7 +43813,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -43839,8 +43841,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4078.7017
+        y: 1844.5754
         width: 160
         height: 30
     - id: 34
@@ -43898,7 +43900,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -43926,8 +43928,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4072.6045
+        y: 1978.112
         width: 160
         height: 30
     - id: 35
@@ -43986,7 +43988,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -44002,8 +44004,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4673.5835
+        y: 1845.033
         width: 160
         height: 30
     - id: 36
@@ -44061,7 +44063,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -44077,8 +44079,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4284.312
+        y: 1845.0327
         width: 160
         height: 30
     - id: 37
@@ -44136,7 +44138,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -44152,8 +44154,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3868.4583
+        y: 1777.35
         width: 160
         height: 30
     - id: 38
@@ -44199,7 +44201,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -44215,8 +44217,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3261.2212
+        y: 1777.3663
         width: 160
         height: 30
     - id: 39
@@ -44262,7 +44264,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -44278,8 +44280,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3865.5315
+        y: 1908.7522
         width: 160
         height: 30
     - id: 40
@@ -44337,7 +44339,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -44353,8 +44355,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4286.7505
+        y: 1919.7278
         width: 160
         height: 30
     - id: 41
@@ -44413,7 +44415,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -44429,8 +44431,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4283.092
+        y: 1982.5327
         width: 160
         height: 30
     - id: 42
@@ -44480,7 +44482,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -44490,14 +44492,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'Variable["PlayerStats.trustingIntimidating"]=false; '
+      userScript: SetPlayerStat("Impression", 1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4476.5073
+        y: 1983.7524
         width: 160
         height: 30
     - id: 43
@@ -44547,7 +44549,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -44557,14 +44559,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'Variable["PlayerStats.trustingIntimidating"]=true; '
+      userScript: SetPlayerStat("Impression", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4482.6045
+        y: 1843.8132
         width: 160
         height: 30
     - id: 44
@@ -44623,7 +44625,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -44639,8 +44641,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4667.486
+        y: 1983.7524
         width: 160
         height: 30
     - id: 45
@@ -44699,7 +44701,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -44715,8 +44717,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4852.4976
+        y: 1914.6096
         width: 160
         height: 30
     - id: 46
@@ -44775,7 +44777,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -44791,8 +44793,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5036.8877
+        y: 1913.7964
         width: 160
         height: 30
     - id: 47
@@ -44842,7 +44844,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -44876,8 +44878,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5232.0103
+        y: 1912.1702
         width: 160
         height: 30
     - id: 48
@@ -44936,7 +44938,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -44952,8 +44954,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5421.7656
+        y: 1851.3472
         width: 160
         height: 30
     - id: 49
@@ -45011,7 +45013,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -45027,8 +45029,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5415.668
+        y: 1967.5054
         width: 160
         height: 30
     - id: 50
@@ -45087,7 +45089,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -45115,8 +45117,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5618.839
+        y: 1849.5686
         width: 160
         height: 30
     - id: 51
@@ -45175,7 +45177,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -45203,8 +45205,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5616.4
+        y: 1967.0483
         width: 160
         height: 30
     - id: 52
@@ -45262,7 +45264,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -45278,8 +45280,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 6190.651
+        y: 1908.9067
         width: 160
         height: 30
     - id: 53
@@ -45338,7 +45340,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -45354,8 +45356,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5818.3516
+        y: 1851.1946
         width: 160
         height: 30
     - id: 54
@@ -45413,7 +45415,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -45429,8 +45431,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5414.693
+        y: 2030.4629
         width: 160
         height: 30
     - id: 55
@@ -45476,7 +45478,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -45492,8 +45494,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5038.5957
+        y: 2023.9082
         width: 160
         height: 30
     - id: 56
@@ -45539,7 +45541,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -45555,8 +45557,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5232.498
+        y: 1795.5544
         width: 160
         height: 30
     - id: 57
@@ -45614,7 +45616,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -45630,8 +45632,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5620.79
+        y: 1908.5117
         width: 160
         height: 30
     - id: 58
@@ -45690,7 +45692,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -45706,8 +45708,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5815.912
+        y: 1969.4873
         width: 160
         height: 30
     - id: 59
@@ -45757,7 +45759,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -45767,14 +45769,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'Variable["PlayerStats.empathContrarian"]=false; '
+      userScript: SetPlayerStat("Understanding", 1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 6006.8877
+        y: 1969.3352
         width: 160
         height: 30
     - id: 60
@@ -45824,7 +45826,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -45834,14 +45836,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'Variable["PlayerStats.empathContrarian"]=true; '
+      userScript: SetPlayerStat("Understanding", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 6008.107
+        y: 1851.347
         width: 160
         height: 30
     - id: 61
@@ -45899,7 +45901,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -45915,8 +45917,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5419.327
+        y: 1794.6398
         width: 160
         height: 30
     - id: 62
@@ -45976,7 +45978,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -45992,8 +45994,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5418.8394
+        y: 1738.1866
         width: 160
         height: 30
     - id: 63
@@ -46053,7 +46055,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -46069,8 +46071,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5234.205
+        y: 1736.561
         width: 160
         height: 30
     - id: 64
@@ -46129,7 +46131,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -46145,8 +46147,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 6379.013
+        y: 1907.4666
         width: 160
         height: 30
     - id: 65
@@ -46214,8 +46216,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 6767.6157
+        y: 1906.9172
         width: 160
         height: 30
     - id: 66
@@ -46261,7 +46263,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -46270,15 +46272,16 @@ MonoBehaviour:
         destinationDialogueID: 70
         isConnector: 0
         priority: 2
-      conditionsString: Variable["PlayerStats.goodCopBadCop"] == true
+      conditionsString: (Actor["Dayholt"].InterpersonalAlignment == -1) and (Actor["Vaughn"].InterpersonalAlignment
+        == 1)
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 6947.6157
+        y: 1844.4172
         width: 160
         height: 30
     - id: 67
@@ -46324,7 +46327,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -46333,15 +46336,16 @@ MonoBehaviour:
         destinationDialogueID: 69
         isConnector: 0
         priority: 2
-      conditionsString: (Variable["PlayerStats.goodCopBadCop"] == true) == false
+      conditionsString: (Actor["Dayholt"].InterpersonalAlignment == 1) and (Actor["Vaughn"].InterpersonalAlignment
+        == -1)
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 6947.6157
+        y: 1969.4172
         width: 160
         height: 30
     - id: 68
@@ -46400,7 +46404,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -46416,8 +46420,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 6573.299
+        y: 1908.8953
         width: 160
         height: 30
     - id: 69
@@ -46476,7 +46480,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -46492,8 +46496,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 7127.6157
+        y: 1969.4172
         width: 160
         height: 30
     - id: 70
@@ -46552,7 +46556,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -46568,8 +46572,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 7127.6157
+        y: 1844.4172
         width: 160
         height: 30
     - id: 71
@@ -46627,7 +46631,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -46643,8 +46647,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 7129.5674
+        y: 1784.6613
         width: 160
         height: 30
     - id: 72
@@ -46702,7 +46706,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -46718,8 +46722,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 7130.299
+        y: 1733.7466
         width: 160
         height: 30
     - id: 73
@@ -46777,7 +46781,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -46793,8 +46797,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 7315.177
+        y: 1732.527
         width: 160
         height: 30
     - id: 74
@@ -46852,7 +46856,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -46868,8 +46872,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 7312.25
+        y: 1844.7222
         width: 160
         height: 30
     - id: 75
@@ -46927,7 +46931,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 18
@@ -46943,8 +46947,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 7531.274
+        y: 1899.6001
         width: 160
         height: 30
     - id: 76
@@ -47019,13 +47023,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 7738.1045
+        y: 1898.3807
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 5859.593, y: 1446.4868}
+    canvasZoom: 0.6700003
   - id: 19
     fields:
     - title: Title
@@ -47138,8 +47142,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 349.99854
+        y: 1684.9935
         width: 160
         height: 30
     - id: 1
@@ -47185,7 +47189,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -47201,8 +47205,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 529.99854
+        y: 1684.9935
         width: 160
         height: 30
     - id: 2
@@ -47248,18 +47252,18 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: SetCharStateLua(0)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 6797.273
+        y: 1670.448
         width: 160
         height: 30
     - id: 3
@@ -47339,8 +47343,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 709.99854
+        y: 1684.9935
         width: 160
         height: 30
     - id: 4
@@ -47390,7 +47394,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -47418,8 +47422,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1260.136
+        y: 1684.9937
         width: 160
         height: 30
     - id: 5
@@ -47478,7 +47482,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -47494,8 +47498,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1451.9164
+        y: 1617.8702
         width: 160
         height: 30
     - id: 6
@@ -47554,7 +47558,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -47570,8 +47574,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1448.7898
+        y: 1748.9904
         width: 160
         height: 30
     - id: 7
@@ -47630,7 +47634,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -47658,8 +47662,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1645.9371
+        y: 1615.2795
         width: 160
         height: 30
     - id: 8
@@ -47718,7 +47722,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -47734,8 +47738,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1640.0549
+        y: 1804.1029
         width: 160
         height: 30
     - id: 9
@@ -47793,7 +47797,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -47809,8 +47813,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2228.2908
+        y: 1680.8678
         width: 160
         height: 30
     - id: 10
@@ -47869,7 +47873,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -47885,8 +47889,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1844.7607
+        y: 1616.6031
         width: 160
         height: 30
     - id: 11
@@ -47944,7 +47948,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -47960,8 +47964,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1454.1722
+        y: 1878.809
         width: 160
         height: 30
     - id: 12
@@ -48007,7 +48011,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -48023,8 +48027,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1258.8783
+        y: 1880.5735
         width: 160
         height: 30
     - id: 13
@@ -48070,7 +48074,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -48086,8 +48090,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1451.8192
+        y: 1683.5149
         width: 160
         height: 30
     - id: 14
@@ -48145,7 +48149,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -48161,8 +48165,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1845.9368
+        y: 1684.1031
         width: 160
         height: 30
     - id: 15
@@ -48220,7 +48224,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -48236,8 +48240,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1842.4077
+        y: 1747.0443
         width: 160
         height: 30
     - id: 16
@@ -48287,7 +48291,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -48297,14 +48301,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'Variable["PlayerStats.methodManIntegrated"] = false; '
+      userScript: SetPlayerStat("Technology", 1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2032.9966
+        y: 1746.309
         width: 160
         height: 30
     - id: 17
@@ -48354,7 +48358,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -48364,14 +48368,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'Variable["PlayerStats.methodManIntegrated"] = true; '
+      userScript: SetPlayerStat("Technology", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2035.3486
+        y: 1617.0443
         width: 160
         height: 30
     - id: 18
@@ -48445,8 +48449,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 889.99854
+        y: 1609.9935
         width: 160
         height: 30
     - id: 19
@@ -48520,8 +48524,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 889.99854
+        y: 1759.9934
         width: 160
         height: 30
     - id: 20
@@ -48597,8 +48601,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1069.9985
+        y: 1684.9935
         width: 160
         height: 30
     - id: 21
@@ -48656,7 +48660,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -48672,8 +48676,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2431.82
+        y: 1679.6914
         width: 160
         height: 30
     - id: 22
@@ -48731,13 +48735,19 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
         originDialogueID: 22
         destinationConversationID: 19
         destinationDialogueID: 23
+        isConnector: 0
+        priority: 2
+      - originConversationID: 19
+        originDialogueID: 22
+        destinationConversationID: 19
+        destinationDialogueID: 62
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -48747,8 +48757,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2628.6199
+        y: 1678.0974
         width: 160
         height: 30
     - id: 23
@@ -48798,7 +48808,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -48826,8 +48836,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2821.723
+        y: 1678.0972
         width: 160
         height: 30
     - id: 24
@@ -48886,7 +48896,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -48902,8 +48912,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3019.4094
+        y: 1619.4763
         width: 160
         height: 30
     - id: 25
@@ -48962,7 +48972,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -48978,8 +48988,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3014.7417
+        y: 1734.2788
         width: 160
         height: 30
     - id: 26
@@ -49037,7 +49047,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -49053,8 +49063,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3211.7583
+        y: 1568.727
         width: 160
         height: 30
     - id: 27
@@ -49113,7 +49123,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -49141,8 +49151,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3208.243
+        y: 1732.6019
         width: 160
         height: 30
     - id: 28
@@ -49200,7 +49210,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -49216,8 +49226,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3406.7603
+        y: 1620.9796
         width: 160
         height: 30
     - id: 29
@@ -49275,7 +49285,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -49291,8 +49301,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3018.9556
+        y: 1568.5405
         width: 160
         height: 30
     - id: 30
@@ -49338,7 +49348,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -49354,8 +49364,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2630.663
+        y: 1568.5404
         width: 160
         height: 30
     - id: 31
@@ -49401,7 +49411,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -49417,8 +49427,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3016.0288
+        y: 1676.4673
         width: 160
         height: 30
     - id: 32
@@ -49476,7 +49486,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -49492,8 +49502,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3406.7605
+        y: 1677.6868
         width: 160
         height: 30
     - id: 33
@@ -49551,7 +49561,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -49567,8 +49577,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3406.0286
+        y: 1733.7844
         width: 160
         height: 30
     - id: 34
@@ -49618,7 +49628,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -49628,14 +49638,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'Variable["PlayerStats.shreddedSlender"] = false; '
+      userScript: SetPlayerStat("Fitness", 1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3597.0042
+        y: 1732.5647
         width: 160
         height: 30
     - id: 35
@@ -49685,7 +49695,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -49695,14 +49705,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'Variable["PlayerStats.shreddedSlender"] = true; '
+      userScript: SetPlayerStat("Fitness", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3598.9556
+        y: 1620.9796
         width: 160
         height: 30
     - id: 36
@@ -49760,7 +49770,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -49776,8 +49786,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3792.37
+        y: 1672.504
         width: 160
         height: 30
     - id: 37
@@ -49835,7 +49845,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -49851,8 +49861,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3985.677
+        y: 1673.8452
         width: 160
         height: 30
     - id: 38
@@ -49902,7 +49912,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -49930,8 +49940,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4374.866
+        y: 1671.818
         width: 160
         height: 30
     - id: 39
@@ -49990,7 +50000,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -50006,8 +50016,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4571.128
+        y: 1608.3857
         width: 160
         height: 30
     - id: 40
@@ -50066,7 +50076,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -50082,8 +50092,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4569.4033
+        y: 1748.0408
         width: 160
         height: 30
     - id: 41
@@ -50142,7 +50152,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -50158,8 +50168,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4977.7754
+        y: 1551.9625
         width: 160
         height: 30
     - id: 42
@@ -50234,8 +50244,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4971.2666
+        y: 1801.6885
         width: 160
         height: 30
     - id: 43
@@ -50309,8 +50319,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5357.273
+        y: 1670.448
         width: 160
         height: 30
     - id: 44
@@ -50368,7 +50378,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -50384,8 +50394,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4977.679
+        y: 1604.5063
         width: 160
         height: 30
     - id: 45
@@ -50443,7 +50453,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -50459,8 +50469,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4567.386
+        y: 1813.2554
         width: 160
         height: 30
     - id: 46
@@ -50506,7 +50516,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -50522,8 +50532,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3989.1772
+        y: 1810.2703
         width: 160
         height: 30
     - id: 47
@@ -50569,7 +50579,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -50585,8 +50595,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4571.2666
+        y: 1672.5837
         width: 160
         height: 30
     - id: 48
@@ -50644,7 +50654,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -50652,7 +50662,7 @@ MonoBehaviour:
         destinationConversationID: 19
         destinationDialogueID: 47
         isConnector: 0
-        priority: 3
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -50660,8 +50670,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4976.341
+        y: 1672.5839
         width: 160
         height: 30
     - id: 49
@@ -50719,7 +50729,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -50735,8 +50745,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4973.356
+        y: 1743.4794
         width: 160
         height: 30
     - id: 50
@@ -50786,7 +50796,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -50796,14 +50806,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'Variable["PlayerStats.wrenchMonkeyCoded"] = false; '
+      userScript: SetPlayerStat("Expertise", 1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5159.6245
+        y: 1743.2922
         width: 160
         height: 30
     - id: 51
@@ -50853,7 +50863,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -50863,14 +50873,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 'Variable["PlayerStats.wrenchMonkeyCoded"] = true; '
+      userScript: SetPlayerStat("Expertise", -1)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5166.916
+        y: 1604.4993
         width: 160
         height: 30
     - id: 52
@@ -50945,8 +50955,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5537.273
+        y: 1670.448
         width: 160
         height: 30
     - id: 53
@@ -51014,8 +51024,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5717.273
+        y: 1670.448
         width: 160
         height: 30
     - id: 54
@@ -51061,7 +51071,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -51070,15 +51080,16 @@ MonoBehaviour:
         destinationDialogueID: 57
         isConnector: 0
         priority: 2
-      conditionsString: Variable["PlayerStats.meatHeadHackerMan"] == true
+      conditionsString: (Actor["Dayholt"].InterestsAlignment == -1) and (Actor["Vaughn"].InterestsAlignment
+        == 1)
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5897.273
+        y: 1595.448
         width: 160
         height: 30
     - id: 55
@@ -51124,7 +51135,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -51133,15 +51144,16 @@ MonoBehaviour:
         destinationDialogueID: 56
         isConnector: 0
         priority: 2
-      conditionsString: (Variable["PlayerStats.meatHeadHackerMan"] == true) == false
+      conditionsString: (Actor["Dayholt"].InterestsAlignment == 1) and (Actor["Vaughn"].InterestsAlignment
+        == -1)
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5897.273
+        y: 1745.4479
         width: 160
         height: 30
     - id: 56
@@ -51217,8 +51229,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 6077.273
+        y: 1745.4479
         width: 160
         height: 30
     - id: 57
@@ -51278,7 +51290,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -51294,8 +51306,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 6076.053
+        y: 1595.448
         width: 160
         height: 30
     - id: 58
@@ -51370,8 +51382,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 6257.273
+        y: 1670.448
         width: 160
         height: 30
     - id: 59
@@ -51430,7 +51442,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -51446,8 +51458,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1261.232
+        y: 1801.8973
         width: 160
         height: 30
     - id: 60
@@ -51505,7 +51517,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -51533,8 +51545,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1643.5842
+        y: 1749.8383
         width: 160
         height: 30
     - id: 61
@@ -51592,7 +51604,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -51620,8 +51632,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3208.4675
+        y: 1620.9794
         width: 160
         height: 30
     - id: 62
@@ -51679,7 +51691,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -51695,8 +51707,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2627.0024
+        y: 1734.2876
         width: 160
         height: 30
     - id: 63
@@ -51755,7 +51767,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -51771,8 +51783,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2624.8108
+        y: 1795.9314
         width: 160
         height: 30
     - id: 64
@@ -51830,7 +51842,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -51846,8 +51858,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2818.5093
+        y: 1795.9314
         width: 160
         height: 30
     - id: 65
@@ -51906,7 +51918,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -51922,8 +51934,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2819.0571
+        y: 1734.2876
         width: 160
         height: 30
     - id: 66
@@ -51982,7 +51994,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -51998,8 +52010,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4184.283
+        y: 1671.8754
         width: 160
         height: 30
     - id: 67
@@ -52057,7 +52069,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -52073,8 +52085,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5158.7295
+        y: 1801.6885
         width: 160
         height: 30
     - id: 68
@@ -52133,7 +52145,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -52149,8 +52161,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 5171.314
+        y: 1551.8779
         width: 160
         height: 30
     - id: 69
@@ -52209,7 +52221,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -52229,7 +52241,7 @@ MonoBehaviour:
         destinationConversationID: 19
         destinationDialogueID: 45
         isConnector: 0
-        priority: 3
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -52237,8 +52249,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4773.5415
+        y: 1605.7994
         width: 160
         height: 30
     - id: 70
@@ -52297,7 +52309,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 19
@@ -52317,7 +52329,7 @@ MonoBehaviour:
         destinationConversationID: 19
         destinationDialogueID: 45
         isConnector: 0
-        priority: 3
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -52325,8 +52337,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4770.093
+        y: 1745.4541
         width: 160
         height: 30
     - id: 71
@@ -52401,8 +52413,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 6437.273
+        y: 1670.448
         width: 160
         height: 30
     - id: 72
@@ -52477,13 +52489,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 6617.273
+        y: 1670.448
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 5585.425, y: 1226.8206}
+    canvasZoom: 0.8200002
   - id: 20
     fields:
     - title: Title
@@ -52589,8 +52601,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 366.15268
+        y: 1995.3782
         width: 160
         height: 30
     - id: 1
@@ -52636,7 +52648,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 20
@@ -52646,14 +52658,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: SetCharStateLua(4)
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 546.1526
+        y: 1995.3782
         width: 160
         height: 30
     - id: 2
@@ -52699,7 +52711,7 @@ MonoBehaviour:
       isGroup: 1
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 20
@@ -52715,8 +52727,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3347.787
+        y: 1997.2258
         width: 160
         height: 30
     - id: 3
@@ -52774,7 +52786,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 20
@@ -52790,8 +52802,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 743.65234
+        y: 1995.3782
         width: 160
         height: 30
     - id: 4
@@ -52865,8 +52877,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 958.652
+        y: 1995.3782
         width: 160
         height: 30
     - id: 5
@@ -52940,8 +52952,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1171.1519
+        y: 1995.3782
         width: 160
         height: 30
     - id: 6
@@ -53015,8 +53027,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1408.6516
+        y: 1992.8782
         width: 160
         height: 30
     - id: 7
@@ -53102,8 +53114,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1588.6516
+        y: 1992.8782
         width: 160
         height: 30
     - id: 8
@@ -53177,8 +53189,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1768.6516
+        y: 1992.8782
         width: 160
         height: 30
     - id: 9
@@ -53252,8 +53264,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1768.6516
+        y: 1942.8782
         width: 160
         height: 30
     - id: 10
@@ -53327,8 +53339,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2488.6553
+        y: 1955.3782
         width: 160
         height: 30
     - id: 11
@@ -53402,8 +53414,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2937.7866
+        y: 1957.552
         width: 160
         height: 30
     - id: 12
@@ -53477,8 +53489,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2937.7866
+        y: 2032.552
         width: 160
         height: 30
     - id: 13
@@ -53559,8 +53571,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1948.6516
+        y: 1992.8782
         width: 160
         height: 30
     - id: 14
@@ -53634,8 +53646,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2128.6516
+        y: 1955.3782
         width: 160
         height: 30
     - id: 15
@@ -53709,8 +53721,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2128.6516
+        y: 2030.3782
         width: 160
         height: 30
     - id: 16
@@ -53784,8 +53796,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3146.0479
+        y: 1957.552
         width: 160
         height: 30
     - id: 17
@@ -53859,8 +53871,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 3146.0479
+        y: 2032.552
         width: 160
         height: 30
     - id: 18
@@ -53934,8 +53946,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1768.6516
+        y: 2042.8782
         width: 160
         height: 30
     - id: 19
@@ -54015,8 +54027,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2727.3518
+        y: 1995.052
         width: 160
         height: 30
     - id: 20
@@ -54090,8 +54102,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2308.6528
+        y: 2030.3782
         width: 160
         height: 30
     - id: 21
@@ -54165,13 +54177,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 2308.6528
+        y: 1955.3782
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 84.03076, y: 1664.8806}
+    canvasZoom: 0.8200002
   - id: 21
     fields:
     - title: Title

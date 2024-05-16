@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using PixelCrushers.DialogueSystem;
 using Unity.VisualScripting;
+using UnityEngine.UI;
 
 namespace PixelCrushers.DialogueSystem.SequencerCommands
 {
@@ -12,6 +13,7 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
     { 
 
         DiceRollRecord rollRecord;
+        DiceRollDeterminer rollDeterminer;
 
         string actorIndex;
         string conversantIndex;
@@ -27,6 +29,9 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
         bool hasWorkingRollBegun = false;
         bool isWorkingRollFinished = false;
 
+        int determination = 0;
+        bool hasDetermined = false;
+
         public DiceRoll WorkingRollAccess { get { return workingRoll; } }
 
         public bool WorkingRollComplete { get { return hasWorkingRollBegun == true && isWorkingRollFinished == true; } }
@@ -34,21 +39,23 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
 
         public void Awake()
         {
+            //Defining local variables for dice roll to be created
             string rollType;
             string rollTypeGroup;
             List<Die> diceTypes;
 
-            Debug.Log("SEQUENCER: Commencing DiceRoll");
             if(rollRecord == null) rollRecord = FindObjectOfType<DiceRollRecord>();
 
+            if (rollDeterminer == null) rollDeterminer = rollRecord.rollDeterminer.GetComponentInParent<DiceRollDeterminer>();
+
             variableName = GetParameter(0, string.Empty);
-            Debug.Log($"SEQUENCER: VariableName is {((variableName != null) ? variableName : "doing the nully")}");
 
-            actorIndex = Lua.Run("return Variable['ActorIndex']").AsString;
+            Debug.Log($"NAMEBYIDACTOR: {GetCurrentEntryActor()}");
+            Debug.Log($"NAMEBYIDCONVER: {GetCurrentEntryConversant()}");
 
+            actorIndex = GetCurrentEntryActor();
             rollingActorName = DialogueLua.GetActorField(actorIndex, "Name").AsString;
-            Debug.Log($"SEQUENCER: RollingActorName is {((rollingActorName != null) ? rollingActorName : "doing the nully")}");
-
+            
             ParseRollType(variableName, out diceTypes, out rollType, out rollTypeGroup);
 
             #region CreatingDiceRoll
@@ -57,26 +64,23 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
             {
 
             }
-            else if (rollTypeGroup == "Interpersonal")
+            else if (rollTypeGroup == "Interpersonal") //Creating Roll as Interpersonal
             {
-                conversantIndex = Lua.Run("return Variable['ConversantIndex']").AsString;
+                conversantIndex = GetCurrentEntryConversant();
 
                 conversantName = DialogueLua.GetActorField(conversantIndex, "Name").AsString;
-                Debug.Log($"SEQUENCER: ContestingNPCName is {((conversantName != null) ? conversantName : "doing the nully")}");
 
                 diceEval = EvalByDisposition(conversantIndex);
-                Debug.Log($"SEQUENCER: DiceEval (by Disposition) has values of {diceEval.critSuccess}, {diceEval.pass}, {diceEval.critFailure}");
 
                 workingRoll = new DiceRoll(actorIndex, conversantIndex, rollType, RollType.Interpersonal, diceTypes.ToArray(), diceEval);
                 workingRoll.isReady = true;
 
             }
-            else if (rollTypeGroup == "Interests")
+            else if (rollTypeGroup == "Interests") //Creating roll as Interests
             {
                 skillDC = GetParameterAsInt(1);
 
                 diceEval = EvalBySkillDC(skillDC);
-                Debug.Log($"SEQUENCER: DiceEval (by SkillDC) has values of {diceEval.critSuccess}, {diceEval.pass}, {diceEval.critFailure}");
 
                 workingRoll = new DiceRoll(actorIndex, rollType, RollType.Interests, diceTypes.ToArray(), diceEval);
                 workingRoll.isReady = true;
@@ -92,15 +96,10 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
 
         public void Start()
         {
-            StartCoroutine(ProcessDiceRoll());
+            StartCoroutine(PrepareDieBoardVisuals());
         }
         public void OnDestroy()
         {
-            // Add your finalization code here. This is critical. If the sequence is cancelled and this
-            // command is marked as "required", then only Awake() and OnDestroy() will be called.
-            // Use it to clean up whatever needs cleaning at the end of the sequencer command.
-            // If you don't need to do anything at the end, you can delete this method.
-            Debug.Log("DESTROYSEQ: DestroyStart.");
             actorIndex = string.Empty;
             conversantIndex = string.Empty;
             
@@ -111,8 +110,6 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
 
             hasWorkingRollBegun = false;
             isWorkingRollFinished = false;
-            Debug.Log("DESTROYSEQ: DestroyMid.");
-            //workingRoll = new DiceRoll();
 
             workingRoll.isReady = false;
             workingRoll.rollerIndex = string.Empty;
@@ -124,9 +121,24 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
             workingRoll.spawnedDice.Clear();
             workingRoll.finalRoll = 0;
 
-            Debug.Log("DESTROYSEQ: DestroyFin.");
         }
 
+
+        public string GetCurrentEntryActor()
+        {
+            return DialogueManager.instance.initialDatabase.GetActor(DialogueManager.CurrentConversationState.subtitle.dialogueEntry.ActorID).Name;
+        }
+
+        public string GetCurrentEntryConversant()
+        {
+            return DialogueManager.instance.initialDatabase.GetActor(DialogueManager.CurrentConversationState.subtitle.dialogueEntry.ConversantID).Name;
+        }
+
+        /// <summary>Determines what dice to roll and the rollType/rollTypeGroup based on the input 'variable'.</summary>
+        /// <param name="variable">Skill name as string; Used to determine what 'out variables' should be set to.</param>
+        /// <param name="toRoll">Out List that dice should be added to.</param>
+        /// <param name="rollType">Out string to set and hold display name of skill.</param>
+        /// <param name="rollTypeGroup">Out string to set and hold skill group name.</param>
         void ParseRollType(string variable, out List<Die> toRoll, out string rollType, out string rollTypeGroup)
         {
             toRoll = new List<Die>();
@@ -150,8 +162,6 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
                     }
                     rollTypeGroup = "Policework";
 
-                    //if (DialogueLua.GetVariable("PlayerStats.gutFeelingStrategic").asBool) toRoll.Add(rollRecord.D4);
-
                     break;
 
                 case "Strategic":
@@ -166,8 +176,6 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
                     }
 
                     rollTypeGroup = "Policework";
-
-                    //if (!DialogueLua.GetVariable("PlayerStats.gutFeelingStrategic").asBool) toRoll.Add(rollRecord.D4);
 
                     break;
 
@@ -184,8 +192,6 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
 
                     rollTypeGroup = "Policework";
 
-                    //if (DialogueLua.GetVariable("PlayerStats.improvisorKnowledge").asBool) toRoll.Add(rollRecord.D4);
-
                     break;
 
                 case "Knowledge":
@@ -200,8 +206,6 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
                     }
 
                     rollTypeGroup = "Policework";
-
-                    //if (!DialogueLua.GetVariable("PlayerStats.improvisorKnowledge").asBool) toRoll.Add(rollRecord.D4);
 
                     break;
 
@@ -218,8 +222,6 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
 
                     rollTypeGroup = "Policework";
 
-                    //if (DialogueLua.GetVariable("PlayerStats.distractPercept").asBool) toRoll.Add(rollRecord.D4);
-
                     break;
 
                 case "Perceptive":
@@ -234,8 +236,6 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
                     }
 
                     rollTypeGroup = "Policework";
-
-                    //if (!DialogueLua.GetVariable("PlayerStats.distractPercept").asBool) toRoll.Add(rollRecord.D4);
 
                     break;
 
@@ -252,9 +252,6 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
 
                     rollTypeGroup = "Interpersonal";
 
-
-                    //if (DialogueLua.GetVariable("PlayerStats.friendlyCold").asBool) toRoll.Add(rollRecord.D4);
-
                     break;
 
                 case "Cold":
@@ -269,9 +266,6 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
                     }
 
                     rollTypeGroup = "Interpersonal";
-
-
-                    //if (!DialogueLua.GetVariable("PlayerStats.friendlyCold").asBool) toRoll.Add(rollRecord.D4);
 
                     break;
 
@@ -288,9 +282,6 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
 
                     rollTypeGroup = "Interpersonal";
 
-
-                    //if (DialogueLua.GetVariable("PlayerStats.trustingIntimidating").asBool) toRoll.Add(rollRecord.D4);
-
                     break;
 
                 case "Intimidating":
@@ -305,9 +296,6 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
                     }
 
                     rollTypeGroup = "Interpersonal";
-
-
-                    //if (!DialogueLua.GetVariable("PlayerStats.trustingIntimidating").asBool) toRoll.Add(rollRecord.D4);
 
                     break;
 
@@ -324,9 +312,6 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
 
                     rollTypeGroup = "Interpersonal";
 
-
-                    //if (DialogueLua.GetVariable("PlayerStats.empathContrarian").asBool) toRoll.Add(rollRecord.D4);
-
                     break;
 
                 case "Contrarian":
@@ -341,9 +326,6 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
                     }
 
                     rollTypeGroup = "Interpersonal";
-
-
-                    //if (!DialogueLua.GetVariable("PlayerStats.empathContrarian").asBool) toRoll.Add(rollRecord.D4);
 
                     break;
 
@@ -360,9 +342,6 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
 
                     rollTypeGroup = "Interests";
 
-
-                    //if (DialogueLua.GetVariable("PlayerStats.methodManIntegrated").asBool) toRoll.Add(rollRecord.D4);
-
                     break;
 
                 case "Integrated":
@@ -377,9 +356,6 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
                     }
 
                     rollTypeGroup = "Interests";
-
-
-                    //if (!DialogueLua.GetVariable("PlayerStats.methodManIntegrated").asBool) toRoll.Add(rollRecord.D4);
 
                     break;
 
@@ -396,9 +372,6 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
 
                     rollTypeGroup = "Interests";
 
-
-                    //if (DialogueLua.GetVariable("PlayerStats.shreddedSlender").asBool) toRoll.Add(rollRecord.D4);
-
                     break;
 
                 case "Slender":
@@ -413,9 +386,6 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
                     }
 
                     rollTypeGroup = "Interests";
-
-
-                    //if (!DialogueLua.GetVariable("PlayerStats.shreddedSlender").asBool) toRoll.Add(rollRecord.D4);
 
                     break;
 
@@ -432,9 +402,6 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
 
                     rollTypeGroup = "Interests";
 
-
-                    //if (DialogueLua.GetVariable("PlayerStats.wrenchMonkeyCoded").asBool) toRoll.Add(rollRecord.D4);
-
                     break;
 
                 case "Coded":
@@ -450,9 +417,6 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
 
                     rollTypeGroup = "Interests";
 
-
-                    //if (!DialogueLua.GetVariable("PlayerStats.wrenchMonkeyCoded").asBool) toRoll.Add(rollRecord.D4);
-
                     break;
 
                 default:
@@ -462,17 +426,20 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
                     break;
             }
 
-            Debug.Log($"SEQUENCER: RollType is now set to \"{rollType}\", in group \"{rollTypeGroup}\". Rolled by {DialogueLua.GetActorField(actorIndex, "Name").AsString}");
         }
 
+
+        /// <summary>Creates Eval Object from conversant's disposition towards Player</summary>
+        /// <param name="conversantIndex">Index of Conversant within Actor table.</param>
+        /// <returns>DiceEval object</returns>
         public DiceEval EvalByDisposition(string conversantIndex)
         {
+
             int rollDC = 0;
 
             int fondnessNum = DialogueLua.GetActorField(conversantIndex, "DispoFondness").asInt;
             int moodNum = DialogueLua.GetActorField(conversantIndex, "DispoMood").asInt;
 
-            Debug.Log($"SEQUENCER: EvalByDisposition -- Fondness {fondnessNum}, Mood {moodNum}");
 
             switch(fondnessNum)
             {
@@ -512,23 +479,40 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
                     break;
             }
 
+            Debug.Log($"DICEROLLDC: {conversantIndex}, {rollDC}");
+
             return new DiceEval(rollDC+6, rollDC, rollDC-6);
         }
 
+        /// <summary>Creates Eval Object from a given skill DC.</summary>
+        /// <param name="skillDC">Number needed to 'meet or beat' for roll to evaluate as a pass.</param>
+        /// <returns>DiceEval object</returns>
         public DiceEval EvalBySkillDC(int skillDC)
         {
             return new DiceEval(skillDC + 6, skillDC, skillDC - 6);
         }
 
+        /// <summary>Executes actions for showing DiceRoll visuals before roll execution.</summary>
         public IEnumerator PrepareDieBoardVisuals()
         {
-            yield return null;
+            rollRecord.rollScreen.SetActive(true);
+
+            yield return new WaitForEndOfFrame();
+
+            if(DiceRollDeterminer.devDiceActive)
+            {
+                StartCoroutine(DetermineDiceRoll());
+            }
+            else
+            {
+                StartCoroutine(ProcessDiceRoll());
+            }
+
         }
 
+        /// <summary>Executes main DiceRoll functionality.</summary>
         public IEnumerator ProcessDiceRoll()
         {
-            Debug.Log("ROLLPROCESS: ProcessDiceRoll Coroutine called.");
-
             rollRecord.ClearSpawnPoints();
 
             //Wait to ensure that working roll is fully initialized.
@@ -537,15 +521,11 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
                 yield return null;
             }
 
-            Debug.Log("ROLLPROCESS: WorkingRoll is Ready.");
-
             //Gets a unique spawn point for each die in the roll
             foreach (Die die in workingRoll.intendedDice)
             {
                 rollRecord.SelectSpawnPoints();
             }
-
-            Debug.Log("ROLLPROCESS: SpawnPoints got.");
 
             //Spawns each die in intendedDice at a selectedSpawnPoint, and adds it to spawnedDice
             for (int i = 0; i < workingRoll.intendedDice.Length; i++)
@@ -554,8 +534,6 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
 
                 workingRoll.spawnedDice.Add(spawnedDie);
             }
-
-            Debug.Log("ROLLPROCESS: Spawned Dice.");
 
             //Rolls each individual spawned die
             for (int i = 0; i < workingRoll.spawnedDice.Count; i++)
@@ -573,9 +551,6 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
                 yield return null;
             }
 
-            Debug.Log("ROLLPROCESS: Dice finished rolling.");
-
-
             //Process roll result
             workingRoll.FinalRollValue();
 
@@ -586,27 +561,108 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
 
             workingRoll.EvaluateDiceRoll();
 
-            rollRecord.rolls.Add(workingRoll);
+            rollRecord.AddDiceRoll(workingRoll);
 
             int index = rollRecord.rolls.IndexOf(workingRoll);
 
-            Debug.Log($"ROLLREPORT: {workingRoll.rollerIndex} rolled for {workingRoll.rollType}. Result: Final Roll of {workingRoll.finalRoll}, evaluating as a {workingRoll.rollState}.");
+            DialogueLua.SetVariable("DiceRoll.operativeIndex", index);
+
+            workingRoll.LogRollDetails();
+            workingRoll.CleanRoll();
+
+            StartCoroutine(FinishRollVisuals());
+        }
+
+        public IEnumerator DetermineDiceRoll()
+        {
+            rollRecord.rollDeterminer.SetActive(true);
+
+            rollDeterminer.critPassButton.onClick.AddListener(delegate { DetermineResult(2); });
+            rollDeterminer.passButton.onClick.AddListener(delegate { DetermineResult(1); });
+            rollDeterminer.failButton.onClick.AddListener(delegate { DetermineResult(-1); });
+            rollDeterminer.critFailButton.onClick.AddListener(delegate { DetermineResult(-2); });
+
+            while (hasDetermined == false)
+            {
+                yield return null;
+            }
+
+            workingRoll.rollState = RollState.Rolling;
+
+            int rollValue;
+
+            switch (determination)
+            {
+                case 2:
+
+                    rollValue = workingRoll.diceEval.critSuccess;
+
+                    break;
+
+                case 1:
+
+                    rollValue = workingRoll.diceEval.pass;
+
+                    break;
+                case -1:
+
+                    rollValue = workingRoll.diceEval.pass - 1;
+
+                    break;
+                case -2:
+
+                    rollValue = workingRoll.diceEval.critFailure - 1;
+
+                    break;
+                default:
+                    rollValue = 0;
+
+                    break;
+            }
+
+            workingRoll.FinalRollDetermination(rollValue);
+
+            while (workingRoll.finalRoll == 0)
+            {
+                yield return null;
+            }
+
+            workingRoll.EvaluateDiceRoll();
+
+            rollRecord.AddDiceRoll(workingRoll);
+
+            int index = rollRecord.rolls.IndexOf(workingRoll);
 
             DialogueLua.SetVariable("DiceRoll.operativeIndex", index);
 
-            Stop();
+            workingRoll.LogRollDetails();
+            workingRoll.CleanRoll();
 
+            rollDeterminer.critPassButton.onClick.RemoveAllListeners();
+            rollDeterminer.passButton.onClick.RemoveAllListeners();
+            rollDeterminer.failButton.onClick.RemoveAllListeners();
+            rollDeterminer.critFailButton.onClick.RemoveAllListeners();
+
+            rollRecord.rollDeterminer.SetActive(false);
+
+            hasDetermined = false;
+
+            StartCoroutine(FinishRollVisuals());
         }
 
-        public IEnumerator FinaliseDiceRollVisuals()
+        /// <summary>Executes actions to finish visuals of newly finished DiceRoll</summary>
+        public IEnumerator FinishRollVisuals() 
         {
-            yield return null;
+            rollRecord.rollScreen.SetActive(false);
+
+            yield return new WaitForSecondsRealtime(1);
+
+            Stop();
         }
+
 
         public void CheckIfRollFinished(DiceRoll roll)
         {
-            Debug.Log("ROLLPROCESS: RollCheck Message Received");
-
             bool isFinished = true;
 
             for(int i = 0; i < roll.spawnedDice.Count; i++)
@@ -618,6 +674,14 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
             }
 
             isWorkingRollFinished = isFinished;
+        }
+
+
+        public void DetermineResult(int determine)
+        {
+            determination = determine;
+
+            hasDetermined = true;
         }
     }
 

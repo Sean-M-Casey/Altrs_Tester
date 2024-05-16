@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using MoreMountains.Feedbacks;
 using PixelCrushers.DialogueSystem;
-using System.Security.Cryptography.X509Certificates;
 
 public enum CharacterTabStates { Overview, Policework, Interests, Interpersonal, Off }
 
@@ -113,18 +112,6 @@ public class CharacterCreatorNew : MonoBehaviour
 
     private void OnEnable()
     {
-        Lua.RegisterFunction(nameof(GutStrats), this, SymbolExtensions.GetMethodInfo(() => GutStrats(false)));
-        Lua.RegisterFunction(nameof(ImprovKnow), this, SymbolExtensions.GetMethodInfo(() => ImprovKnow(false)));
-        Lua.RegisterFunction(nameof(Distraceptive), this, SymbolExtensions.GetMethodInfo(() => Distraceptive(false)));
-
-        Lua.RegisterFunction(nameof(FriendCold), this, SymbolExtensions.GetMethodInfo(() => FriendCold(false)));
-        Lua.RegisterFunction(nameof(TrustIntimidating), this, SymbolExtensions.GetMethodInfo(() => TrustIntimidating(false)));
-        Lua.RegisterFunction(nameof(EmpathContra), this, SymbolExtensions.GetMethodInfo(() => EmpathContra(false)));
-
-        Lua.RegisterFunction(nameof(MethodInteg), this, SymbolExtensions.GetMethodInfo(() => MethodInteg(false)));
-        Lua.RegisterFunction(nameof(ShredSlend), this, SymbolExtensions.GetMethodInfo(() => ShredSlend(false)));
-        Lua.RegisterFunction(nameof(WrenchCoded), this, SymbolExtensions.GetMethodInfo(() => WrenchCoded(false)));
-
         Lua.RegisterFunction(nameof(SetCharStateLua), this, SymbolExtensions.GetMethodInfo(() => SetCharStateLua(0)));
         Lua.RegisterFunction(nameof(SetPlayerStat), this, SymbolExtensions.GetMethodInfo(() => SetPlayerStat(string.Empty, 0)));
 
@@ -133,18 +120,6 @@ public class CharacterCreatorNew : MonoBehaviour
 
     private void OnDisable()
     {
-        Lua.UnregisterFunction(nameof(GutStrats));
-        Lua.UnregisterFunction(nameof(ImprovKnow));
-        Lua.UnregisterFunction(nameof(Distraceptive));
-
-        Lua.UnregisterFunction(nameof(FriendCold));
-        Lua.UnregisterFunction(nameof(TrustIntimidating));
-        Lua.UnregisterFunction(nameof(EmpathContra));
-
-        Lua.UnregisterFunction(nameof(MethodInteg));
-        Lua.UnregisterFunction(nameof(ShredSlend));
-        Lua.UnregisterFunction(nameof(WrenchCoded));
-
         Lua.UnregisterFunction(nameof(SetCharStateLua));
         Lua.UnregisterFunction(nameof(SetPlayerStat));
     }
@@ -157,12 +132,14 @@ public class CharacterCreatorNew : MonoBehaviour
         SetCharacterSheetState((CharacterTabStates)stateInt);
     }
 
+    /// <summary>Sets CharacterTabStates as Int</summary>
+    /// <param name="state"></param>
     public void SetCharacterSheetState(int state)
     {
         SetCharacterSheetState((CharacterTabStates)state);
     }
 
-    /// <summary>Sets CharacterTabState</summary>
+    /// <summary>Sets CharacterTabStates as Enum</summary>
     /// <param name="state"></param>
     public void SetCharacterSheetState(CharacterTabStates state)
     {
