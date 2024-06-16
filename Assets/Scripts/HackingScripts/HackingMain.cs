@@ -26,6 +26,7 @@ public class HackingMain : MonoBehaviour
 
     [SerializeField] private HackExec hackExecPrefab;
 
+
     public List<HackExec> hackExecs = new List<HackExec>();
     
     private bool hacksOpen = false;
@@ -57,9 +58,8 @@ public class HackingMain : MonoBehaviour
     {
 
         //Toggles Hacking State
-        if (Input.GetKeyDown(KeyCode.Tab)) toggleHacking = !toggleHacking;
-
-        if (toggleHacking == true)
+        
+        if (Input.GetKey(KeyCode.LeftAlt))
         {
             Debug.Log("HACKTEST: ToggleActive");
 

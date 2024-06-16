@@ -31774,11 +31774,11 @@ MonoBehaviour:
       - title: Title
         value: "Dayholt: \"[\U0001F3B2Empathetic] I understand this mu...\""
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 12
         type: 5
@@ -31790,36 +31790,36 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: "<b>[\U0001F3B2Empathetic] </b>I understand this must be tough for
           you at the moment."
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: DiceRoll(Empathetic);
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Articy Id
         value: 0x010000000000584C
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: ReferenceSlot
         value: Dayholt
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: MediumTextValue
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: InputId
         value: 0x010000000000584F
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: OutputId
         value: 0x0100000000005850
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 16
       isRoot: 0
       isGroup: 0
@@ -36304,7 +36304,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 1986.3032, y: 853.7048}
+    canvasScrollPosition: {x: 116.44031, y: 904.39014}
     canvasZoom: 0.73000026
   - id: 17
     fields:

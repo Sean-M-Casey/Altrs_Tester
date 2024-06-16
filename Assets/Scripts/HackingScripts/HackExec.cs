@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.EventSystems;
 
-public class HackExec : MonoBehaviour
+public class HackExec : MonoBehaviour, ISelectHandler
 {
     [SerializeField] private Button hackButton;
 
@@ -13,8 +13,12 @@ public class HackExec : MonoBehaviour
 
     [SerializeField] private HackScriptable hack;
 
+    [SerializeField] private GameObject hackExecPanel;
+    
+
     public Button HackButton { get { return hackButton; } }
     public HackScriptable Hack { get { return hack; } }
+
 
     /// <summary>Initialises HackExec with Scriptable Hack.</summary>
     /// <param name="inHack">HackScriptable to initialise with.</param>
@@ -27,8 +31,9 @@ public class HackExec : MonoBehaviour
 
         hackButton.onClick.AddListener(hack.Execute);
 
-
     }
+
+
 
     /// <summary>Removes listeners and destroys this hack object.</summary>
     public void DestroyHack()
@@ -37,4 +42,10 @@ public class HackExec : MonoBehaviour
 
         Destroy(gameObject);
     }
+
+    public void OnSelect(BaseEventData eventData)
+    {
+
+    }
+
 }
