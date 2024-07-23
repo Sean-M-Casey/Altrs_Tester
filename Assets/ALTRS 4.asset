@@ -31138,8 +31138,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 30
+        y: 20
         width: 160
         height: 30
     - id: 1
@@ -31195,8 +31195,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 30
+        y: 70
         width: 160
         height: 30
     entryGroups: []
@@ -31894,6 +31894,10 @@ MonoBehaviour:
         typeString: 
       - title: OutputId
         value: 0x0100000000005856
+        type: 0
+        typeString: 
+      - title: EventGuid
+        value: 
         type: 0
         typeString: 
       conversationID: 16
