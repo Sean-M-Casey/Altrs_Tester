@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HackFunctionality : MonoBehaviour
+public abstract class HackFunctionality : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    protected HackState state = HackState.Inactive;
+    public void Execute(IHackable target)
     {
-        
+        StartCoroutine(ExecuteRoutine(target));
     }
 
-    // Update is called once per frame
-    void Update()
+    public abstract IEnumerator ExecuteRoutine(IHackable target);
+
+    public void Resolve()
     {
-        
+        state = HackState.Inactive;
     }
 }

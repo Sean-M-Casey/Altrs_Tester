@@ -6,13 +6,9 @@ using TMPro;
 
 public interface IHackable
 {
-    
+    public HackableTypes HackableType { get; }
 
-    
-
-    void OnHackingStart();
-
-    void OnHackingFinish();
+    public GameObject TargetAsGameObject { get; }
 }
 
 
