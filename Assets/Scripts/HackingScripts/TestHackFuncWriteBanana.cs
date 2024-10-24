@@ -2,22 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestHackFuncWriteBanana : HackFunctionality
+[CreateAssetMenu(fileName = "TestHackFuncWriteBanana", menuName = "ScriptableObjects/CallTargetBanana", order = 1)]
+public class TestHackFuncWriteBanana : HackScriptable
 {
-
-
-    public override IEnumerator ExecuteRoutine(IHackable target)
+    void CallTargetBanana(IHackable target)
     {
-        state = HackState.InProgress;
+        Debug.Log($"{target.TargetAsGameObject.name} is totes a banana");
 
-        /*Do the hacky wacky woo here*/
+    }
 
-        while (state != HackState.Completed)
-        {
-            yield return null;
-        }
-
-        Resolve();
+    public override void StartExecute(IHackable target)
+    {
+        CallTargetBanana(target);
     }
 
 }

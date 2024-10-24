@@ -9,13 +9,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15cf0be5f46c5c049aead0f2a612bc45, type: 3}
-  m_Name: NewHack
+  m_Script: {fileID: 11500000, guid: f13601084f708ce4a8810ca2f4aef186, type: 3}
+  m_Name: TestChooseNumber
   m_EditorClassIdentifier: 
-  hackName: 
+  hackName: ChoomNum
   hackDescription: 
   hackIcon: {fileID: 0}
   hackType: 0
-  compatibleHackables: 
-  hackParams: []
-  function: {fileID: 0}
+  compatibleHackables: 00000000
+  hackParams:
+  - name: Number1
+    type: 1
+    value: 12
+  - name: Number2
+    type: 1
+    value: 34
+  - name: Number3
+    type: 1
+    value: 56
+  - name: Number4
+    type: 1
+    value: 78

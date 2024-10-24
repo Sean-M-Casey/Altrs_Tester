@@ -23,8 +23,10 @@ public class HackParamDrawer : PropertyDrawer
 
         EditorGUI.PropertyField(nameRect, property.FindPropertyRelative("name"), GUIContent.none);
         EditorGUI.PropertyField(typeRect, type, GUIContent.none);
+        EditorGUI.PropertyField(valueRect, property.FindPropertyRelative("value"), GUIContent.none);
 
-        switch((HackParamTypes)type.enumValueIndex)
+
+        /*switch((HackParamTypes)type.enumValueIndex)
         {
             case HackParamTypes.String:
 
@@ -49,7 +51,7 @@ public class HackParamDrawer : PropertyDrawer
                 EditorGUI.PropertyField(valueRect, property.FindPropertyRelative("valueAsVector3"), GUIContent.none);
 
                 break;
-        }
+        }*/
 
         EditorGUI.indentLevel = storedIndent;
 

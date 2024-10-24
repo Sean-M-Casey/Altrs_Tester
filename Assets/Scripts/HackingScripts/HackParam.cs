@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using PixelCrushers.DialogueSystem.Articy.Articy_1_4;
 
 [Serializable]
 public class HackParam
@@ -10,56 +11,25 @@ public class HackParam
 
     public HackParamTypes type;
 
-    [SerializeField] private string valueAsString;
-    [SerializeField] private int valueAsInt;
-    [SerializeField] private float valueAsFloat;
-    [SerializeField] private Vector3 valueAsVector3;
+    [SerializeField] private string value;
 
-    public HackParamValue GetValue()
-    {
-        HackParamValue paramValue = new HackParamValue();
+    public string ValueAsString { get { return value; } }
+    public int ValueAsInt { get { return int.Parse(value); } }
+    public float ValueAsFloat { get { return float.Parse(value); } }
+    public Vector3 ValueAsVector3 { get { return StaticMethods.StringToVector3(value); } }
 
 
-        switch(type)
-        {
-            case HackParamTypes.String:
-
-                paramValue = new HackParamValue<string>(valueAsString);
-
-
-                break;
-
-            case HackParamTypes.Int:
-
-                paramValue = new HackParamValue<int>(valueAsInt);
-
-
-                break;
-
-            case HackParamTypes.Float:
-
-                paramValue = new HackParamValue<float>(valueAsFloat);
-
-
-                break;
-
-            case HackParamTypes.Vector3:
-
-                paramValue = new HackParamValue<Vector3>(valueAsVector3);
-
-
-                break;
-
-        }
-
-        return paramValue;
-    }
 }
 
 [Serializable]
 public class HackParamValue
 {
-    
+    public Type type;
+
+    public virtual string GetValueAsString()
+    {
+        return "Valueless";
+    }
 }
 
 [Serializable]
@@ -70,6 +40,13 @@ public class HackParamValue<T> : HackParamValue
     public HackParamValue(T value)
     {
         this.value = value;
+
+        type = typeof(T);
+    }
+
+    public override string GetValueAsString()
+    {
+        return value.ToString();
     }
 }
 
